@@ -1,8 +1,8 @@
-version: "2.2"
+version: "3"
 services:
   diff_mpc:
-    container_name: ros2_container 
+    container_name: fervent_banach 
     build:
       context: ./
       dockerfile: Dockerfile
-    image: ros2_container:v1
+    image: ros2_intro:v1

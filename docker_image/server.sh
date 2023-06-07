@@ -1,5 +1,5 @@
-DOCKER_IMG="ros2_container:v1"
-DOCKER_CONATINER_NAME="ros2_container"
+DOCKER_IMG="ros2_intro"
+DOCKER_CONATINER_NAME="fervent_banach"
 HOME_DIRECTORY="/home/$USER/ros2_container"
 mkdir -p $HOME_DIRECTORY
 
