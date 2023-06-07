@@ -254,6 +254,29 @@ Free Research Preview. ChatGPT may produce inaccurate information about people, 
   <img src="assets/structure.png" alt="Alt Text">
 </div>
 
+- ROS (Robot Operating System) and ROS2 (Robot Operating System 2) are two versions of the same framework with some notable differences. Here are the key distinctions between ROS and ROS2, along with examples:
+  - Communication Middleware:
+    - ROS: ROS primarily uses the TCPROS (TCP/IP-based) and XML-RPC protocols for communication between nodes. This approach works well for small-scale systems but may introduce latency and limited scalability for large-scale deployments. 
+    - ROS2: ROS2 introduces a new communication middleware called Data Distribution Service (DDS), which provides more efficient and scalable data exchange. It enables real-time communication, reliable message delivery, and supports different Quality of Service (QoS) settings. For example, ROS2 can be used in applications where real-time control is crucial, such as robotic arms in manufacturing that require precise and timely communication.
+
+  - Distributed Architecture:
+    - ROS: ROS primarily supports a master-slave architecture, where a central ROS master node manages communication and discovery between other nodes. This centralization can be a single point of failure in large-scale systems.
+    - ROS2: ROS2 adopts a decentralized architecture, enabling communication between nodes without a single master node. Nodes can discover each other and communicate directly. This decentralized approach improves fault tolerance and allows for more robust and scalable systems.
+
+  - Language Support:
+    - ROS: ROS primarily supports the programming language Python, although other language bindings exist. Python is known for its simplicity and ease of use, making it accessible for beginners.
+    - ROS2: ROS2 expands language support to include C++, Python, and other languages. This allows developers to choose the language that best suits their application requirements and programming preferences. For example, if performance is a critical factor, developers can opt for C++ to achieve faster execution.
+
+  - Real-Time Capabilities:
+    - ROS: ROS does not inherently provide built-in real-time capabilities. While real-time extensions and workarounds exist, achieving hard real-time behavior can be challenging.
+    - ROS2: ROS2 is designed with real-time capabilities in mind. It incorporates mechanisms to support real-time communication and deterministic behavior. This makes ROS2 suitable for applications where precise timing and predictable behavior are essential, such as autonomous vehicles or robotic systems operating in time-critical environments.
+
+  - Security:
+    - ROS: ROS does not have built-in security features, which can be a concern when working with sensitive data or in environments where secure communication is required.
+    - ROS2: ROS2 includes security features such as authentication and encryption. It ensures secure communication between nodes, protecting data integrity and confidentiality. This is particularly important for robots operating in industries like healthcare or defense, where privacy and security are paramount.
+
+- These are some of the main differences between ROS and ROS2. While ROS has a vast ecosystem, extensive community support, and numerous packages, ROS2 addresses limitations and introduces new features to meet the evolving needs of modern robotics applications, including distributed communication, real-time capabilities, language support, security, and scalability.
+
 ## Docker
 <div style="text-align: center;">
   <img src="assets/docker.jpg" alt="Alt Text">
