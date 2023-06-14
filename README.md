@@ -28,7 +28,7 @@
 ## Course Structure :space_invader:
     
 - Section 1 :alien:	
-    - ROS2 Fundamentals [:books:](lectures/ros2_fundamentals.pdf) [:scroll: code]()
+    - ROS2 Fundamentals [:books: lec01 ](lectures/ros2_fundamentals.pdf) [:books: lec02 ](lectures/ros2_fundamentals_2.pdf) [:scroll: code](hello_world/src/)
     - Workout Examples  [:books:](lectures/) [:scroll: code]()
 - Section 2 :alien:	
     - ROS2 Visualization  [:books:](lectures/) [:scroll: code]()
@@ -38,7 +38,7 @@
 - Section 3 :alien:	
     - Mini Group Project 
 - References
-    - https://docs.ros.org/en/foxy/index.html
+    - https://docs.ros.org/en/humble/index.html
 
 
 ## lesson 1
