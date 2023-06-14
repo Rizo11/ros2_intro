@@ -1,6 +1,10 @@
 
 - [Introduction to ROS2](#introduction-to-ros2)
   - [Course Structure :space\_invader:](#course-structure-space_invader)
+  - [lesson 1](#lesson-1)
+    - [Colcon](#colcon)
+    - [Duplex](#duplex)
+    - [Simplex](#simplex)
   - [ROS](#ros)
     - [What is ROS and Why ROS](#what-is-ros-and-why-ros)
     - [ROS Philosophy](#ros-philosophy)
@@ -16,6 +20,8 @@
     - [Forking](#forking)
     - [Getting changes to forked repo from original repo](#getting-changes-to-forked-repo-from-original-repo)
   - [Bash](#bash)
+    - [tmux](#tmux)
+    - [Nano](#nano)
 
 
 # Introduction to ROS2
@@ -33,6 +39,30 @@
     - Mini Group Project 
 - References
     - https://docs.ros.org/en/foxy/index.html
+
+
+## lesson 1
+### Colcon
+So in simple terms, colcon:
+
+  1. Finds all ROS packages in a workspace
+  2. Uses cmake to build each package
+  3. Installs the packages
+  4. Generates a setup.bash file for the workspace
+  ```bash
+      colcon build         # Build all packages in a workspace
+      colcon build --packages-select <pkg1> <pkg2>    # Build only specified packages
+      colcon build --symlink-install  # Install packages by symlinking them (for development)
+      source install/setup.bash     # Add the workspace to your environment (after building)
+      colcon list         # List all packages in a workspace
+      colcon graph        # Show the dependency graph between packages
+  ```
+### Duplex
+* communication refers to a mode of communication where two devices can both transmit and receive data simultaneously.
+
+### Simplex
+* is a mode of communication where data is transmitted in one direction only. In other words, one device can only transmit data, while the other device can only receive data. 
+
 
 
 ## ROS
@@ -248,7 +278,33 @@ It provides services similar to an operating system (hardware abstraction, manag
 - The ROS File System plays a crucial role in enabling communication and data exchange between different software components in a ROS-based system. By following the file system conventions, developers can easily share and reuse packages across different projects, promoting collaboration and code sharing within the ROS community.
 
 - In summary, the ROS File System is a specialized file organization and management system used in the ROS framework for developing robotic applications. It provides a standardized structure for packages, directories, and files, facilitating the development, deployment, and execution of ROS-based software.
-Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts. ChatGPT May 24 Version
+Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts.
+
+- A ROS2 workspace is a folder where you can build and develop ROS2 packages. It contains:
+
+  * **`src folder`**: Contains the source code of ROS2 packages. This is where you place the packages you want to build.
+  * **`build folder`**: Contains the compiled binaries and libraries of the packages in the src folder. This folder is generated when you build the workspace.
+  * **`install folder`**: Contains the installed/deployed files from the build. This folder is generated when you install the workspace.
+  * **`log folder`**: Contains logs from building the workspace. 
+  * **`workspace.xml`**: A meta file describing the workspace.
+  ```bash
+  my_workspace/         # The workspace folder
+  src/                 # Source space for packages
+    package_1/        # A package folder
+    package_2/        # Another package folder 
+  build/               # Build space 
+  install/             # Install space  
+  log/                 # Log space
+  workspace.xml       # Workspace description file
+  ```
+
+  * To build a ROS2 workspace, you:
+    1. Create a workspace folder
+    2. Add packages to the `src` folder
+    3. Build the workspace using `colcon build`
+    4. Source the `install/setup.bash` file to add the workspace to your environment
+
+
 ### ROS vs ROS2
 <div style="text-align: center;">
   <img src="assets/structure.png" alt="Alt Text">
@@ -461,3 +517,36 @@ To run a `.sh` file (shell script file), you can follow these steps:
 The shell interpreter specified in the shebang line (the first line of the .sh file) will be used to execute the script. Commonly, the shebang line at the beginning of the file looks like this: `#!/bin/bash`, indicating that the script should be executed using the Bash interpreter.
 
 Note: If the `.sh` file requires specific arguments or parameters, you can provide them after the file name when running the script. For example: `./script.sh arg1 arg2`.
+
+- **`./bashrc`**
+  - is a bash shell configuration file. It contains aliases, functions and environment variable settings that are executed whenever you start a new bash shell.
+
+  - Some common things you'll find in a `.bashrc` file are:
+
+    * Aliases: Shortcuts for longer commands, e.g. alias `ll='ls -al'`
+    * Environment variables: Settings like export `PATH=$PATH:/some/`path to add a directory to your `PATH`
+    * Custom functions: Your own bash functions, e.g.
+
+### tmux
+  * `tmux` 	Start a new session
+  * `tmux new -s <session-name>` 	Start a new session with the name chosen
+  * `tmux ls` 	List all sessions
+  * `tmux attach -t <target-session>` 	Re-attach a detached session
+  * `tmux attach -d -t <target-session>` 	Re-attach a detached session (and detach it from elsewhere)
+  * `tmux kill-session -t <target-session>` 	Delete session 
+  * `Ctrl b, "` 	Split pane horizontally
+  * `Ctrl b, %` 	Split pane vertically
+  * `Ctrl b, o` 	Next pane
+  * `Ctrl b, ;` 	Previous pane 
+  * `Ctrl b, x` 	Kill current pane or `exit`
+  * `Ctrl b, ↑` 	change pane
+  * `Ctrl b, ↓` 	change pane
+  * `Ctrl b, ←` 	change pane
+  * `Ctrl b, →` 	change pane
+  * `Ctrl b, ,` 	Rename current window
+  * `Ctrl b, p` 	Previous window
+  * `Ctrl b, n` 	Next window
+  * `Ctrl b, c` 	Create new window
+  * `Ctrl b, num` Go to pane with number num
+### Nano
+  * `Ctrl X` 	Exit nano. You will be prompted to save your file if you haven't

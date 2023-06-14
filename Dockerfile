@@ -5,9 +5,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-rolling-desktop-full=0.10.0-2* \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get update && apt-get install -y x11-apps
-# Set the DISPLAY environment variable
-ENV DISPLAY=:0
 
+ENV DISPLAY=novnc:0.0
 
 # Set up the entrypoint script
 COPY ros2_entrypoint.sh /
