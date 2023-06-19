@@ -18,6 +18,7 @@
     - [**std::bind**](#stdbind)
     - [**`rclcpp::init(argc, char **argv)`**](#rclcppinitargc-char-argv)
     - [**`rclcpp::spin(node)`**](#rclcppspinnode)
+    - [**`rclcpp::Executor`**](#rclcppexecutor)
     - [**`rclcpp::shutdown()`**](#rclcppshutdown)
     - [**Creating/Running packages**:](#creatingrunning-packages)
   - [Docker](#docker)
@@ -30,6 +31,9 @@
   - [Bash](#bash)
     - [tmux](#tmux)
     - [Nano](#nano)
+    - [Extra](#extra)
+  - [**process, thread, multiprocessing, multithreading, parallel programming, concurrency, task**](#process-thread-multiprocessing-multithreading-parallel-programming-concurrency-task)
+  - [Round-robin scheduling](#round-robin-scheduling)
 
 
 # Introduction to ROS2
@@ -457,7 +461,7 @@ Using `std::bind` in this context allows you to bind member functions to callbac
   2. blocks the current thread, preventing it from returning until the event loop is explicitly stopped or an exception occurs.
   3. continuously processes messages and events, such as incoming messages on subscribed topics, service requests, timers, and other events associated with the node until it is explicitly stopped.
 - *Initialization*: Before calling `rclcpp::spin(node)`, the necessary components for the node are initialized. This includes setting up publishers, subscribers, services, timers, and other relevant objects.
-- *Event Loop Creation*: When `rclcpp::spin(node)` is called, it internally creates an event loop associated with the given node. The event loop is an instance of the rclcpp::Executor class, responsible for handling events and executing callbacks.
+- *Event Loop Creation*: When `rclcpp::spin(node)` is called, it internally creates an event loop associated with the given node. The event loop is an instance of the `rclcpp::Executor` class, responsible for handling events and executing callbacks.
 - *Loop Execution*: The `rclcpp::spin(node)` function starts a loop within the event loop. This loop runs continuously, repeatedly checking for pending events and executing their associated callbacks.
 - *Check for Pending Events*: During each iteration of the loop, the event loop checks for any pending events. These events include incoming messages on subscribed topics, service requests, or timer expirations.
 - *Blocking the Thread*: If there are no pending events at a given iteration of the loop, the event loop blocks the current thread. Blocking the thread means that it suspends the execution of the thread and puts it into a waiting state. This prevents the thread from returning and allows the event loop to wait for new events without consuming unnecessary resources.
@@ -465,10 +469,138 @@ Using `std::bind` in this context allows you to bind member functions to callbac
 - *Callback Execution*: The callback function associated with the event is executed within the context of the event loop. The callback function performs the necessary actions based on the event, such as processing the received message or responding to a service request.
 - *Return to Blocking State*: After executing the callback function, the event loop returns to the loop and checks for new pending events. If there are no pending events, it blocks the thread again, waiting for new events.
 - *Loop Termination*: The event loop continues this process until it is explicitly stopped or an exception occurs. When either of these conditions is met, the event loop breaks out of the loop, and the `rclcpp::spin(node)` function returns, allowing the thread to resume execution.
+- In ROS 2, by default, each node runs in its own thread. This allows nodes to operate concurrently and independently of each other. Each node's event loop runs in its dedicated thread, ensuring that the processing of messages and execution of callbacks within a node do not block or interfere with other nodes.
 
+- Running nodes in separate threads provides several benefits:
+
+  - *Concurrency*: Each node can perform its tasks independently and concurrently with other nodes. This enables efficient utilization of system resources and facilitates parallel processing.
+
+  - *Responsiveness*: Nodes can promptly respond to incoming messages and events, ensuring timely execution of callbacks without blocking the main execution thread.
+
+  - *Isolation*: By running nodes in separate threads, issues within one node, such as slow processing or a deadlock, are less likely to impact the functioning of other nodes. It enhances fault tolerance and system stability.
+### **`rclcpp::Executor`**
+-  class is a fundamental component responsible for executing callbacks associated with events in the event loop. It provides the infrastructure for managing and dispatching events in a multi-threaded environment.
+   - Construction: To create an `rclcpp::Executor` object, you typically call the constructor, `rclcpp::Executor::Executor()`.
+
+   - Adding Nodes: Before running the event loop, you need to add nodes to the executor using the `add_node()` method. This informs the executor which nodes' callbacks it should handle during event processing.
+
+   - Event Loop Execution: The primary method of the `rclcpp::Executor` class is `rclcpp::Executor::spin()`, which starts the event loop execution. Inside the event loop, the executor continuously waits for events, executes associated callbacks, and returns to the waiting state.
+
+   - Event Handling: When an event occurs, such as an incoming message, service request, or timer expiration, the executor detects the event and dispatches it to the appropriate callback function. The executor maintains a list of active nodes and their associated callbacks.
+
+   - Callback Execution: The executor invokes the callback function within the context of the event loop. The callback function performs the necessary operations based on the event, such as processing received messages or responding to service requests.
+
+   - Multi-threading Support: The `rclcpp::Executor` class supports multi-threading, allowing callbacks to be executed concurrently. It provides thread-safe mechanisms to manage the execution of callbacks across multiple threads.
+
+   - Execution Policies: The executor offers various execution policies that determine how callbacks are executed. These policies include `SingleThreaded`, `StaticSingleThreaded`, and `MultiThreaded`. You can specify the desired execution policy when constructing the executor or by calling the `set_execution_policy()` method.
+     - `rclcpp::executors::MultiThreadedExecutor`:
+       - This executor allows concurrent execution of callbacks across multiple threads. Each callback is executed in its own thread, allowing for parallelism.
+       - Use this executor when you have multiple independent callbacks that can be executed concurrently without significant risk of data races or deadlocks. It can improve the performance of your ROS node by leveraging multi-core CPUs and distributing the workload across threads.
+       - However, you need to ensure thread safety when accessing shared resources within callbacks to avoid potential race conditions.
+
+     - `rclcpp::executors::StaticSingleThreadedExecutor`:
+       - This executor is designed for single-threaded execution of callbacks but allows you to specify the number of threads upfront.
+       - It creates a fixed number of threads and assigns callbacks to them in a [round-robin fashion](#extra). Once assigned, a callback always executes on the same thread.
+       - Use this executor when you need concurrency but want to limit the number of threads to a specific value.
+       - It provides deterministic behavior, as callbacks are always executed on the same thread, which can simplify debugging and ensure thread safety for shared resources.
+
+     - `rclcpp::executors::SingleThreadedExecutor`:
+       - This executor executes callbacks in a single thread, sequentially, one at a time. It does not introduce concurrency.
+       - Use this executor when you have callbacks that are not thread-safe or have dependencies that require sequential execution.
+       - It provides a simple and deterministic execution model, where callbacks are executed one after another, ensuring thread safety.
+       - This executor is typically used when you have critical sections of code that should not be executed concurrently.
+
+   - Wait Strategies: The `rclcpp::Executor` class provides different wait strategies that control how the executor waits for events. The wait strategy determines factors such as the timeout duration and whether the executor should spin indefinitely or for a limited time. ROS 2 provides different wait strategies that offer various trade-offs between responsiveness and CPU utilization. Let's explore the available wait strategies:
+     - `rclcpp::executors::WaitSetWaitStrategy`:
+        This is the default wait strategy used by the executor. It employs a rclcpp::WaitSet to wait for events.
+        The WaitSet allows the executor to wait for multiple types of events simultaneously, such as incoming messages, timer expirations, and service requests.
+        It provides a balance between responsiveness and CPU utilization. It efficiently waits for events and wakes up the executor as soon as any event occurs, minimizing latency.
+        This wait strategy is suitable for most use cases where responsiveness is important, and there are moderate to high event rates.
+     - `rclcpp::executors::StaticSingleThreadedExecutorWaitStrategy`:
+        This wait strategy is specifically designed for rclcpp::executors::StaticSingleThreadedExecutor.
+        It uses a rclcpp::StaticWaitSet instead of rclcpp::WaitSet to wait for events.
+        The StaticWaitSet is preallocated with a fixed size to avoid dynamic memory allocation during runtime.
+        This wait strategy provides predictable and low-latency behavior, making it suitable for real-time and hard real-time systems.
+        It sacrifices some CPU utilization to achieve deterministic and low-latency event processing.
+     - `rclcpp::executors::WallRateBasedSleepWaitStrategy`:
+        This wait strategy utilizes a sleep mechanism based on a specified wall rate to control the executor's idle time.
+        It uses a combination of busy-waiting and sleeping to balance responsiveness and CPU utilization.
+        The executor periodically checks for events and sleeps for a brief duration if no events are pending.
+        This wait strategy is useful when the event rate is relatively low or sporadic, and responsiveness is still important, but excessive CPU utilization needs to be avoided.
+      ```c++
+      #include "rclcpp/rclcpp.hpp"
+      #include "std_msgs/msg/string.hpp"
+
+      class MyNode : public rclcpp::Node {
+      public:
+        MyNode() : Node("my_node") {
+          publisher_ = this->create_publisher<std_msgs::msg::String>("my_topic", 10);
+          subscriber_ = this->create_subscription<std_msgs::msg::String>(
+              "my_topic", 10, std::bind(&MyNode::callback, this, std::placeholders::_1));
+        }
+
+        void callback(const std_msgs::msg::String::SharedPtr msg) {
+          RCLCPP_INFO(this->get_logger(), "Received message: %s", msg->data.c_str());
+        }
+
+      private:
+        rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+        rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscriber_;
+      };
+
+      int main(int argc, char** argv) {
+        rclcpp::init(argc, argv);
+
+        auto node = std::make_shared<MyNode>();
+
+        // Create the executor using the WaitSetWaitStrategy (default)
+        auto executor1 = std::make_shared<rclcpp::executors::SingleThreadedExecutor>();
+
+        // Create the executor using the StaticSingleThreadedExecutorWaitStrategy
+        auto executor2 = std::make_shared<rclcpp::executors::StaticSingleThreadedExecutor>();
+
+        // Create the executor using the WallRateBasedSleepWaitStrategy
+        auto executor3 = std::make_shared<rclcpp::executors::SingleThreadedExecutor>(
+            std::chrono::milliseconds(10));  // Sleep duration of 10 milliseconds
+
+        executor1->add_node(node);
+        executor2->add_node(node);
+        executor3->add_node(node);
+
+        // Create a timer to publish messages periodically
+        auto timer = node->create_wall_timer(std::chrono::seconds(1),
+                                            [&node]() {
+                                              auto msg = std::make_shared<std_msgs::msg::String>();
+                                              msg->data = "Hello, world!";
+                                              node->publisher_->publish(msg);
+                                            });
+
+        // Spin each executor for a fixed number of iterations
+        for (int i = 0; i < 5; ++i) {
+          executor1->spin_some();
+          executor2->spin_some();
+          executor3->spin_some();
+          std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        }
+
+        rclcpp::shutdown();
+        return 0;
+      }
+
+      ```
+
+   - Termination: The event loop continues until an explicit stop request is made or an exception occurs. You can stop the executor's event loop by calling the `cancel()` method. Once the event loop is stopped, the `rclcpp::Executor::spin()` method returns, allowing the thread to resume execution.
 
 
 ### **`rclcpp::shutdown()`**
+- function is used to clean up and gracefully shut down the rclcpp library. It is typically called at the end of a ROS 2 C++ application to release any resources allocated by rclcpp and ensure a proper shutdown of the ROS 2 system.
+- the function performs the following tasks:
+
+  1. Stops the event loop for all active ROS 2 nodes.
+
+  2. Releases any resources acquired by the rclcpp library, such as memory allocations and communication resources.
+
+  3. Performs cleanup operations, including shutting down the underlying ROS 2 middleware and freeing any remaining resources.
 
 ### **Creating/Running packages**:
 - **cpp**: `~/ros2_ws/src$ ros2 pkg create my_cpp_pkg --build-type ament_cmake --dependencies rclcpp`
@@ -701,3 +833,100 @@ Note: If the `.sh` file requires specific arguments or parameters, you can provi
   * `Ctrl b, num` Go to pane with number num
 ### Nano
   * `Ctrl X` 	Exit nano. You will be prompted to save your file if you haven't
+
+### Extra
+
+## **process, thread, multiprocessing, multithreading, parallel programming, concurrency, task**
+- **Thread and Multithreading**:
+  A thread is like an independent flow of execution within a program that can perform tasks concurrently.
+  Multithreading refers to the use of multiple threads within a program to achieve parallel execution of tasks.
+  Example: Think of a web browser where one thread is responsible for fetching data from the internet, while another thread renders the web page. Both threads work together to provide a seamless browsing experience.
+  Multithreading refers to the concurrent execution of multiple threads within a process. In a multithreaded program, multiple threads are created and executed simultaneously, sharing the same memory space and resources of the process. Each thread can perform different tasks independently, allowing for concurrent and parallel execution.
+
+  Here's a high-level overview of how multithreading works:
+
+    - Thread Creation: A program creates multiple threads by explicitly spawning them using language-specific thread creation mechanisms or threading libraries. Each thread is associated with a specific entry point, which is a function or method that contains the code to be executed by the thread.
+
+    - Thread Execution: Once created, threads are scheduled by the operating system for execution on available CPU cores. The operating system assigns time slices to each thread, allowing them to execute their instructions in an interleaved manner. The scheduler switches between threads, providing the illusion of simultaneous execution.
+
+    - Shared Memory Space: All threads within a process share the same memory space. This means that they can access and modify shared variables and data structures, enabling communication and coordination between threads. However, shared memory access must be properly synchronized to avoid data races and ensure data integrity.
+
+    - Synchronization: Threads may need to synchronize their execution to coordinate their activities and avoid conflicts. Synchronization mechanisms, such as locks, mutexes, semaphores, and condition variables, are used to control access to shared resources and ensure mutual exclusion or coordination among threads.
+
+    - Communication: Threads can communicate with each other by sharing data through shared memory or using inter-thread communication mechanisms like message queues, pipes, or channels. These mechanisms allow threads to exchange information and coordinate their activities.
+
+    - Thread Termination: Threads can complete their execution and terminate voluntarily or be terminated by the program. Proper thread termination and resource cleanup are essential to ensure the stability and correctness of the program.
+
+  Multithreading enables concurrent execution of tasks, leveraging the available CPU cores and improving performance by utilizing parallelism. It is particularly useful for tasks that can be executed independently and concurrently, such as handling I/O operations, performing calculations, processing data in parallel, or maintaining a responsive user interface.
+
+  However, multithreading introduces challenges such as thread synchronization, managing shared resources, and potential issues like data races and deadlocks. Proper design and synchronization techniques are necessary to ensure thread safety and avoid concurrency-related bugs.
+
+- **Process and Multiprocessing**:
+  A process is an instance of a program running independently, with its own memory space and resources.
+  Multiprocessing involves running multiple processes simultaneously to accomplish tasks in parallel.
+  Example: Imagine a document conversion program that converts multiple files concurrently by creating a separate process for each file. Each process operates independently, converting its assigned file simultaneously with others, improving overall conversion speed.
+
+- **Parallel Programming**:
+  Parallel programming is a programming paradigm that focuses on breaking down tasks into smaller units that can be executed simultaneously, usually across multiple processors or cores.
+  It aims to maximize performance and efficiency by leveraging parallelism.
+  Example: Suppose you have a simulation program that simulates the behavior of a large number of particles. Parallel programming can be used to divide the simulation into smaller parts, distributing them across multiple cores or processors, and executing them in parallel to speed up the simulation.
+
+- **Concurrency**:
+  Concurrency refers to the ability of a program to execute multiple tasks simultaneously, making progress on more than one task at the same time.
+  It does not necessarily imply parallel execution but rather the ability to handle multiple tasks concurrently, interleaving their execution.
+  Example: Consider a messaging application where you can send messages while receiving new ones in real-time. The ability to send and receive messages concurrently, even if they are handled by the same thread, demonstrates concurrency.
+
+- In summary, threads and processes are units of execution that enable concurrent execution within a program. Multithreading and multiprocessing utilize multiple threads or processes, respectively, to achieve parallelism. Parallel programming focuses on dividing tasks into smaller units for parallel execution. Concurrency is the ability to make progress on multiple tasks simultaneously, irrespective of whether they execute in parallel or not.
+- Task
+  - In C++, a task refers to a unit of work or a specific action that needs to be performed as part of a program's execution. It represents a discrete operation or set of operations that the program needs to accomplish.
+
+  - Tasks in C++ can vary in complexity and can involve operations such as calculations, data processing, I/O operations, user interactions, or any other specific action required by the program.
+
+  - Tasks are typically implemented as functions or methods in C++. These functions define the steps to be performed to accomplish a specific goal or carry out a particular computation. They encapsulate a sequence of instructions that perform a specific task.
+
+  - Here's a simple example of a task implemented as a C++ function:
+  ```c++
+  #include <iostream>
+
+  void printMessage()
+  {
+      std::cout << "Hello, world!" << std::endl;
+  }
+
+  int main()
+  {
+      // Call the task function
+      printMessage();
+
+      return 0;
+  }
+  ```
+  In this example, the `printMessage()` function is a task that prints the message "Hello, world!" to the console. It represents a specific action or task that the program needs to perform. When the program runs, the `printMessage()` task is executed, and the message is displayed on the console.
+
+  Tasks in C++ can be more complex, involving multiple steps, conditional statements, loops, or interactions with other parts of the program. They can be standalone functions or methods within classes, depending on the program's design and structure.
+
+  Overall, tasks in C++ are the building blocks of a program's logic, representing specific actions or operations that need to be executed to accomplish the desired functionality.
+
+
+## Round-robin scheduling
+- In the context of multiple threads, round-robin fashion refers to a scheduling algorithm where each thread gets an equal opportunity to execute its tasks in a sequential and cyclic manner. The scheduler assigns time slices to each thread, allowing them to run for a specified duration before switching to the next thread in the cycle.
+
+- Let's consider an example with three threads (T1, T2, and T3) using a round-robin scheduling algorithm:
+
+  - Thread Assignment:
+    - Time Slice: Let's assume that each thread gets a time slice of 100 milliseconds to execute its tasks before switching to the next thread.
+        Initial Assignment: Initially, the scheduler assigns T1 to run.
+
+  - Execution Sequence:
+    - Time 0 ms to 100 ms: Thread T1 runs and performs its tasks.
+    - Time 100 ms to 200 ms: The scheduler interrupts T1 and assigns the CPU time to T2.
+    - Time 200 ms to 300 ms: Thread T2 runs and performs its tasks.
+    - Time 300 ms to 400 ms: The scheduler interrupts T2 and assigns the CPU time to T3.
+    - Time 400 ms to 500 ms: Thread T3 runs and performs its tasks.
+    - Time 500 ms to 600 ms: The scheduler interrupts T3 and assigns the CPU time back to T1, completing one cycle.
+
+  - Repeat the Cycle:
+    - The cycle continues, with each thread executing its tasks for the allocated time slice before being interrupted and giving way to the next thread in the cycle.
+    - This round-robin fashion ensures that each thread gets an equal opportunity to execute its tasks, and the execution order repeats in a cyclical manner. 
+- Round-robin scheduling with multiple threads helps provide fair and balanced execution time among the threads, preventing a single thread from monopolizing the CPU resources for an extended period. It ensures that each thread receives a turn to execute its tasks, promoting fairness and resource utilization in a multi-threaded environment.
+
