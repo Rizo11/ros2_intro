@@ -1,5 +1,5 @@
-DOCKER_IMG="ros2_intro"
-DOCKER_CONATINER_NAME="fervent_banach"
+DOCKER_IMG="osrf/ros:rolling-desktop-jammy"
+DOCKER_CONATINER_NAME="fervent_banach1"
 HOME_DIRECTORY="/home/$USER/ros2_container"
 mkdir -p $HOME_DIRECTORY
 
@@ -8,11 +8,11 @@ docker_run() {
   if [ -d "$HOME_DIRECTORY" ]; then
     # docker run
     CONTAINER_ID=$(docker run -it --detach \
-        -v "/tmp/.X11-unix:/tmp/.X11-unix:rw" \
         -e DISPLAY=$DISPLAY  \
         -e QT_X11_NO_MITSHM=1 \
         --net=host \
         --privileged \
+        --gpus=all \
         --name $DOCKER_CONATINER_NAME \
       $DOCKER_IMG)
 

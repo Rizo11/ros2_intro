@@ -1,0 +1,122 @@
+[0.000000] (-) TimerEvent: {}
+[0.000241] (friend_msgs) JobQueued: {'identifier': 'friend_msgs', 'dependencies': OrderedDict()}
+[0.000320] (homework1) JobQueued: {'identifier': 'homework1', 'dependencies': OrderedDict()}
+[0.000707] (hello_world) JobQueued: {'identifier': 'hello_world', 'dependencies': OrderedDict([('friend_msgs', '/home/rizo/edu/ros2_intro/install/friend_msgs')])}
+[0.001478] (ros2_composition) JobQueued: {'identifier': 'ros2_composition', 'dependencies': OrderedDict([('friend_msgs', '/home/rizo/edu/ros2_intro/install/friend_msgs')])}
+[0.001507] (friend_msgs) JobStarted: {'identifier': 'friend_msgs'}
+[0.007264] (homework1) JobStarted: {'identifier': 'homework1'}
+[0.012496] (friend_msgs) JobProgress: {'identifier': 'friend_msgs', 'progress': 'cmake'}
+[0.012785] (friend_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/rizo/edu/ros2_intro/friend_msgs', '-DCMAKE_INSTALL_PREFIX=/home/rizo/edu/ros2_intro/install/friend_msgs'], 'cwd': '/home/rizo/edu/ros2_intro/build/friend_msgs', 'env': OrderedDict([('TERM_SESSION_ID', 'f4756441-6cdb-4cc0-ab46-5252f86919bc'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_US:en'), ('SNAP_INSTANCE_KEY', ''), ('USER', 'rizo'), ('SNAP_COMMON', '/var/snap/clion/common'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rizo'), ('CONDA_SHLVL', '1'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('DESKTOP_SESSION', 'ubuntu'), ('SNAP_USER_DATA', '/home/rizo/snap/clion/237'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/clion_clion.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '3749'), ('SYSTEMD_EXEC_PID', '3974'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SNAP_REVISION', '237'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '32597'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rizo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rizo'), ('SNAP_CONTEXT', 'Ciyz70F07whP-lRP8kEo6BFN3xo4cKDFgs15GOAYWF7Z4F6-tvvE'), ('JOURNAL_STREAM', '8:36321'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('SNAP_VERSION', '2023.1.3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SNAP_INSTANCE_NAME', 'clion'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rizo/anaconda3/bin:/home/rizo/anaconda3/condabin:/home/rizo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/leo:@/tmp/.ICE-unix/3947,unix/leo:/tmp/.ICE-unix/3947'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '74944b8394c348f3bbdfa0dbc5dd08be'), ('PAPERSIZE', 'letter'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/clion_clion.desktop'), ('SNAP_DATA', '/var/snap/clion/237'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('DESKTOP_STARTUP_ID', 'gnome-shell/CLion/3974-2-leo_TIME4433914'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/rizo/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SNAP_USER_COMMON', '/home/rizo/snap/clion/common'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/rizo'), ('SNAP_ARCH', 'amd64'), ('AMENT_PREFIX_PATH', '/home/rizo/ros2_ws/install/my_py_pkg:/home/rizo/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SNAP_COOKIE', 'Ciyz70F07whP-lRP8kEo6BFN3xo4cKDFgs15GOAYWF7Z4F6-tvvE'), ('CONDA_PYTHON_EXE', '/home/rizo/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('SNAP_NAME', 'clion'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rizo/edu/ros2_intro/build/friend_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/rizo/anaconda3/bin/conda'), ('SNAP_REAL_HOME', '/home/rizo'), ('FIG_JETBRAINS_SHELL_INTEGRATION', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rizo/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/clion/237'), ('LC_NUMERIC', 'en_US.UTF-8'), ('CONDA_PREFIX', '/home/rizo/anaconda3'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rizo/ros2_ws/install/my_cpp_pkg:/home/rizo/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.015279] (homework1) JobProgress: {'identifier': 'homework1', 'progress': 'cmake'}
+[0.015483] (homework1) Command: {'cmd': ['/usr/bin/cmake', '/home/rizo/edu/ros2_intro/homework/homework1', '-DCMAKE_INSTALL_PREFIX=/home/rizo/edu/ros2_intro/install/homework1'], 'cwd': '/home/rizo/edu/ros2_intro/build/homework1', 'env': OrderedDict([('TERM_SESSION_ID', 'f4756441-6cdb-4cc0-ab46-5252f86919bc'), ('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('LANGUAGE', 'en_US:en'), ('SNAP_INSTANCE_KEY', ''), ('USER', 'rizo'), ('SNAP_COMMON', '/var/snap/clion/common'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rizo'), ('CONDA_SHLVL', '1'), ('SNAP_LIBRARY_PATH', '/var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void'), ('DESKTOP_SESSION', 'ubuntu'), ('SNAP_USER_DATA', '/home/rizo/snap/clion/237'), ('TERMINAL_EMULATOR', 'JetBrains-JediTerm'), ('GIO_LAUNCHED_DESKTOP_FILE', '/var/lib/snapd/desktop/applications/clion_clion.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '3749'), ('SYSTEMD_EXEC_PID', '3974'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('SNAP_REVISION', '237'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '32597'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rizo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rizo'), ('SNAP_CONTEXT', 'Ciyz70F07whP-lRP8kEo6BFN3xo4cKDFgs15GOAYWF7Z4F6-tvvE'), ('JOURNAL_STREAM', '8:36321'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('SNAP_VERSION', '2023.1.3'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('SNAP_INSTANCE_NAME', 'clion'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rizo/anaconda3/bin:/home/rizo/anaconda3/condabin:/home/rizo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/leo:@/tmp/.ICE-unix/3947,unix/leo:/tmp/.ICE-unix/3947'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', '74944b8394c348f3bbdfa0dbc5dd08be'), ('PAPERSIZE', 'letter'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('BAMF_DESKTOP_FILE_HINT', '/var/lib/snapd/desktop/applications/clion_clion.desktop'), ('SNAP_DATA', '/var/snap/clion/237'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('DESKTOP_STARTUP_ID', 'gnome-shell/CLion/3974-2-leo_TIME4433914'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/rizo/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SNAP_USER_COMMON', '/home/rizo/snap/clion/common'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/rizo'), ('SNAP_ARCH', 'amd64'), ('AMENT_PREFIX_PATH', '/home/rizo/ros2_ws/install/my_py_pkg:/home/rizo/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SNAP_COOKIE', 'Ciyz70F07whP-lRP8kEo6BFN3xo4cKDFgs15GOAYWF7Z4F6-tvvE'), ('CONDA_PYTHON_EXE', '/home/rizo/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('SNAP_REEXEC', ''), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('SNAP_NAME', 'clion'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rizo/edu/ros2_intro/build/homework1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/rizo/anaconda3/bin/conda'), ('SNAP_REAL_HOME', '/home/rizo'), ('FIG_JETBRAINS_SHELL_INTEGRATION', '1'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rizo/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SNAP', '/snap/clion/237'), ('LC_NUMERIC', 'en_US.UTF-8'), ('CONDA_PREFIX', '/home/rizo/anaconda3'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rizo/ros2_ws/install/my_cpp_pkg:/home/rizo/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.063876] (homework1) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.065623] (friend_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.100048] (-) TimerEvent: {}
+[0.106758] (homework1) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.107325] (friend_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.117489] (friend_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.117627] (homework1) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.165966] (friend_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.166150] (homework1) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.171852] (homework1) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.172315] (homework1) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.173054] (friend_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.173156] (homework1) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.173309] (friend_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.173651] (friend_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.176680] (homework1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.176889] (friend_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200136] (-) TimerEvent: {}
+[0.230957] (homework1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.233193] (friend_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.242380] (homework1) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.242667] (homework1) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.243295] (homework1) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.246540] (friend_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.246858] (friend_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.247646] (friend_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.250348] (homework1) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.250495] (friend_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300227] (-) TimerEvent: {}
+[0.400435] (-) TimerEvent: {}
+[0.404354] (homework1) StdoutLine: {'line': b'-- Found Python3: /home/rizo/anaconda3/bin/python3.10 (found version "3.10.9") found components: Interpreter \n'}
+[0.409678] (friend_msgs) StdoutLine: {'line': b'-- Found Python3: /home/rizo/anaconda3/bin/python3.10 (found version "3.10.9") found components: Interpreter \n'}
+[0.500526] (-) TimerEvent: {}
+[0.514568] (friend_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.514762] (homework1) StdoutLine: {'line': b'-- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.560090] (friend_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.560288] (homework1) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.566133] (homework1) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.566233] (friend_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.577086] (homework1) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.577179] (friend_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.595025] (friend_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.595304] (homework1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600617] (-) TimerEvent: {}
+[0.619656] (friend_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.619791] (homework1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.642049] (friend_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.700701] (-) TimerEvent: {}
+[0.711852] (homework1) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.716002] (homework1) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.740597] (friend_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):\n'}
+[0.740806] (friend_msgs) StderrLine: {'line': b'  execute_process(/home/rizo/anaconda3/bin/python3.10 -m rosidl_adapter\n'}
+[0.740888] (friend_msgs) StderrLine: {'line': b'  --package-name friend_msgs --arguments-file\n'}
+[0.740977] (friend_msgs) StderrLine: {'line': b'  /home/rizo/edu/ros2_intro/build/friend_msgs/rosidl_adapter__arguments__friend_msgs.json\n'}
+[0.741034] (friend_msgs) StderrLine: {'line': b'  --output-dir\n'}
+[0.741080] (friend_msgs) StderrLine: {'line': b'  /home/rizo/edu/ros2_intro/build/friend_msgs/rosidl_adapter/friend_msgs\n'}
+[0.741125] (friend_msgs) StderrLine: {'line': b'  --output-file\n'}
+[0.741168] (friend_msgs) StderrLine: {'line': b'  /home/rizo/edu/ros2_intro/build/friend_msgs/rosidl_adapter/friend_msgs.idls)\n'}
+[0.741226] (friend_msgs) StderrLine: {'line': b'  returned error code 1:\n'}
+[0.741268] (friend_msgs) StderrLine: {'line': b'\n'}
+[0.741311] (friend_msgs) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[0.741353] (friend_msgs) StderrLine: {'line': b'\n'}
+[0.741397] (friend_msgs) StderrLine: {'line': b'    File "/home/rizo/anaconda3/lib/python3.10/runpy.py", line 196, in _run_module_as_main\n'}
+[0.741441] (friend_msgs) StderrLine: {'line': b'      return _run_code(code, main_globals, None,\n'}
+[0.741483] (friend_msgs) StderrLine: {'line': b'    File "/home/rizo/anaconda3/lib/python3.10/runpy.py", line 86, in _run_code\n'}
+[0.741527] (friend_msgs) StderrLine: {'line': b'      exec(code, run_globals)\n'}
+[0.741569] (friend_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[0.741613] (friend_msgs) StderrLine: {'line': b'      sys.exit(main())\n'}
+[0.741655] (friend_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[0.741704] (friend_msgs) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[0.741747] (friend_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 18, in convert_to_idl\n'}
+[0.741790] (friend_msgs) StderrLine: {'line': b'      from rosidl_adapter.msg import convert_msg_to_idl\n'}
+[0.741832] (friend_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 16, in <module>\n'}
+[0.741875] (friend_msgs) StderrLine: {'line': b'      from rosidl_adapter.resource import expand_template\n'}
+[0.741917] (friend_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>\n'}
+[0.741959] (friend_msgs) StderrLine: {'line': b'      import em\n'}
+[0.742001] (friend_msgs) StderrLine: {'line': b'\n'}
+[0.742043] (friend_msgs) StderrLine: {'line': b"  ModuleNotFoundError: No module named 'em'\n"}
+[0.742087] (friend_msgs) StderrLine: {'line': b'\n'}
+[0.742129] (friend_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.742171] (friend_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[0.742214] (friend_msgs) StderrLine: {'line': b'  CMakeLists.txt:10 (rosidl_generate_interfaces)\n'}
+[0.742256] (friend_msgs) StderrLine: {'line': b'\n'}
+[0.742298] (friend_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[0.742340] (friend_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.742387] (friend_msgs) StdoutLine: {'line': b'See also "/home/rizo/edu/ros2_intro/build/friend_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[0.746253] (friend_msgs) CommandEnded: {'returncode': 1}
+[0.762437] (friend_msgs) JobEnded: {'identifier': 'friend_msgs', 'rc': 1}
+[0.800785] (-) TimerEvent: {}
+[0.804373] (homework1) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.827369] (homework1) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.864702] (homework1) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.877874] (homework1) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.900869] (-) TimerEvent: {}
+[0.924969] (homework1) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.925345] (homework1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.975080] (homework1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.976082] (homework1) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.000945] (-) TimerEvent: {}
+[1.101138] (-) TimerEvent: {}
+[1.138548] (homework1) StdoutLine: {'line': b'-- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.159429] (homework1) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.201243] (-) TimerEvent: {}
+[1.291093] (homework1) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.298444] (homework1) StdoutLine: {'line': b'-- Generating done\n'}
+[1.299503] (homework1) StdoutLine: {'line': b'-- Build files have been written to: /home/rizo/edu/ros2_intro/build/homework1\n'}
+[1.301337] (-) TimerEvent: {}
+[1.306174] (homework1) JobEnded: {'identifier': 'homework1', 'rc': 'SIGINT'}
+[1.316746] (hello_world) JobSkipped: {'identifier': 'hello_world'}
+[1.316783] (ros2_composition) JobSkipped: {'identifier': 'ros2_composition'}
+[1.316801] (-) EventReactorShutdown: {}

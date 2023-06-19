@@ -1,0 +1,7 @@
+{
+  "package_name": "friend_msgs",
+  "non_idl_tuples": [
+    "/home/rizo/edu/ros2_intro/friend_msgs:msg/FriendInfo.msg",
+    "/home/rizo/edu/ros2_intro/friend_msgs:srv/FriendInfoService.srv"
+  ]
+}

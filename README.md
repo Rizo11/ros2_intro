@@ -5,13 +5,21 @@
     - [Colcon](#colcon)
     - [Duplex](#duplex)
     - [Simplex](#simplex)
-  - [ROS](#ros)
+  - [lesson 2](#lesson-2)
+    - [`rclcpp` ROS Client Library for C++ ROS](#rclcpp-ros-client-library-for-c-ros)
     - [What is ROS and Why ROS](#what-is-ros-and-why-ros)
     - [ROS Philosophy](#ros-philosophy)
     - [ROS in the example of Spot](#ros-in-the-example-of-spot)
     - [ROS Structure](#ros-structure)
     - [ROS File System](#ros-file-system)
     - [ROS vs ROS2](#ros-vs-ros2)
+  - [lesson 3 ros basics (CRUD)](#lesson-3-ros-basics-crud)
+    - [**callback function**](#callback-function)
+    - [**std::bind**](#stdbind)
+    - [**`rclcpp::init(argc, char **argv)`**](#rclcppinitargc-char-argv)
+    - [**`rclcpp::spin(node)`**](#rclcppspinnode)
+    - [**`rclcpp::shutdown()`**](#rclcppshutdown)
+    - [**Creating/Running packages**:](#creatingrunning-packages)
   - [Docker](#docker)
     - [Why Docker instead of usual installation?](#why-docker-instead-of-usual-installation)
     - [Creating docker container](#creating-docker-container)
@@ -65,7 +73,18 @@ So in simple terms, colcon:
 
 
 
-## ROS
+## lesson 2
+
+### `rclcpp` ROS Client Library for C++ ROS
+-  is a C++ library that provides the necessary functionality for creating and managing ROS nodes, as well as publishing and subscribing to topics, managing parameters, and executing actions. It is a fundamental part of the ROS2 framework, enabling C++ developers to build robotic applications.
+- Key features:
+  1. Node abstraction: `rclcpp::Node`
+  2. Publisher and Subscriber: `rclcpp::Publisher` and `rclcpp::Subscriber` classes are used for publishing and subscribing to messages on ROS 2 topics. They provide a convenient interface for sending and receiving data between different nodes.
+  3. Service and Client: `rclcpp::Service` and `rclcpp::Client` classes are used for implementing and calling ROS 2 services, respectively. They enable request-response communication patterns between nodes.
+  4. Parameter management: `rclcpp::Parameter` and `rclcpp::ParameterServer` provide functionality for managing and accessing parameters within a ROS 2 system. Parameters allow dynamic configuration of nodes and can be modified at runtime.
+  5. Timer and Callbacks: `rclcpp::Timer` class allows you to schedule periodic callbacks, while `rclcpp::CallbackGroup` provides a mechanism for managing multiple callbacks associated with a node.
+  6. Lifecycle management: `rclcpp_lifecycle` package extends rclcpp to support node lifecycle management, allowing nodes to transition between different states (e.g., configuring, activating, deactivating, cleaning up).
+
 
 <div style="text-align: center;">
   <img src="assets/ros.jpeg" alt="Alt Text">
@@ -332,6 +351,138 @@ Free Research Preview. ChatGPT may produce inaccurate information about people, 
     - ROS2: ROS2 includes security features such as authentication and encryption. It ensures secure communication between nodes, protecting data integrity and confidentiality. This is particularly important for robots operating in industries like healthcare or defense, where privacy and security are paramount.
 
 - These are some of the main differences between ROS and ROS2. While ROS has a vast ecosystem, extensive community support, and numerous packages, ROS2 addresses limitations and introduces new features to meet the evolving needs of modern robotics applications, including distributed communication, real-time capabilities, language support, security, and scalability.
+
+## lesson 3 ros basics (CRUD)
+
+### **callback function**
+- is a functions that is passed as an argument to another functions with a purpose of being called or invoked when needed (usually as a response to some event)
+```c++
+#include <iostream>
+
+// The receiving function takes a callback function as an argument
+void performOperation(int x, int y, void (*callback)(int)) {
+    int result = x + y;
+    
+    // Invoke the callback function with the result
+    callback(result);
+}
+
+// A sample callback function
+void printResult(int result) {
+    std::cout << "The result is: " << result << std::endl;
+}
+
+int main() {
+    int a = 10;
+    int b = 5;
+    
+    // Call performOperation and pass the printResult function as a callback
+    performOperation(a, b, printResult);
+    
+    return 0;
+}
+```
+
+### **std::bind**
+- used to create a callable object that takes a `function` and some `args`. When callable object is called, `functions` will be called with provided `args`
+```c++
+#include "rclcpp/rclcpp.hpp"
+
+class MyNode : public rclcpp::Node
+{
+public:
+    MyNode() : Node("cpp_test"), counter_(0)
+    {
+        RCLCPP_INFO(this->get_logger(), "hello from cpp node");
+        timer_ = this->create_wall_timer(std::chrono::seconds(1),
+                                         std::bind(&MyNode::timerCallback, this));
+    }
+
+private:
+    void timerCallback()
+    {
+        RCLCPP_INFO(this->get_logger(), "Hello %d", counter_++);
+    }
+
+    rclcpp::TimerBase::SharedPtr timer_;
+    int counter_;
+};
+
+int main(int argc, char **argv)
+{
+
+    rclcpp::init(argc, argv);
+    auto node = std::make_shared<MyNode>();
+
+    rclcpp::spin(node);
+    rclcpp::shutdown();
+
+    return 0;
+}
+```
+- In the above code snippet, `std::bind` is used to bind the member function `MyNode::timerCallback` to the timer's callback. Here's what's happening:
+1. `std::bind` is called with the following arguments:
+    The member function pointer `& MyNode::timerCallback`.
+    The this pointer is passed as the second argument to bind the member function to the current instance of the `MyNode` class.
+
+2. The resulting bound function object is then passed as the callback to `create_wall_timer` function. This function creates a timer that triggers the callback function periodically.
+
+When the timer expires, it will call the bound function `MyNode::timerCallback`, which will in turn log a message using `RCLCPP_INFO` and increment the `counter_` variable.
+
+Using `std::bind` in this context allows you to bind member functions to callbacks without having to provide additional arguments explicitly. The this pointer is passed automatically, enabling the member function to access the class's member variables and functions.
+
+### **`rclcpp::init(argc, char **argv)`**
+- funcitons used to initialize `rclcpp` library and to prepare all necessary resource for running ROS2 C++ application
+- usually called at the beginning of `main()`
+- When `rclcpp::init(argc, char **argv)` is called:
+  - Command-Line Argument Parsing:
+    - The `argc` and `argv` arguments correspond to the command-line arguments passed to the main function of your application.
+    `argc` represents the number of arguments, including the name of the executable.
+    `argv` is an array of C-style strings (`char*`) containing the command-line arguments.
+
+  Initialization of ROS 2 Infrastructure:
+    - The `rclcpp::init(argc, argv)` function parses the command-line arguments related to ROS 2, such as namespace, parameters, remapping rules, and other configuration options. It initializes the underlying ROS 2 middleware, which could be, for example, **Fast RTPS** or **Cyclone DDS**.
+
+  - Initialization of rclcpp Library:
+    - `rclcpp::init(argc, argv)` sets up the `rclcpp` library, which is the C++ interface for interacting with ROS 2. It initializes various components within `rclcpp`, such as the internal ROS node representation and the event-driven architecture.
+
+  - Creation of Default ROS 2 Node:
+    - After `rclcpp::init(argc, argv)` is called, a default ROS 2 node is created automatically. This node acts as the context for managing publishers, subscribers, services, timers, and other ROS 2 components.
+### **`rclcpp::spin(node)`**
+- used to start event loop for a specific node
+- it allows a node to process incoming messages, execute callbacks, and respond to events
+- funcitons will run until explicitly stopped or exception occured
+- When `rclcpp::spin(node)` is called for `node`, the function performs the following tasks:
+  1. starts event loop for a `node`
+  2. blocks the current thread, preventing it from returning until the event loop is explicitly stopped or an exception occurs.
+  3. continuously processes messages and events, such as incoming messages on subscribed topics, service requests, timers, and other events associated with the node until it is explicitly stopped.
+- *Initialization*: Before calling `rclcpp::spin(node)`, the necessary components for the node are initialized. This includes setting up publishers, subscribers, services, timers, and other relevant objects.
+- *Event Loop Creation*: When `rclcpp::spin(node)` is called, it internally creates an event loop associated with the given node. The event loop is an instance of the rclcpp::Executor class, responsible for handling events and executing callbacks.
+- *Loop Execution*: The `rclcpp::spin(node)` function starts a loop within the event loop. This loop runs continuously, repeatedly checking for pending events and executing their associated callbacks.
+- *Check for Pending Events*: During each iteration of the loop, the event loop checks for any pending events. These events include incoming messages on subscribed topics, service requests, or timer expirations.
+- *Blocking the Thread*: If there are no pending events at a given iteration of the loop, the event loop blocks the current thread. Blocking the thread means that it suspends the execution of the thread and puts it into a waiting state. This prevents the thread from returning and allows the event loop to wait for new events without consuming unnecessary resources.
+- *Event Handling*: When an event occurs, such as a message arriving on a subscribed topic or a timer expiring, the event loop wakes up the blocked thread. It processes the event by invoking the corresponding callback function associated with that event.
+- *Callback Execution*: The callback function associated with the event is executed within the context of the event loop. The callback function performs the necessary actions based on the event, such as processing the received message or responding to a service request.
+- *Return to Blocking State*: After executing the callback function, the event loop returns to the loop and checks for new pending events. If there are no pending events, it blocks the thread again, waiting for new events.
+- *Loop Termination*: The event loop continues this process until it is explicitly stopped or an exception occurs. When either of these conditions is met, the event loop breaks out of the loop, and the `rclcpp::spin(node)` function returns, allowing the thread to resume execution.
+
+
+
+### **`rclcpp::shutdown()`**
+
+### **Creating/Running packages**:
+- **cpp**: `~/ros2_ws/src$ ros2 pkg create my_cpp_pkg --build-type ament_cmake --dependencies rclcpp`
+- `ros2 run my_cpp_pkg cpp_node`
+```bash
+-- my_cpp_pkg:
+  -- include:             # for header files
+  -- scr:                 # .cpp files
+  CMakeLists.txt
+  package.xml
+```
+- **py**: `~/ros2_ws/src$ ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy`
+- `colcon build` when you make changes, run that command in your workspace
+- **2 nodes can't have the same name** 
 
 ## Docker
 <div style="text-align: center;">

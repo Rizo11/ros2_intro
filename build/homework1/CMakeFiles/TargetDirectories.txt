@@ -1,0 +1,10 @@
+/home/rizo/edu/ros2_intro/build/homework1/CMakeFiles/uninstall.dir
+/home/rizo/edu/ros2_intro/build/homework1/CMakeFiles/homework1_uninstall.dir
+/home/rizo/edu/ros2_intro/build/homework1/CMakeFiles/commander_node.dir
+/home/rizo/edu/ros2_intro/build/homework1/CMakeFiles/test.dir
+/home/rizo/edu/ros2_intro/build/homework1/CMakeFiles/edit_cache.dir
+/home/rizo/edu/ros2_intro/build/homework1/CMakeFiles/rebuild_cache.dir
+/home/rizo/edu/ros2_intro/build/homework1/CMakeFiles/list_install_components.dir
+/home/rizo/edu/ros2_intro/build/homework1/CMakeFiles/install.dir
+/home/rizo/edu/ros2_intro/build/homework1/CMakeFiles/install/local.dir
+/home/rizo/edu/ros2_intro/build/homework1/CMakeFiles/install/strip.dir
