@@ -323,53 +323,53 @@ src/joy_hagen_camera_todo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_hagen_camera.dir/build.make CMakeFiles/joy_hagen_camera.dir/src/joy_hagen_camera_todo.cpp.s
 .PHONY : src/joy_hagen_camera_todo.cpp.s
 
-src/joy_hagen_marker_array_todo.o: src/joy_hagen_marker_array_todo.cpp.o
-.PHONY : src/joy_hagen_marker_array_todo.o
+src/joy_hagen_marker_array.o: src/joy_hagen_marker_array.cpp.o
+.PHONY : src/joy_hagen_marker_array.o
 
 # target to build an object file
-src/joy_hagen_marker_array_todo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_hagen_marker_array.dir/build.make CMakeFiles/joy_hagen_marker_array.dir/src/joy_hagen_marker_array_todo.cpp.o
-.PHONY : src/joy_hagen_marker_array_todo.cpp.o
+src/joy_hagen_marker_array.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_hagen_marker_array.dir/build.make CMakeFiles/joy_hagen_marker_array.dir/src/joy_hagen_marker_array.cpp.o
+.PHONY : src/joy_hagen_marker_array.cpp.o
 
-src/joy_hagen_marker_array_todo.i: src/joy_hagen_marker_array_todo.cpp.i
-.PHONY : src/joy_hagen_marker_array_todo.i
+src/joy_hagen_marker_array.i: src/joy_hagen_marker_array.cpp.i
+.PHONY : src/joy_hagen_marker_array.i
 
 # target to preprocess a source file
-src/joy_hagen_marker_array_todo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_hagen_marker_array.dir/build.make CMakeFiles/joy_hagen_marker_array.dir/src/joy_hagen_marker_array_todo.cpp.i
-.PHONY : src/joy_hagen_marker_array_todo.cpp.i
+src/joy_hagen_marker_array.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_hagen_marker_array.dir/build.make CMakeFiles/joy_hagen_marker_array.dir/src/joy_hagen_marker_array.cpp.i
+.PHONY : src/joy_hagen_marker_array.cpp.i
 
-src/joy_hagen_marker_array_todo.s: src/joy_hagen_marker_array_todo.cpp.s
-.PHONY : src/joy_hagen_marker_array_todo.s
+src/joy_hagen_marker_array.s: src/joy_hagen_marker_array.cpp.s
+.PHONY : src/joy_hagen_marker_array.s
 
 # target to generate assembly for a file
-src/joy_hagen_marker_array_todo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_hagen_marker_array.dir/build.make CMakeFiles/joy_hagen_marker_array.dir/src/joy_hagen_marker_array_todo.cpp.s
-.PHONY : src/joy_hagen_marker_array_todo.cpp.s
+src/joy_hagen_marker_array.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_hagen_marker_array.dir/build.make CMakeFiles/joy_hagen_marker_array.dir/src/joy_hagen_marker_array.cpp.s
+.PHONY : src/joy_hagen_marker_array.cpp.s
 
-src/joy_hagen_point_cloud_todo.o: src/joy_hagen_point_cloud_todo.cpp.o
-.PHONY : src/joy_hagen_point_cloud_todo.o
+src/joy_hagen_point_cloud.o: src/joy_hagen_point_cloud.cpp.o
+.PHONY : src/joy_hagen_point_cloud.o
 
 # target to build an object file
-src/joy_hagen_point_cloud_todo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_hagen_point_cloud.dir/build.make CMakeFiles/joy_hagen_point_cloud.dir/src/joy_hagen_point_cloud_todo.cpp.o
-.PHONY : src/joy_hagen_point_cloud_todo.cpp.o
+src/joy_hagen_point_cloud.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_hagen_point_cloud.dir/build.make CMakeFiles/joy_hagen_point_cloud.dir/src/joy_hagen_point_cloud.cpp.o
+.PHONY : src/joy_hagen_point_cloud.cpp.o
 
-src/joy_hagen_point_cloud_todo.i: src/joy_hagen_point_cloud_todo.cpp.i
-.PHONY : src/joy_hagen_point_cloud_todo.i
+src/joy_hagen_point_cloud.i: src/joy_hagen_point_cloud.cpp.i
+.PHONY : src/joy_hagen_point_cloud.i
 
 # target to preprocess a source file
-src/joy_hagen_point_cloud_todo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_hagen_point_cloud.dir/build.make CMakeFiles/joy_hagen_point_cloud.dir/src/joy_hagen_point_cloud_todo.cpp.i
-.PHONY : src/joy_hagen_point_cloud_todo.cpp.i
+src/joy_hagen_point_cloud.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_hagen_point_cloud.dir/build.make CMakeFiles/joy_hagen_point_cloud.dir/src/joy_hagen_point_cloud.cpp.i
+.PHONY : src/joy_hagen_point_cloud.cpp.i
 
-src/joy_hagen_point_cloud_todo.s: src/joy_hagen_point_cloud_todo.cpp.s
-.PHONY : src/joy_hagen_point_cloud_todo.s
+src/joy_hagen_point_cloud.s: src/joy_hagen_point_cloud.cpp.s
+.PHONY : src/joy_hagen_point_cloud.s
 
 # target to generate assembly for a file
-src/joy_hagen_point_cloud_todo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_hagen_point_cloud.dir/build.make CMakeFiles/joy_hagen_point_cloud.dir/src/joy_hagen_point_cloud_todo.cpp.s
-.PHONY : src/joy_hagen_point_cloud_todo.cpp.s
+src/joy_hagen_point_cloud.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/joy_hagen_point_cloud.dir/build.make CMakeFiles/joy_hagen_point_cloud.dir/src/joy_hagen_point_cloud.cpp.s
+.PHONY : src/joy_hagen_point_cloud.cpp.s
 
 src/joy_hagen_pub_todo.o: src/joy_hagen_pub_todo.cpp.o
 .PHONY : src/joy_hagen_pub_todo.o
@@ -446,12 +446,12 @@ help:
 	@echo "... src/joy_hagen_camera_todo.o"
 	@echo "... src/joy_hagen_camera_todo.i"
 	@echo "... src/joy_hagen_camera_todo.s"
-	@echo "... src/joy_hagen_marker_array_todo.o"
-	@echo "... src/joy_hagen_marker_array_todo.i"
-	@echo "... src/joy_hagen_marker_array_todo.s"
-	@echo "... src/joy_hagen_point_cloud_todo.o"
-	@echo "... src/joy_hagen_point_cloud_todo.i"
-	@echo "... src/joy_hagen_point_cloud_todo.s"
+	@echo "... src/joy_hagen_marker_array.o"
+	@echo "... src/joy_hagen_marker_array.i"
+	@echo "... src/joy_hagen_marker_array.s"
+	@echo "... src/joy_hagen_point_cloud.o"
+	@echo "... src/joy_hagen_point_cloud.i"
+	@echo "... src/joy_hagen_point_cloud.s"
 	@echo "... src/joy_hagen_pub_todo.o"
 	@echo "... src/joy_hagen_pub_todo.i"
 	@echo "... src/joy_hagen_pub_todo.s"

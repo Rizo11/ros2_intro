@@ -1,0 +1,3 @@
+[console_scripts]
+spawn_robot = hagen_robot_diff_drive.spawn_robot:main
+

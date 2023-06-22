@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/joy_hagen_point_cloud.dir/src/joy_hagen_point_cloud_todo.cpp.o"
-  "CMakeFiles/joy_hagen_point_cloud.dir/src/joy_hagen_point_cloud_todo.cpp.o.d"
+  "CMakeFiles/joy_hagen_point_cloud.dir/src/joy_hagen_point_cloud.cpp.o"
+  "CMakeFiles/joy_hagen_point_cloud.dir/src/joy_hagen_point_cloud.cpp.o.d"
   "joy_hagen_point_cloud"
   "joy_hagen_point_cloud.pdb"
 )

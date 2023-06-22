@@ -1,0 +1,88 @@
+[0.484s] Invoking command in '/home/rizo/ros2_intro/build/ros2_visualize': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/ros2_visualize -- -j12 -l12
+[0.503s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.662s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[0.693s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.696s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.703s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.715s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.731s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.796s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.796s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.932s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.099s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.145s] -- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.378s] -- Found diagnostic_updater: 3.1.2 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[1.445s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.458s] -- Found tf2: 0.25.2 (/opt/ros/humble/share/tf2/cmake)
+[1.466s] -- Found tf2_ros: 0.25.2 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.787s] -- Found tf2_geometry_msgs: 0.25.2 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.791s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.792s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.801s] -- Found image_transport: 3.1.5 (/opt/ros/humble/share/image_transport/cmake)
+[1.822s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.943s] -- Found interactive_markers: 2.3.2 (/opt/ros/humble/share/interactive_markers/cmake)
+[1.954s] -- Found friend_msgs: 0.2.0 (/home/rizo/iros/install/friend_msgs/share/friend_msgs/cmake)
+[1.986s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.075s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system 
+[2.086s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.093s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[2.094s] -- looking for PCL_COMMON
+[2.491s] -- Configuring done
+[2.544s] -- Generating done
+[2.546s] -- Build files have been written to: /home/rizo/ros2_intro/build/ros2_visualize
+[2.566s] [35m[1mConsolidate compiler generated dependencies of target joy_hagen_pub[0m
+[2.566s] [35m[1mConsolidate compiler generated dependencies of target joy_hagen_sub[0m
+[2.566s] [35m[1mConsolidate compiler generated dependencies of target joy_hagen_basic_control[0m
+[2.567s] [35m[1mConsolidate compiler generated dependencies of target joy_hagen_camera[0m
+[2.573s] [ 16%] [32mBuilding CXX object CMakeFiles/joy_hagen_marker_array.dir/src/joy_hagen_marker_array.cpp.o[0m
+[2.573s] [ 16%] [32mBuilding CXX object CMakeFiles/joy_hagen_point_cloud.dir/src/joy_hagen_point_cloud.cpp.o[0m
+[2.581s] [ 33%] [32mBuilding CXX object CMakeFiles/joy_hagen_pub.dir/src/joy_hagen_pub_todo.cpp.o[0m
+[2.582s] [ 33%] [32mBuilding CXX object CMakeFiles/joy_hagen_sub.dir/src/joy_hagen_sub_todo.cpp.o[0m
+[2.586s] [ 50%] Built target joy_hagen_camera
+[2.586s] [ 66%] Built target joy_hagen_basic_control
+[6.340s] [ 75%] [32m[1mLinking CXX executable joy_hagen_marker_array[0m
+[6.559s] [ 75%] Built target joy_hagen_marker_array
+[7.422s] [ 83%] [32m[1mLinking CXX executable joy_hagen_pub[0m
+[7.668s] [ 83%] Built target joy_hagen_pub
+[9.038s] [ 91%] [32m[1mLinking CXX executable joy_hagen_point_cloud[0m
+[9.254s] [ 91%] Built target joy_hagen_point_cloud
+[12.766s] [100%] [32m[1mLinking CXX executable joy_hagen_sub[0m
+[13.315s] [100%] Built target joy_hagen_sub
+[13.322s] Invoked command in '/home/rizo/ros2_intro/build/ros2_visualize' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/ros2_visualize -- -j12 -l12
+[13.344s] Invoking command in '/home/rizo/ros2_intro/build/ros2_visualize': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/ros2_visualize
+[13.349s] -- Install configuration: ""
+[13.349s] -- Installing: /home/rizo/ros2_intro/install/ros2_visualize/lib/ros2_visualize/joy_hagen_sub
+[13.353s] -- Set runtime path of "/home/rizo/ros2_intro/install/ros2_visualize/lib/ros2_visualize/joy_hagen_sub" to ""
+[13.353s] -- Installing: /home/rizo/ros2_intro/install/ros2_visualize/lib/ros2_visualize/joy_hagen_marker_array
+[13.353s] -- Set runtime path of "/home/rizo/ros2_intro/install/ros2_visualize/lib/ros2_visualize/joy_hagen_marker_array" to ""
+[13.353s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/lib/ros2_visualize/joy_hagen_basic_control
+[13.354s] -- Installing: /home/rizo/ros2_intro/install/ros2_visualize/lib/ros2_visualize/joy_hagen_pub
+[13.355s] -- Set runtime path of "/home/rizo/ros2_intro/install/ros2_visualize/lib/ros2_visualize/joy_hagen_pub" to ""
+[13.355s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/lib/ros2_visualize/joy_hagen_camera
+[13.355s] -- Installing: /home/rizo/ros2_intro/install/ros2_visualize/lib/ros2_visualize/joy_hagen_point_cloud
+[13.356s] -- Set runtime path of "/home/rizo/ros2_intro/install/ros2_visualize/lib/ros2_visualize/joy_hagen_point_cloud" to ""
+[13.356s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/launch
+[13.356s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/launch/joy_hagen_pub.launch.py
+[13.356s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/launch/joy_hagen_basic_control.launch.py
+[13.356s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/launch/joy_hagen_marker_array.launch.py
+[13.356s] -- Installing: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/launch/joy_hagen_point_cloud.launch.py
+[13.356s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/launch/joy_hagen_sub.launch.py
+[13.356s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/launch/joy_hagen_camera.launch.py
+[13.357s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ament_index/resource_index/package_run_dependencies/ros2_visualize
+[13.357s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ament_index/resource_index/parent_prefix_path/ros2_visualize
+[13.357s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/environment/ament_prefix_path.sh
+[13.357s] -- Installing: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/environment/ament_prefix_path.dsv
+[13.357s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/environment/path.sh
+[13.357s] -- Installing: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/environment/path.dsv
+[13.357s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/local_setup.bash
+[13.357s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/local_setup.sh
+[13.357s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/local_setup.zsh
+[13.357s] -- Installing: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/local_setup.dsv
+[13.357s] -- Installing: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/package.dsv
+[13.357s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ament_index/resource_index/packages/ros2_visualize
+[13.357s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.357s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.357s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/cmake/ros2_visualizeConfig.cmake
+[13.357s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/cmake/ros2_visualizeConfig-version.cmake
+[13.357s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/package.xml
+[13.360s] Invoked command in '/home/rizo/ros2_intro/build/ros2_visualize' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/ros2_visualize

@@ -4,3 +4,9 @@ friend_msgs.egg-info/PKG-INFO
 friend_msgs.egg-info/SOURCES.txt
 friend_msgs.egg-info/dependency_links.txt
 friend_msgs.egg-info/top_level.txt
+friend_msgs/msg/__init__.py
+friend_msgs/msg/_friend_info.py
+friend_msgs/msg/_r2_d2.py
+friend_msgs/srv/__init__.py
+friend_msgs/srv/_friend_info_service.py
+friend_msgs/srv/_set_speed.py
