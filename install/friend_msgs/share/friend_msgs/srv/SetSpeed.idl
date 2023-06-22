@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from friend_msgs/srv/SetSpeed.srv
+// generated code does not contain a copyright notice
+
+
+module friend_msgs {
+  module srv {
+    struct SetSpeed_Request {
+      float desired_speed;
+    };
+    struct SetSpeed_Response {
+      float previous_speed;
+
+      float new_speed;
+
+      boolean stalled;
+    };
+  };
+};

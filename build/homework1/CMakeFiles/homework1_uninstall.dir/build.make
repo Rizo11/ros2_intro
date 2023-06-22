@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rizo/edu/ros2_intro/homework/homework1
+CMAKE_SOURCE_DIR = /home/rizo/ros2_intro/homework/homework1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rizo/edu/ros2_intro/build/homework1
+CMAKE_BINARY_DIR = /home/rizo/ros2_intro/build/homework1
 
 # Utility rule file for homework1_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/homework1_uninstall.dir/compiler_depend.make
 include CMakeFiles/homework1_uninstall.dir/progress.make
 
 CMakeFiles/homework1_uninstall:
-	/usr/bin/cmake -P /home/rizo/edu/ros2_intro/build/homework1/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/rizo/ros2_intro/build/homework1/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 homework1_uninstall: CMakeFiles/homework1_uninstall
 homework1_uninstall: CMakeFiles/homework1_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/homework1_uninstall.dir/clean:
 .PHONY : CMakeFiles/homework1_uninstall.dir/clean
 
 CMakeFiles/homework1_uninstall.dir/depend:
-	cd /home/rizo/edu/ros2_intro/build/homework1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rizo/edu/ros2_intro/homework/homework1 /home/rizo/edu/ros2_intro/homework/homework1 /home/rizo/edu/ros2_intro/build/homework1 /home/rizo/edu/ros2_intro/build/homework1 /home/rizo/edu/ros2_intro/build/homework1/CMakeFiles/homework1_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rizo/ros2_intro/build/homework1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rizo/ros2_intro/homework/homework1 /home/rizo/ros2_intro/homework/homework1 /home/rizo/ros2_intro/build/homework1 /home/rizo/ros2_intro/build/homework1 /home/rizo/ros2_intro/build/homework1/CMakeFiles/homework1_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/homework1_uninstall.dir/depend
 

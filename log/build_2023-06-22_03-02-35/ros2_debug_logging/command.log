@@ -1,0 +1,1 @@
+Invoking command in '/home/rizo/ros2_intro/build/ros2_debug_logging': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake /home/rizo/ros2_intro/ros2_debug_logging -DCMAKE_INSTALL_PREFIX=/home/rizo/ros2_intro/install/ros2_debug_logging

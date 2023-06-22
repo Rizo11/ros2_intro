@@ -1,0 +1,4 @@
+
+float32 previous_speed
+float32 new_speed
+bool stalled

@@ -1,0 +1,108 @@
+[0.036s] Invoking command in '/home/rizo/ros2_intro/build/hello_world': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/rizo/ros2_intro/hello_world -DCMAKE_INSTALL_PREFIX=/home/rizo/ros2_intro/install/hello_world
+[0.126s] -- The C compiler identification is GNU 11.3.0
+[0.186s] -- The CXX compiler identification is GNU 11.3.0
+[0.195s] -- Detecting C compiler ABI info
+[0.288s] -- Detecting C compiler ABI info - done
+[0.297s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.298s] -- Detecting C compile features
+[0.298s] -- Detecting C compile features - done
+[0.303s] -- Detecting CXX compiler ABI info
+[0.426s] -- Detecting CXX compiler ABI info - done
+[0.438s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.438s] -- Detecting CXX compile features
+[0.439s] -- Detecting CXX compile features - done
+[0.443s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.710s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.820s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[0.886s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.908s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.909s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.932s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.966s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.084s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.089s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.230s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.264s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.317s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.327s] -- Looking for pthread.h
+[1.414s] -- Looking for pthread.h - found
+[1.414s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.486s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.488s] -- Found Threads: TRUE  
+[1.767s] -- Found friend_msgs: 0.2.0 (/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake)
+[1.842s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.969s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.972s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.972s] -- Configured cppcheck include dirs: 
+[1.972s] -- Configured cppcheck exclude dirs and/or files: 
+[1.974s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.974s] -- Configured cpplint exclude dirs and/or files: 
+[1.975s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.976s] -- Added test 'lint_cmake' to check CMake code style
+[1.977s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.979s] -- Added test 'uncrustify' to check C / C++ code style
+[1.979s] -- Configured uncrustify additional arguments: 
+[1.980s] -- Added test 'xmllint' to check XML markup files
+[1.984s] -- Configuring done
+[2.022s] -- Generating done
+[2.025s] -- Build files have been written to: /home/rizo/ros2_intro/build/hello_world
+[2.043s] Invoked command in '/home/rizo/ros2_intro/build/hello_world' returned '0': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/rizo/ros2_intro/hello_world -DCMAKE_INSTALL_PREFIX=/home/rizo/ros2_intro/install/hello_world
+[2.045s] Invoking command in '/home/rizo/ros2_intro/build/hello_world': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rizo/ros2_intro/build/hello_world -- -j12 -l12
+[2.118s] [  8%] [32mBuilding CXX object CMakeFiles/service_server.dir/src/friend_service_server.cpp.o[0m
+[2.127s] [ 16%] [32mBuilding CXX object CMakeFiles/publisher_node.dir/src/friend_hello_pub_todo.cpp.o[0m
+[2.130s] [ 25%] [32mBuilding CXX object CMakeFiles/subscriber_node.dir/src/friend_hello_sub_todo.cpp.o[0m
+[2.134s] [ 33%] [32mBuilding CXX object CMakeFiles/param_reader_user_info.dir/src/set_name_and_id_todo.cpp.o[0m
+[2.141s] [ 41%] [32mBuilding CXX object CMakeFiles/service_client.dir/src/friend_service_client.cpp.o[0m
+[2.154s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher_class_node.dir/src/friend_hello_pub_class_todo.cpp.o[0m
+[8.957s] [ 58%] [32m[1mLinking CXX executable publisher_class_node[0m
+[9.230s] [ 58%] Built target publisher_class_node
+[9.392s] [ 66%] [32m[1mLinking CXX executable param_reader_user_info[0m
+[9.611s] [ 66%] Built target param_reader_user_info
+[10.074s] [ 75%] [32m[1mLinking CXX executable service_server[0m
+[10.360s] [ 75%] Built target service_server
+[10.484s] [ 83%] [32m[1mLinking CXX executable service_client[0m
+[10.489s] [ 91%] [32m[1mLinking CXX executable publisher_node[0m
+[10.796s] [ 91%] Built target service_client
+[10.797s] [ 91%] Built target publisher_node
+[14.751s] [100%] [32m[1mLinking CXX executable subscriber_node[0m
+[15.113s] [100%] Built target subscriber_node
+[15.122s] Invoked command in '/home/rizo/ros2_intro/build/hello_world' returned '0': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rizo/ros2_intro/build/hello_world -- -j12 -l12
+[15.153s] Invoking command in '/home/rizo/ros2_intro/build/hello_world': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rizo/ros2_intro/build/hello_world
+[15.159s] -- Install configuration: ""
+[15.159s] -- Installing: /home/rizo/ros2_intro/install/hello_world/lib/hello_world/publisher_node
+[15.160s] -- Set runtime path of "/home/rizo/ros2_intro/install/hello_world/lib/hello_world/publisher_node" to ""
+[15.160s] -- Installing: /home/rizo/ros2_intro/install/hello_world/lib/hello_world/subscriber_node
+[15.162s] -- Set runtime path of "/home/rizo/ros2_intro/install/hello_world/lib/hello_world/subscriber_node" to ""
+[15.162s] -- Installing: /home/rizo/ros2_intro/install/hello_world/lib/hello_world/service_server
+[15.163s] -- Set runtime path of "/home/rizo/ros2_intro/install/hello_world/lib/hello_world/service_server" to ""
+[15.163s] -- Installing: /home/rizo/ros2_intro/install/hello_world/lib/hello_world/param_reader_user_info
+[15.163s] -- Set runtime path of "/home/rizo/ros2_intro/install/hello_world/lib/hello_world/param_reader_user_info" to ""
+[15.163s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/launch
+[15.163s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/launch/service_server.py
+[15.163s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/launch/service_client.py
+[15.163s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/launch/param_set_variant_2.py
+[15.164s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/launch/includer.py
+[15.164s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/launch/pub_sub_variant_1.py
+[15.164s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/launch/pub_sub_variant_2.py
+[15.164s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/launch/param_set_variant_1.py
+[15.164s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/config
+[15.164s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/config/params_user_info.yaml
+[15.164s] -- Installing: /home/rizo/ros2_intro/install/hello_world/lib/hello_world/hello_pub_todo.py
+[15.164s] -- Installing: /home/rizo/ros2_intro/install/hello_world/lib/hello_world/hello_sub_todo.py
+[15.164s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/ament_index/resource_index/package_run_dependencies/hello_world
+[15.164s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/ament_index/resource_index/parent_prefix_path/hello_world
+[15.164s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/environment/ament_prefix_path.sh
+[15.164s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/environment/ament_prefix_path.dsv
+[15.165s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/environment/path.sh
+[15.165s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/environment/path.dsv
+[15.165s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/local_setup.bash
+[15.165s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/local_setup.sh
+[15.165s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/local_setup.zsh
+[15.165s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/local_setup.dsv
+[15.165s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/package.dsv
+[15.165s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/ament_index/resource_index/packages/hello_world
+[15.165s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.165s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/cmake/hello_worldConfig.cmake
+[15.165s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/cmake/hello_worldConfig-version.cmake
+[15.166s] -- Installing: /home/rizo/ros2_intro/install/hello_world/share/hello_world/package.xml
+[15.169s] Invoked command in '/home/rizo/ros2_intro/build/hello_world' returned '0': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rizo/ros2_intro/build/hello_world

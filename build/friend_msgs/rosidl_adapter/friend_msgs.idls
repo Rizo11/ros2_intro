@@ -1,0 +1,4 @@
+/home/rizo/ros2_intro/build/friend_msgs/rosidl_adapter/friend_msgs:msg/FriendInfo.idl
+/home/rizo/ros2_intro/build/friend_msgs/rosidl_adapter/friend_msgs:msg/R2D2.idl
+/home/rizo/ros2_intro/build/friend_msgs/rosidl_adapter/friend_msgs:srv/FriendInfoService.idl
+/home/rizo/ros2_intro/build/friend_msgs/rosidl_adapter/friend_msgs:srv/SetSpeed.idl

@@ -1,0 +1,64 @@
+[0.026s] Invoking command in '/home/rizo/ros2_intro/build/homework1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake /home/rizo/ros2_intro/homework/homework1 -DCMAKE_INSTALL_PREFIX=/home/rizo/ros2_intro/install/homework1
+[0.070s] -- The C compiler identification is GNU 11.3.0
+[0.113s] -- The CXX compiler identification is GNU 11.3.0
+[0.118s] -- Detecting C compiler ABI info
+[0.163s] -- Detecting C compiler ABI info - done
+[0.174s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.175s] -- Detecting C compile features
+[0.175s] -- Detecting C compile features - done
+[0.179s] -- Detecting CXX compiler ABI info
+[0.238s] -- Detecting CXX compiler ABI info - done
+[0.245s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.246s] -- Detecting CXX compile features
+[0.246s] -- Detecting CXX compile features - done
+[0.248s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.385s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.470s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[0.530s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.537s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.545s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.558s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.577s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.644s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.647s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.736s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.767s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.808s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.817s] -- Looking for pthread.h
+[0.865s] -- Looking for pthread.h - found
+[0.865s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.921s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.922s] -- Found Threads: TRUE  
+[1.070s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[1.085s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.181s] -- Configuring done
+[1.188s] -- Generating done
+[1.189s] -- Build files have been written to: /home/rizo/ros2_intro/build/homework1
+[1.199s] Invoked command in '/home/rizo/ros2_intro/build/homework1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake /home/rizo/ros2_intro/homework/homework1 -DCMAKE_INSTALL_PREFIX=/home/rizo/ros2_intro/install/homework1
+[1.201s] Invoking command in '/home/rizo/ros2_intro/build/homework1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/homework1 -- -j12 -l12
+[1.235s] [ 50%] [32mBuilding CXX object CMakeFiles/commander_node.dir/src/commander_node.cpp.o[0m
+[15.967s] [100%] [32m[1mLinking CXX executable commander_node[0m
+[16.590s] [100%] Built target commander_node
+[16.598s] Invoked command in '/home/rizo/ros2_intro/build/homework1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/homework1 -- -j12 -l12
+[16.617s] Invoking command in '/home/rizo/ros2_intro/build/homework1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/homework1
+[16.623s] -- Install configuration: ""
+[16.623s] -- Installing: /home/rizo/ros2_intro/install/homework1/lib/homework1/commander_node
+[16.626s] -- Set runtime path of "/home/rizo/ros2_intro/install/homework1/lib/homework1/commander_node" to ""
+[16.626s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/ament_index/resource_index/package_run_dependencies/homework1
+[16.626s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/ament_index/resource_index/parent_prefix_path/homework1
+[16.626s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/environment/ament_prefix_path.sh
+[16.627s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/environment/ament_prefix_path.dsv
+[16.627s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/environment/path.sh
+[16.627s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/environment/path.dsv
+[16.627s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/local_setup.bash
+[16.627s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/local_setup.sh
+[16.627s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/local_setup.zsh
+[16.627s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/local_setup.dsv
+[16.628s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/package.dsv
+[16.628s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/ament_index/resource_index/packages/homework1
+[16.628s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/cmake/ament_cmake_export_include_directories-extras.cmake
+[16.628s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/cmake/ament_cmake_export_dependencies-extras.cmake
+[16.628s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/cmake/homework1Config.cmake
+[16.628s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/cmake/homework1Config-version.cmake
+[16.628s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/package.xml
+[16.632s] Invoked command in '/home/rizo/ros2_intro/build/homework1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/homework1

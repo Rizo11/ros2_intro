@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/rizo/edu/ros2_intro/homework/homework1/src/commander_node.cpp" "CMakeFiles/commander_node.dir/src/commander_node.cpp.o" "gcc" "CMakeFiles/commander_node.dir/src/commander_node.cpp.o.d"
+  "/home/rizo/ros2_intro/homework/homework1/src/commander_node.cpp" "CMakeFiles/commander_node.dir/src/commander_node.cpp.o" "gcc" "CMakeFiles/commander_node.dir/src/commander_node.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -1,0 +1,330 @@
+[0.032s] Invoking command in '/home/rizo/ros2_intro/build/friend_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake /home/rizo/ros2_intro/friend_msgs -DCMAKE_INSTALL_PREFIX=/home/rizo/ros2_intro/install/friend_msgs
+[0.079s] -- The C compiler identification is GNU 11.3.0
+[0.129s] -- The CXX compiler identification is GNU 11.3.0
+[0.135s] -- Detecting C compiler ABI info
+[0.179s] -- Detecting C compiler ABI info - done
+[0.187s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.187s] -- Detecting C compile features
+[0.187s] -- Detecting C compile features - done
+[0.190s] -- Detecting CXX compiler ABI info
+[0.248s] -- Detecting CXX compiler ABI info - done
+[0.256s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.257s] -- Detecting CXX compile features
+[0.257s] -- Detecting CXX compile features - done
+[0.259s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.397s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.490s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.540s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.547s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.556s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.569s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.588s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.605s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.845s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.095s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.194s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.215s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") 
+[1.217s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.236s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") 
+[1.236s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.236s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.237s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.254s] -- Found PythonExtra: .so  
+[1.301s] -- Configuring done
+[1.344s] -- Generating done
+[1.346s] -- Build files have been written to: /home/rizo/ros2_intro/build/friend_msgs
+[1.352s] Invoked command in '/home/rizo/ros2_intro/build/friend_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake /home/rizo/ros2_intro/friend_msgs -DCMAKE_INSTALL_PREFIX=/home/rizo/ros2_intro/install/friend_msgs
+[1.353s] Invoking command in '/home/rizo/ros2_intro/build/friend_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/friend_msgs -- -j12 -l12
+[1.382s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.390s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.396s] [  3%] Built target ament_cmake_python_copy_friend_msgs
+[1.663s] running egg_info
+[1.663s] creating friend_msgs.egg-info
+[1.663s] writing friend_msgs.egg-info/PKG-INFO
+[1.664s] writing dependency_links to friend_msgs.egg-info/dependency_links.txt
+[1.664s] writing top-level names to friend_msgs.egg-info/top_level.txt
+[1.664s] writing manifest file 'friend_msgs.egg-info/SOURCES.txt'
+[1.666s] reading manifest file 'friend_msgs.egg-info/SOURCES.txt'
+[1.666s] writing manifest file 'friend_msgs.egg-info/SOURCES.txt'
+[1.691s] [  3%] Built target ament_cmake_python_build_friend_msgs_egg
+[1.827s] [  3%] Built target friend_msgs__cpp
+[1.836s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.836s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.838s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.902s] [ 12%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_generator_c.dir/rosidl_generator_c/friend_msgs/srv/detail/set_speed__functions.c.o[0m
+[1.902s] [ 12%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_generator_c.dir/rosidl_generator_c/friend_msgs/msg/detail/friend_info__functions.c.o[0m
+[1.902s] [ 14%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_generator_c.dir/rosidl_generator_c/friend_msgs/srv/detail/friend_info_service__functions.c.o[0m
+[1.903s] [ 16%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_generator_c.dir/rosidl_generator_c/friend_msgs/msg/detail/r2_d2__functions.c.o[0m
+[1.975s] [ 18%] [32m[1mLinking C shared library libfriend_msgs__rosidl_generator_c.so[0m
+[2.017s] [ 18%] Built target friend_msgs__rosidl_generator_c
+[2.029s] [ 20%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.029s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.029s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.203s] [ 25%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/friend_msgs/srv/set_speed__type_support.cpp.o[0m
+[2.204s] [ 27%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/friend_msgs/msg/r2_d2__type_support.cpp.o[0m
+[2.205s] [ 29%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/friend_msgs/msg/friend_info__type_support.cpp.o[0m
+[2.210s] [ 30%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/friend_msgs/srv/friend_info_service__type_support.cpp.o[0m
+[2.432s] [ 32%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/friend_msgs/srv/detail/dds_fastrtps/friend_info_service__type_support.cpp.o[0m
+[2.441s] [ 34%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/friend_msgs/msg/detail/dds_fastrtps/r2_d2__type_support.cpp.o[0m
+[2.446s] [ 36%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/friend_msgs/msg/detail/dds_fastrtps/friend_info__type_support.cpp.o[0m
+[2.449s] [ 38%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/friend_msgs/srv/detail/dds_fastrtps/set_speed__type_support.cpp.o[0m
+[2.648s] [ 40%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/friend_msgs/msg/friend_info__type_support.cpp.o[0m
+[2.660s] [ 41%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/friend_msgs/msg/r2_d2__type_support.cpp.o[0m
+[2.686s] [ 43%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/friend_msgs/msg/detail/r2_d2__type_support.cpp.o[0m
+[2.695s] [ 45%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/friend_msgs/msg/detail/friend_info__type_support.cpp.o[0m
+[2.701s] [ 47%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/friend_msgs/srv/friend_info_service__type_support.cpp.o[0m
+[2.713s] [ 49%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/friend_msgs/srv/detail/friend_info_service__type_support.cpp.o[0m
+[2.723s] [ 50%] [32m[1mLinking CXX shared library libfriend_msgs__rosidl_typesupport_cpp.so[0m
+[2.758s] [ 52%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/friend_msgs/srv/set_speed__type_support.cpp.o[0m
+[2.799s] [ 54%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/friend_msgs/srv/detail/set_speed__type_support.cpp.o[0m
+[2.823s] [ 54%] Built target friend_msgs__rosidl_typesupport_cpp
+[2.851s] [ 56%] [32m[1mLinking CXX shared library libfriend_msgs__rosidl_typesupport_c.so[0m
+[2.911s] [ 58%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/friend_msgs/msg/detail/friend_info__type_support_c.cpp.o[0m
+[2.922s] [ 60%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/friend_msgs/msg/detail/r2_d2__type_support_c.cpp.o[0m
+[2.938s] [ 61%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/friend_msgs/msg/detail/friend_info__type_support.c.o[0m
+[2.963s] [ 61%] Built target friend_msgs__rosidl_typesupport_c
+[3.011s] [ 63%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/friend_msgs/msg/detail/r2_d2__type_support.c.o[0m
+[3.042s] [ 65%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/friend_msgs/srv/detail/friend_info_service__type_support_c.cpp.o[0m
+[3.083s] [ 67%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/friend_msgs/srv/detail/friend_info_service__type_support.c.o[0m
+[3.124s] [ 69%] [32mBuilding CXX object CMakeFiles/friend_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/friend_msgs/srv/detail/set_speed__type_support_c.cpp.o[0m
+[3.135s] [ 70%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/friend_msgs/srv/detail/set_speed__type_support.c.o[0m
+[3.214s] [ 72%] [32m[1mLinking CXX shared library libfriend_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.240s] [ 74%] [32m[1mLinking C shared library libfriend_msgs__rosidl_typesupport_introspection_c.so[0m
+[3.337s] [ 74%] Built target friend_msgs__rosidl_typesupport_introspection_c
+[3.376s] [ 74%] Built target friend_msgs__rosidl_typesupport_fastrtps_cpp
+[3.432s] [ 76%] [32m[1mLinking CXX shared library libfriend_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[3.510s] [ 76%] Built target friend_msgs__rosidl_typesupport_introspection_cpp
+[3.643s] [ 78%] [32m[1mLinking CXX shared library libfriend_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[3.750s] [ 78%] Built target friend_msgs__rosidl_typesupport_fastrtps_c
+[3.771s] [ 78%] Built target friend_msgs
+[3.793s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.528s] [ 80%] Built target friend_msgs__py
+[4.562s] [ 81%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_generator_py.dir/rosidl_generator_py/friend_msgs/msg/_friend_info_s.c.o[0m
+[4.562s] [ 83%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_generator_py.dir/rosidl_generator_py/friend_msgs/msg/_r2_d2_s.c.o[0m
+[4.563s] [ 85%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_generator_py.dir/rosidl_generator_py/friend_msgs/srv/_set_speed_s.c.o[0m
+[4.570s] [ 87%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_generator_py.dir/rosidl_generator_py/friend_msgs/srv/_friend_info_service_s.c.o[0m
+[4.763s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/friend_msgs/libfriend_msgs__rosidl_generator_py.so[0m
+[4.826s] [ 89%] Built target friend_msgs__rosidl_generator_py
+[4.854s] [ 92%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/friend_msgs/_friend_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[4.855s] [ 92%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/friend_msgs/_friend_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.857s] [ 94%] [32mBuilding C object CMakeFiles/friend_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/friend_msgs/_friend_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.046s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/friend_msgs/friend_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.054s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/friend_msgs/friend_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.056s] [100%] [32m[1mLinking C shared library rosidl_generator_py/friend_msgs/friend_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.104s] [100%] Built target friend_msgs__rosidl_typesupport_c__pyext
+[5.110s] [100%] Built target friend_msgs__rosidl_typesupport_fastrtps_c__pyext
+[5.118s] [100%] Built target friend_msgs__rosidl_typesupport_introspection_c__pyext
+[5.136s] Invoked command in '/home/rizo/ros2_intro/build/friend_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/friend_msgs -- -j12 -l12
+[5.288s] Invoking command in '/home/rizo/ros2_intro/build/friend_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/friend_msgs
+[5.297s] -- Install configuration: ""
+[5.299s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/ament_index/resource_index/rosidl_interfaces/friend_msgs
+[5.302s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs
+[5.304s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv
+[5.305s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/set_speed.h
+[5.307s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail
+[5.309s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/set_speed__functions.c
+[5.312s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/set_speed__functions.h
+[5.315s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/set_speed__type_support.h
+[5.333s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/set_speed__struct.h
+[5.333s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/friend_info_service__functions.h
+[5.333s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/friend_info_service__struct.h
+[5.333s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/friend_info_service__functions.c
+[5.334s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/friend_info_service__type_support.h
+[5.334s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/friend_info_service.h
+[5.334s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg
+[5.334s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/r2_d2.h
+[5.334s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail
+[5.334s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/r2_d2__struct.h
+[5.334s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/r2_d2__functions.c
+[5.334s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/friend_info__functions.c
+[5.335s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/r2_d2__type_support.h
+[5.335s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/r2_d2__functions.h
+[5.335s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/friend_info__functions.h
+[5.335s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/friend_info__type_support.h
+[5.335s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/friend_info__struct.h
+[5.335s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/friend_info.h
+[5.335s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/rosidl_generator_c__visibility_control.h
+[5.336s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/environment/library_path.sh
+[5.336s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/environment/library_path.dsv
+[5.336s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_generator_c.so
+[5.336s] -- Set runtime path of "/home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_generator_c.so" to ""
+[5.336s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs
+[5.336s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv
+[5.336s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail
+[5.336s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/set_speed__rosidl_typesupport_fastrtps_c.h
+[5.337s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/friend_info_service__rosidl_typesupport_fastrtps_c.h
+[5.337s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg
+[5.337s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail
+[5.337s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/friend_info__rosidl_typesupport_fastrtps_c.h
+[5.337s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/r2_d2__rosidl_typesupport_fastrtps_c.h
+[5.337s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.337s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_typesupport_fastrtps_c.so
+[5.337s] -- Set runtime path of "/home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[5.338s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs
+[5.338s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv
+[5.338s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail
+[5.338s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/friend_info_service__traits.hpp
+[5.338s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/friend_info_service__builder.hpp
+[5.338s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/set_speed__builder.hpp
+[5.338s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/friend_info_service__struct.hpp
+[5.338s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/set_speed__struct.hpp
+[5.338s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/set_speed__traits.hpp
+[5.338s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/friend_info_service.hpp
+[5.339s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/set_speed.hpp
+[5.339s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg
+[5.339s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail
+[5.339s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/r2_d2__traits.hpp
+[5.339s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/friend_info__struct.hpp
+[5.339s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/friend_info__traits.hpp
+[5.339s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/friend_info__builder.hpp
+[5.339s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/r2_d2__builder.hpp
+[5.339s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/r2_d2__struct.hpp
+[5.340s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/friend_info.hpp
+[5.340s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/r2_d2.hpp
+[5.340s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs
+[5.340s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv
+[5.340s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail
+[5.340s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/set_speed__rosidl_typesupport_fastrtps_cpp.hpp
+[5.340s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/friend_info_service__rosidl_typesupport_fastrtps_cpp.hpp
+[5.340s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/dds_fastrtps
+[5.340s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg
+[5.341s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.341s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail
+[5.341s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/r2_d2__rosidl_typesupport_fastrtps_cpp.hpp
+[5.341s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/dds_fastrtps
+[5.341s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/friend_info__rosidl_typesupport_fastrtps_cpp.hpp
+[5.341s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_typesupport_fastrtps_cpp.so
+[5.341s] -- Set runtime path of "/home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.341s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs
+[5.341s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv
+[5.342s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail
+[5.342s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/set_speed__type_support.c
+[5.342s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/friend_info_service__rosidl_typesupport_introspection_c.h
+[5.342s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/friend_info_service__type_support.c
+[5.342s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/set_speed__rosidl_typesupport_introspection_c.h
+[5.342s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg
+[5.342s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail
+[5.342s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/r2_d2__rosidl_typesupport_introspection_c.h
+[5.342s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/friend_info__rosidl_typesupport_introspection_c.h
+[5.343s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/friend_info__type_support.c
+[5.343s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/r2_d2__type_support.c
+[5.343s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.343s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_typesupport_introspection_c.so
+[5.343s] -- Set runtime path of "/home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_typesupport_introspection_c.so" to ""
+[5.343s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_typesupport_c.so
+[5.343s] -- Set runtime path of "/home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_typesupport_c.so" to ""
+[5.343s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs
+[5.343s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv
+[5.343s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail
+[5.344s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/set_speed__type_support.cpp
+[5.344s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/friend_info_service__type_support.cpp
+[5.344s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/friend_info_service__rosidl_typesupport_introspection_cpp.hpp
+[5.344s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/srv/detail/set_speed__rosidl_typesupport_introspection_cpp.hpp
+[5.344s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg
+[5.344s] -- Up-to-date: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail
+[5.344s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/friend_info__type_support.cpp
+[5.344s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/r2_d2__type_support.cpp
+[5.344s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/r2_d2__rosidl_typesupport_introspection_cpp.hpp
+[5.345s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/include/friend_msgs/friend_msgs/msg/detail/friend_info__rosidl_typesupport_introspection_cpp.hpp
+[5.345s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_typesupport_introspection_cpp.so
+[5.345s] -- Set runtime path of "/home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[5.345s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_typesupport_cpp.so
+[5.345s] -- Set runtime path of "/home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_typesupport_cpp.so" to ""
+[5.345s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/environment/pythonpath.sh
+[5.345s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/environment/pythonpath.dsv
+[5.345s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs-0.2.0-py3.10.egg-info
+[5.346s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs-0.2.0-py3.10.egg-info/SOURCES.txt
+[5.346s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs-0.2.0-py3.10.egg-info/PKG-INFO
+[5.346s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs-0.2.0-py3.10.egg-info/top_level.txt
+[5.346s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs-0.2.0-py3.10.egg-info/dependency_links.txt
+[5.346s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs
+[5.346s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/_friend_msgs_s.ep.rosidl_typesupport_c.c
+[5.346s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/_friend_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[5.346s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/__init__.py
+[5.346s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/srv
+[5.347s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/srv/_set_speed.py
+[5.347s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/srv/__init__.py
+[5.347s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/srv/_friend_info_service_s.c
+[5.347s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/srv/_friend_info_service.py
+[5.347s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/srv/_set_speed_s.c
+[5.347s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/msg
+[5.347s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/msg/_friend_info.py
+[5.347s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/msg/_friend_info_s.c
+[5.347s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/msg/__init__.py
+[5.348s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/msg/_r2_d2_s.c
+[5.348s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/msg/_r2_d2.py
+[5.348s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/_friend_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.348s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/libfriend_msgs__rosidl_generator_py.so
+[5.348s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/friend_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.348s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/friend_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.348s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/friend_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.404s] Listing '/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs'...
+[5.404s] Compiling '/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/__init__.py'...
+[5.404s] Listing '/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/msg'...
+[5.404s] Compiling '/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/msg/__init__.py'...
+[5.404s] Compiling '/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/msg/_friend_info.py'...
+[5.405s] Compiling '/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/msg/_r2_d2.py'...
+[5.405s] Listing '/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/srv'...
+[5.405s] Compiling '/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/srv/__init__.py'...
+[5.405s] Compiling '/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/srv/_friend_info_service.py'...
+[5.405s] Compiling '/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/srv/_set_speed.py'...
+[5.412s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/friend_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.412s] -- Set runtime path of "/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/friend_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.413s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/friend_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.414s] -- Set runtime path of "/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/friend_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.414s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/friend_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.415s] -- Set runtime path of "/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages/friend_msgs/friend_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.415s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_generator_py.so
+[5.416s] -- Set runtime path of "/home/rizo/ros2_intro/install/friend_msgs/lib/libfriend_msgs__rosidl_generator_py.so" to ""
+[5.417s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/msg/FriendInfo.idl
+[5.417s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/msg/R2D2.idl
+[5.418s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/srv/FriendInfoService.idl
+[5.418s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/srv/SetSpeed.idl
+[5.419s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/msg/FriendInfo.msg
+[5.419s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/msg/R2D2.msg
+[5.420s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/srv/FriendInfoService.srv
+[5.420s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/srv/FriendInfoService_Request.msg
+[5.421s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/srv/FriendInfoService_Response.msg
+[5.421s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/srv/SetSpeed.srv
+[5.421s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/srv/SetSpeed_Request.msg
+[5.422s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/srv/SetSpeed_Response.msg
+[5.422s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/ament_index/resource_index/package_run_dependencies/friend_msgs
+[5.423s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/ament_index/resource_index/parent_prefix_path/friend_msgs
+[5.423s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/environment/ament_prefix_path.sh
+[5.424s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/environment/ament_prefix_path.dsv
+[5.424s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/environment/path.sh
+[5.425s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/environment/path.dsv
+[5.425s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/local_setup.bash
+[5.425s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/local_setup.sh
+[5.426s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/local_setup.zsh
+[5.426s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/local_setup.dsv
+[5.427s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/package.dsv
+[5.427s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/ament_index/resource_index/packages/friend_msgs
+[5.428s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/export_friend_msgs__rosidl_generator_cExport.cmake
+[5.428s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/export_friend_msgs__rosidl_generator_cExport-noconfig.cmake
+[5.429s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/export_friend_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[5.429s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/export_friend_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.430s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/export_friend_msgs__rosidl_generator_cppExport.cmake
+[5.430s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/export_friend_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.430s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/export_friend_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.431s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/friend_msgs__rosidl_typesupport_introspection_cExport.cmake
+[5.431s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/friend_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.431s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/friend_msgs__rosidl_typesupport_cExport.cmake
+[5.432s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/friend_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[5.432s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/friend_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[5.433s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/friend_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.433s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/friend_msgs__rosidl_typesupport_cppExport.cmake
+[5.433s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/friend_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[5.434s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/export_friend_msgs__rosidl_generator_pyExport.cmake
+[5.434s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/export_friend_msgs__rosidl_generator_pyExport-noconfig.cmake
+[5.435s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/rosidl_cmake-extras.cmake
+[5.435s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.435s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.436s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[5.436s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[5.436s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.437s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.437s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/friend_msgsConfig.cmake
+[5.438s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/cmake/friend_msgsConfig-version.cmake
+[5.438s] -- Installing: /home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/package.xml
+[5.454s] Invoked command in '/home/rizo/ros2_intro/build/friend_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/friend_msgs

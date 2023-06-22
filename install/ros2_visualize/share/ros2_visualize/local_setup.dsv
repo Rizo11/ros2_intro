@@ -1,0 +1,2 @@
+source;share/ros2_visualize/environment/ament_prefix_path.sh
+source;share/ros2_visualize/environment/path.sh

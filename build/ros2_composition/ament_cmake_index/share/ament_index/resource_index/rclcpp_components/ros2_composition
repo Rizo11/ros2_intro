@@ -1,0 +1,4 @@
+composition::SenderNode;lib/libhello_world_pub_component.so
+composition::ReceiverNode;lib/libhello_world_sub_component.so
+composition::Server;lib/libhello_world_service_server.so
+composition::Client;lib/libhello_world_service_client.so
