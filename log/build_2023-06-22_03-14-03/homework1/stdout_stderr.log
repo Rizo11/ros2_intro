@@ -1,0 +1,20 @@
+[100%] Built target commander_node
+-- Install configuration: ""
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/lib/homework1/commander_node
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/ament_index/resource_index/package_run_dependencies/homework1
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/ament_index/resource_index/parent_prefix_path/homework1
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/environment/ament_prefix_path.sh
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/environment/path.sh
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/environment/path.dsv
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/local_setup.bash
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/local_setup.sh
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/local_setup.zsh
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/local_setup.dsv
+-- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/package.dsv
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/ament_index/resource_index/packages/homework1
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/cmake/homework1Config.cmake
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/cmake/homework1Config-version.cmake
+-- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/package.xml

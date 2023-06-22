@@ -1,0 +1,24 @@
+[0.438s] Invoking command in '/home/rizo/ros2_intro/build/homework1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/homework1 -- -j12 -l12
+[0.484s] [100%] Built target commander_node
+[0.505s] Invoked command in '/home/rizo/ros2_intro/build/homework1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/homework1 -- -j12 -l12
+[0.535s] Invoking command in '/home/rizo/ros2_intro/build/homework1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/homework1
+[0.552s] -- Install configuration: ""
+[0.552s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/lib/homework1/commander_node
+[0.552s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/ament_index/resource_index/package_run_dependencies/homework1
+[0.552s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/ament_index/resource_index/parent_prefix_path/homework1
+[0.553s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/environment/ament_prefix_path.sh
+[0.555s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/environment/ament_prefix_path.dsv
+[0.556s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/environment/path.sh
+[0.556s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/environment/path.dsv
+[0.556s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/local_setup.bash
+[0.556s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/local_setup.sh
+[0.556s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/local_setup.zsh
+[0.557s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/local_setup.dsv
+[0.557s] -- Installing: /home/rizo/ros2_intro/install/homework1/share/homework1/package.dsv
+[0.558s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/ament_index/resource_index/packages/homework1
+[0.558s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.558s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.558s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/cmake/homework1Config.cmake
+[0.558s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/cmake/homework1Config-version.cmake
+[0.558s] -- Up-to-date: /home/rizo/ros2_intro/install/homework1/share/homework1/package.xml
+[0.613s] Invoked command in '/home/rizo/ros2_intro/build/homework1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/homework1

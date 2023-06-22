@@ -1,0 +1,23 @@
+[0.836s] Invoking command in '/home/rizo/ros2_intro/hagen_robot/hagen_robot_diff_drive': PYTHONPATH=/home/rizo/ros2_intro/build/hagen_robot_diff_drive/prefix_override:/home/rizo/ros2_intro/install/hagen_robot_diff_drive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hagen_robot_diff_drive build --build-base /home/rizo/ros2_intro/build/hagen_robot_diff_drive/build install --record /home/rizo/ros2_intro/build/hagen_robot_diff_drive/install.log --single-version-externally-managed
+[1.057s] running egg_info
+[1.057s] writing ../../build/hagen_robot_diff_drive/hagen_robot_diff_drive.egg-info/PKG-INFO
+[1.058s] writing dependency_links to ../../build/hagen_robot_diff_drive/hagen_robot_diff_drive.egg-info/dependency_links.txt
+[1.058s] writing entry points to ../../build/hagen_robot_diff_drive/hagen_robot_diff_drive.egg-info/entry_points.txt
+[1.058s] writing requirements to ../../build/hagen_robot_diff_drive/hagen_robot_diff_drive.egg-info/requires.txt
+[1.058s] writing top-level names to ../../build/hagen_robot_diff_drive/hagen_robot_diff_drive.egg-info/top_level.txt
+[1.059s] reading manifest file '../../build/hagen_robot_diff_drive/hagen_robot_diff_drive.egg-info/SOURCES.txt'
+[1.060s] writing manifest file '../../build/hagen_robot_diff_drive/hagen_robot_diff_drive.egg-info/SOURCES.txt'
+[1.060s] running build
+[1.060s] running build_py
+[1.060s] running install
+[1.061s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.061s]   warnings.warn(
+[1.061s] running install_lib
+[1.062s] running install_data
+[1.062s] running install_egg_info
+[1.064s] removing '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/lib/python3.10/site-packages/hagen_robot_diff_drive-0.0.0-py3.10.egg-info' (and everything under it)
+[1.064s] Copying ../../build/hagen_robot_diff_drive/hagen_robot_diff_drive.egg-info to /home/rizo/ros2_intro/install/hagen_robot_diff_drive/lib/python3.10/site-packages/hagen_robot_diff_drive-0.0.0-py3.10.egg-info
+[1.064s] running install_scripts
+[1.082s] Installing spawn_robot script to /home/rizo/ros2_intro/install/hagen_robot_diff_drive/lib/hagen_robot_diff_drive
+[1.082s] writing list of installed files to '/home/rizo/ros2_intro/build/hagen_robot_diff_drive/install.log'
+[1.107s] Invoked command in '/home/rizo/ros2_intro/hagen_robot/hagen_robot_diff_drive' returned '0': PYTHONPATH=/home/rizo/ros2_intro/build/hagen_robot_diff_drive/prefix_override:/home/rizo/ros2_intro/install/hagen_robot_diff_drive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hagen_robot_diff_drive build --build-base /home/rizo/ros2_intro/build/hagen_robot_diff_drive/build install --record /home/rizo/ros2_intro/build/hagen_robot_diff_drive/install.log --single-version-externally-managed

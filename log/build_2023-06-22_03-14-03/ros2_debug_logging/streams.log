@@ -1,0 +1,26 @@
+[0.420s] Invoking command in '/home/rizo/ros2_intro/build/ros2_debug_logging': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/ros2_debug_logging -- -j12 -l12
+[0.457s] [100%] Built target logging_basic
+[0.478s] Invoked command in '/home/rizo/ros2_intro/build/ros2_debug_logging' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/ros2_debug_logging -- -j12 -l12
+[0.503s] Invoking command in '/home/rizo/ros2_intro/build/ros2_debug_logging': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/ros2_debug_logging
+[0.508s] -- Install configuration: ""
+[0.510s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/lib/ros2_debug_logging/logging_basic
+[0.510s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/launch
+[0.510s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/launch/logging_basic_launch.py
+[0.511s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ament_index/resource_index/package_run_dependencies/ros2_debug_logging
+[0.511s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ament_index/resource_index/parent_prefix_path/ros2_debug_logging
+[0.511s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/environment/ament_prefix_path.sh
+[0.511s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/environment/ament_prefix_path.dsv
+[0.512s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/environment/path.sh
+[0.512s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/environment/path.dsv
+[0.513s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/local_setup.bash
+[0.513s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/local_setup.sh
+[0.513s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/local_setup.zsh
+[0.514s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/local_setup.dsv
+[0.514s] -- Installing: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/package.dsv
+[0.514s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ament_index/resource_index/packages/ros2_debug_logging
+[0.514s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.515s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.515s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/cmake/ros2_debug_loggingConfig.cmake
+[0.515s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/cmake/ros2_debug_loggingConfig-version.cmake
+[0.515s] -- Up-to-date: /home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/package.xml
+[0.530s] Invoked command in '/home/rizo/ros2_intro/build/ros2_debug_logging' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/ros2_debug_logging

@@ -1,0 +1,24 @@
+[0.773s] Invoking command in '/home/rizo/ros2_intro/hagen_robot/hagen_robot_controller': PYTHONPATH=/home/rizo/ros2_intro/build/hagen_robot_controller/prefix_override:/home/rizo/ros2_intro/install/hagen_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hagen_robot_controller build --build-base /home/rizo/ros2_intro/build/hagen_robot_controller/build install --record /home/rizo/ros2_intro/build/hagen_robot_controller/install.log --single-version-externally-managed
+[0.995s] running egg_info
+[0.996s] writing ../../build/hagen_robot_controller/hagen_robot_controller.egg-info/PKG-INFO
+[0.996s] writing dependency_links to ../../build/hagen_robot_controller/hagen_robot_controller.egg-info/dependency_links.txt
+[0.996s] writing entry points to ../../build/hagen_robot_controller/hagen_robot_controller.egg-info/entry_points.txt
+[0.996s] writing requirements to ../../build/hagen_robot_controller/hagen_robot_controller.egg-info/requires.txt
+[0.996s] writing top-level names to ../../build/hagen_robot_controller/hagen_robot_controller.egg-info/top_level.txt
+[0.998s] reading manifest file '../../build/hagen_robot_controller/hagen_robot_controller.egg-info/SOURCES.txt'
+[0.999s] writing manifest file '../../build/hagen_robot_controller/hagen_robot_controller.egg-info/SOURCES.txt'
+[0.999s] running build
+[0.999s] running build_py
+[0.999s] running install
+[0.999s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.999s]   warnings.warn(
+[1.000s] running install_lib
+[1.001s] running install_data
+[1.001s] running install_egg_info
+[1.003s] removing '/home/rizo/ros2_intro/install/hagen_robot_controller/lib/python3.10/site-packages/hagen_robot_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[1.003s] Copying ../../build/hagen_robot_controller/hagen_robot_controller.egg-info to /home/rizo/ros2_intro/install/hagen_robot_controller/lib/python3.10/site-packages/hagen_robot_controller-0.0.0-py3.10.egg-info
+[1.004s] running install_scripts
+[1.021s] Installing robot_controller script to /home/rizo/ros2_intro/install/hagen_robot_controller/lib/hagen_robot_controller
+[1.021s] Installing robot_estimator script to /home/rizo/ros2_intro/install/hagen_robot_controller/lib/hagen_robot_controller
+[1.022s] writing list of installed files to '/home/rizo/ros2_intro/build/hagen_robot_controller/install.log'
+[1.041s] Invoked command in '/home/rizo/ros2_intro/hagen_robot/hagen_robot_controller' returned '0': PYTHONPATH=/home/rizo/ros2_intro/build/hagen_robot_controller/prefix_override:/home/rizo/ros2_intro/install/hagen_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hagen_robot_controller build --build-base /home/rizo/ros2_intro/build/hagen_robot_controller/build install --record /home/rizo/ros2_intro/build/hagen_robot_controller/install.log --single-version-externally-managed

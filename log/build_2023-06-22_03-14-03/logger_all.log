@@ -1,0 +1,633 @@
+[0.226s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.226s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f96c264dff0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f96c27f72e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f96c27f72e0>>)
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.249s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.249s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rizo/ros2_intro'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'colcon_pkg'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['colcon_meta']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'colcon_meta'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['ros']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'ros'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['cmake', 'python']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'cmake'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'python'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extensions ['python_setup_py']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(assets) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extension 'ros'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extensions ['cmake', 'python']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extension 'cmake'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extension 'python'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extensions ['python_setup_py']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(docker_image) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(friend_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(friend_msgs) by extension 'ignore'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(friend_msgs) by extension 'ignore_ament_install'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(friend_msgs) by extensions ['colcon_pkg']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(friend_msgs) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(friend_msgs) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(friend_msgs) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(friend_msgs) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(friend_msgs) by extension 'ros'
+[0.261s] DEBUG:colcon.colcon_core.package_identification:Package 'friend_msgs' with type 'ros.ament_cmake' and name 'friend_msgs'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extension 'ros'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extensions ['cmake', 'python']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extension 'cmake'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extension 'python'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extensions ['python_setup_py']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot) by extension 'python_setup_py'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_controller) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_controller) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_controller) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_controller) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_controller) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_controller) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_controller) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_controller) by extension 'ros'
+[0.263s] DEBUG:colcon.colcon_core.package_identification:Package 'hagen_robot/hagen_robot_controller' with type 'ros.ament_python' and name 'hagen_robot_controller'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_diff_drive) by extensions ['ignore', 'ignore_ament_install']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_diff_drive) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_diff_drive) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_diff_drive) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_diff_drive) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_diff_drive) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_diff_drive) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_diff_drive) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(hagen_robot/hagen_robot_diff_drive) by extension 'ros'
+[0.264s] DEBUG:colcon.colcon_core.package_identification:Package 'hagen_robot/hagen_robot_diff_drive' with type 'ros.ament_python' and name 'hagen_robot_diff_drive'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(hello_world) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(hello_world) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(hello_world) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(hello_world) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(hello_world) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(hello_world) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(hello_world) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(hello_world) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(hello_world) by extension 'ros'
+[0.264s] DEBUG:colcon.colcon_core.package_identification:Package 'hello_world' with type 'ros.ament_cmake' and name 'hello_world'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extension 'ros'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extensions ['cmake', 'python']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extension 'cmake'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extension 'python'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extensions ['python_setup_py']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework) by extension 'python_setup_py'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework/homework1) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework/homework1) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework/homework1) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework/homework1) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework/homework1) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(homework/homework1) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(homework/homework1) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(homework/homework1) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(homework/homework1) by extension 'ros'
+[0.266s] DEBUG:colcon.colcon_core.package_identification:Package 'homework/homework1' with type 'ros.ament_cmake' and name 'homework1'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extension 'ros'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extensions ['cmake', 'python']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extension 'cmake'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extension 'python'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extensions ['python_setup_py']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(lectures) by extension 'python_setup_py'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_composition) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_composition) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_composition) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_composition) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_composition) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_composition) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_composition) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_composition) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_composition) by extension 'ros'
+[0.268s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_composition' with type 'ros.ament_cmake' and name 'ros2_composition'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_debug_logging) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_debug_logging) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_debug_logging) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_debug_logging) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_debug_logging) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_debug_logging) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_debug_logging) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_debug_logging) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_debug_logging) by extension 'ros'
+[0.268s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_debug_logging' with type 'ros.ament_cmake' and name 'ros2_debug_logging'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_visualize) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_visualize) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_visualize) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_visualize) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_visualize) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_visualize) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_visualize) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_visualize) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_visualize) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_visualize' with type 'ros.ament_cmake' and name 'ros2_visualize'
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.287s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.287s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.289s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/rizo/iros/install
+[0.291s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 314 installed packages in /opt/ros/humble
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'friend_msgs' build argument 'cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'friend_msgs' build argument 'cmake_target' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'friend_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'friend_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'friend_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'friend_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'friend_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'friend_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.339s] Level 5:colcon.colcon_core.verb:set package 'friend_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.339s] DEBUG:colcon.colcon_core.verb:Building package 'friend_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rizo/ros2_intro/build/friend_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rizo/ros2_intro/install/friend_msgs', 'merge_install': False, 'path': '/home/rizo/ros2_intro/friend_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_controller' build argument 'cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_controller' build argument 'cmake_target' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.340s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.340s] DEBUG:colcon.colcon_core.verb:Building package 'hagen_robot_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rizo/ros2_intro/build/hagen_robot_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rizo/ros2_intro/install/hagen_robot_controller', 'merge_install': False, 'path': '/home/rizo/ros2_intro/hagen_robot/hagen_robot_controller', 'symlink_install': False, 'test_result_base': None}
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_diff_drive' build argument 'cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_diff_drive' build argument 'cmake_target' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_diff_drive' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_diff_drive' build argument 'cmake_clean_cache' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_diff_drive' build argument 'cmake_clean_first' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_diff_drive' build argument 'cmake_force_configure' from command line to 'False'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_diff_drive' build argument 'ament_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_diff_drive' build argument 'catkin_cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'hagen_robot_diff_drive' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.341s] DEBUG:colcon.colcon_core.verb:Building package 'hagen_robot_diff_drive' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rizo/ros2_intro/build/hagen_robot_diff_drive', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rizo/ros2_intro/install/hagen_robot_diff_drive', 'merge_install': False, 'path': '/home/rizo/ros2_intro/hagen_robot/hagen_robot_diff_drive', 'symlink_install': False, 'test_result_base': None}
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'homework1' build argument 'cmake_args' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'homework1' build argument 'cmake_target' from command line to 'None'
+[0.341s] Level 5:colcon.colcon_core.verb:set package 'homework1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'homework1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'homework1' build argument 'cmake_clean_first' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'homework1' build argument 'cmake_force_configure' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'homework1' build argument 'ament_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'homework1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'homework1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.342s] DEBUG:colcon.colcon_core.verb:Building package 'homework1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rizo/ros2_intro/build/homework1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rizo/ros2_intro/install/homework1', 'merge_install': False, 'path': '/home/rizo/ros2_intro/homework/homework1', 'symlink_install': False, 'test_result_base': None}
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'ros2_debug_logging' build argument 'cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'ros2_debug_logging' build argument 'cmake_target' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'ros2_debug_logging' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'ros2_debug_logging' build argument 'cmake_clean_cache' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'ros2_debug_logging' build argument 'cmake_clean_first' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'ros2_debug_logging' build argument 'cmake_force_configure' from command line to 'False'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'ros2_debug_logging' build argument 'ament_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'ros2_debug_logging' build argument 'catkin_cmake_args' from command line to 'None'
+[0.342s] Level 5:colcon.colcon_core.verb:set package 'ros2_debug_logging' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.343s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_debug_logging' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rizo/ros2_intro/build/ros2_debug_logging', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rizo/ros2_intro/install/ros2_debug_logging', 'merge_install': False, 'path': '/home/rizo/ros2_intro/ros2_debug_logging', 'symlink_install': False, 'test_result_base': None}
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_visualize' build argument 'cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_visualize' build argument 'cmake_target' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_visualize' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_visualize' build argument 'cmake_clean_cache' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_visualize' build argument 'cmake_clean_first' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_visualize' build argument 'cmake_force_configure' from command line to 'False'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_visualize' build argument 'ament_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_visualize' build argument 'catkin_cmake_args' from command line to 'None'
+[0.343s] Level 5:colcon.colcon_core.verb:set package 'ros2_visualize' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.343s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_visualize' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rizo/ros2_intro/build/ros2_visualize', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rizo/ros2_intro/install/ros2_visualize', 'merge_install': False, 'path': '/home/rizo/ros2_intro/ros2_visualize', 'symlink_install': False, 'test_result_base': None}
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hello_world' build argument 'cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hello_world' build argument 'cmake_target' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hello_world' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hello_world' build argument 'cmake_clean_cache' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hello_world' build argument 'cmake_clean_first' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hello_world' build argument 'cmake_force_configure' from command line to 'False'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hello_world' build argument 'ament_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hello_world' build argument 'catkin_cmake_args' from command line to 'None'
+[0.344s] Level 5:colcon.colcon_core.verb:set package 'hello_world' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.344s] DEBUG:colcon.colcon_core.verb:Building package 'hello_world' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rizo/ros2_intro/build/hello_world', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rizo/ros2_intro/install/hello_world', 'merge_install': False, 'path': '/home/rizo/ros2_intro/hello_world', 'symlink_install': False, 'test_result_base': None}
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_composition' build argument 'cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_composition' build argument 'cmake_target' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_composition' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_composition' build argument 'cmake_clean_cache' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_composition' build argument 'cmake_clean_first' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_composition' build argument 'cmake_force_configure' from command line to 'False'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_composition' build argument 'ament_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_composition' build argument 'catkin_cmake_args' from command line to 'None'
+[0.345s] Level 5:colcon.colcon_core.verb:set package 'ros2_composition' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.345s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_composition' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rizo/ros2_intro/build/ros2_composition', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rizo/ros2_intro/install/ros2_composition', 'merge_install': False, 'path': '/home/rizo/ros2_intro/ros2_composition', 'symlink_install': False, 'test_result_base': None}
+[0.346s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.348s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.348s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rizo/ros2_intro/friend_msgs' with build type 'ament_cmake'
+[0.349s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rizo/ros2_intro/friend_msgs'
+[0.353s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.353s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.353s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.358s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rizo/ros2_intro/hagen_robot/hagen_robot_controller' with build type 'ament_python'
+[0.358s] Level 1:colcon.colcon_core.shell:create_environment_hook('hagen_robot_controller', 'ament_prefix_path')
+[0.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/hagen_robot_controller/share/hagen_robot_controller/hook/ament_prefix_path.ps1'
+[0.360s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/hagen_robot_controller/share/hagen_robot_controller/hook/ament_prefix_path.dsv'
+[0.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/hagen_robot_controller/share/hagen_robot_controller/hook/ament_prefix_path.sh'
+[0.362s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.362s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.367s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rizo/ros2_intro/hagen_robot/hagen_robot_diff_drive' with build type 'ament_python'
+[0.367s] Level 1:colcon.colcon_core.shell:create_environment_hook('hagen_robot_diff_drive', 'ament_prefix_path')
+[0.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/share/hagen_robot_diff_drive/hook/ament_prefix_path.ps1'
+[0.369s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/share/hagen_robot_diff_drive/hook/ament_prefix_path.dsv'
+[0.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/share/hagen_robot_diff_drive/hook/ament_prefix_path.sh'
+[0.371s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.371s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.375s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rizo/ros2_intro/homework/homework1' with build type 'ament_cmake'
+[0.375s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rizo/ros2_intro/homework/homework1'
+[0.376s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.376s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.381s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rizo/ros2_intro/ros2_debug_logging' with build type 'ament_cmake'
+[0.381s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rizo/ros2_intro/ros2_debug_logging'
+[0.382s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.382s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.387s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rizo/ros2_intro/ros2_visualize' with build type 'ament_cmake'
+[0.387s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rizo/ros2_intro/ros2_visualize'
+[0.388s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.388s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.398s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/build/friend_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/friend_msgs -- -j12 -l12
+[0.598s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rizo/ros2_intro/hagen_robot/hagen_robot_controller'
+[0.599s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.599s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.792s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rizo/ros2_intro/hagen_robot/hagen_robot_diff_drive'
+[0.793s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.794s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.799s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/build/homework1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/homework1 -- -j12 -l12
+[0.801s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/build/ros2_debug_logging': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/ros2_debug_logging -- -j12 -l12
+[0.807s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/build/ros2_visualize': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/ros2_visualize -- -j12 -l12
+[0.808s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/build/friend_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/friend_msgs -- -j12 -l12
+[0.851s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/build/homework1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/homework1 -- -j12 -l12
+[0.859s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/build/ros2_debug_logging' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/ros2_debug_logging -- -j12 -l12
+[0.881s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/build/homework1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/homework1
+[0.884s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/build/ros2_debug_logging': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/ros2_debug_logging
+[0.885s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/build/ros2_visualize' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rizo/ros2_intro/build/ros2_visualize -- -j12 -l12
+[0.889s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(homework1)
+[0.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/build/homework1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/homework1
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1' for CMake module files
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1' for CMake config files
+[0.898s] Level 1:colcon.colcon_core.shell:create_environment_hook('homework1', 'cmake_prefix_path')
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/homework1/share/homework1/hook/cmake_prefix_path.ps1'
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/homework1/share/homework1/hook/cmake_prefix_path.dsv'
+[0.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/homework1/share/homework1/hook/cmake_prefix_path.sh'
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1/lib'
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1/bin'
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1/lib/pkgconfig/homework1.pc'
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1/lib/python3.10/site-packages'
+[0.900s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1/bin'
+[0.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/homework1/share/homework1/package.ps1'
+[0.902s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/homework1/share/homework1/package.dsv'
+[0.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/homework1/share/homework1/package.sh'
+[0.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/homework1/share/homework1/package.bash'
+[0.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/homework1/share/homework1/package.zsh'
+[0.904s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/homework1/share/colcon-core/packages/homework1)
+[0.907s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/build/friend_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/friend_msgs
+[0.907s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_debug_logging)
+[0.910s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging' for CMake module files
+[0.911s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/build/ros2_debug_logging' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/ros2_debug_logging
+[0.911s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging' for CMake config files
+[0.911s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_debug_logging', 'cmake_prefix_path')
+[0.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/hook/cmake_prefix_path.ps1'
+[0.914s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/hook/cmake_prefix_path.dsv'
+[0.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/hook/cmake_prefix_path.sh'
+[0.916s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging/lib'
+[0.917s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging/bin'
+[0.917s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging/lib/pkgconfig/ros2_debug_logging.pc'
+[0.917s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging/lib/python3.10/site-packages'
+[0.918s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging/bin'
+[0.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/package.ps1'
+[0.921s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/package.dsv'
+[0.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/package.sh'
+[0.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/package.bash'
+[0.923s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/package.zsh'
+[0.924s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/ros2_debug_logging/share/colcon-core/packages/ros2_debug_logging)
+[0.930s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(homework1)
+[0.933s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1' for CMake module files
+[0.935s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1' for CMake config files
+[0.941s] Level 1:colcon.colcon_core.shell:create_environment_hook('homework1', 'cmake_prefix_path')
+[0.943s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/homework1/share/homework1/hook/cmake_prefix_path.ps1'
+[0.944s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/homework1/share/homework1/hook/cmake_prefix_path.dsv'
+[0.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/homework1/share/homework1/hook/cmake_prefix_path.sh'
+[0.946s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1/lib'
+[0.946s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1/bin'
+[0.947s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1/lib/pkgconfig/homework1.pc'
+[0.947s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1/lib/python3.10/site-packages'
+[0.947s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/homework1/bin'
+[0.948s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/homework1/share/homework1/package.ps1'
+[0.949s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/homework1/share/homework1/package.dsv'
+[0.950s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/homework1/share/homework1/package.sh'
+[0.951s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/homework1/share/homework1/package.bash'
+[0.951s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/build/ros2_visualize': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/ros2_visualize
+[0.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/homework1/share/homework1/package.zsh'
+[0.953s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/homework1/share/colcon-core/packages/homework1)
+[0.955s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_visualize)
+[0.956s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize' for CMake module files
+[0.961s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize' for CMake config files
+[0.963s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_visualize', 'cmake_prefix_path')
+[0.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/hook/cmake_prefix_path.ps1'
+[0.965s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/hook/cmake_prefix_path.dsv'
+[0.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/hook/cmake_prefix_path.sh'
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize/lib'
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize/bin'
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize/lib/pkgconfig/ros2_visualize.pc'
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize/lib/python3.10/site-packages'
+[0.967s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize/bin'
+[0.969s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/package.ps1'
+[0.969s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/package.dsv'
+[0.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/build/ros2_visualize' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/ros2_visualize
+[0.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/package.sh'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/package.bash'
+[0.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/package.zsh'
+[0.971s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/ros2_visualize/share/colcon-core/packages/ros2_visualize)
+[0.973s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(friend_msgs)
+[0.976s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs' for CMake module files
+[0.977s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/build/friend_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/rizo/ros2_intro/build/friend_msgs
+[0.978s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs' for CMake config files
+[0.978s] Level 1:colcon.colcon_core.shell:create_environment_hook('friend_msgs', 'cmake_prefix_path')
+[0.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/hook/cmake_prefix_path.ps1'
+[0.981s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/hook/cmake_prefix_path.dsv'
+[0.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/hook/cmake_prefix_path.sh'
+[0.982s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs/lib'
+[0.982s] Level 1:colcon.colcon_core.shell:create_environment_hook('friend_msgs', 'ld_library_path_lib')
+[0.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/hook/ld_library_path_lib.ps1'
+[0.984s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/hook/ld_library_path_lib.dsv'
+[0.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/hook/ld_library_path_lib.sh'
+[0.985s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs/bin'
+[0.985s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs/lib/pkgconfig/friend_msgs.pc'
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs/lib/python3.10/site-packages'
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs/bin'
+[0.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/package.ps1'
+[0.988s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/package.dsv'
+[0.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/package.sh'
+[0.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/package.bash'
+[0.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/package.zsh'
+[0.990s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/friend_msgs/share/colcon-core/packages/friend_msgs)
+[0.993s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_debug_logging)
+[0.996s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging' for CMake module files
+[0.997s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging' for CMake config files
+[0.997s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_debug_logging', 'cmake_prefix_path')
+[0.999s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/hook/cmake_prefix_path.ps1'
+[1.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/hook/cmake_prefix_path.dsv'
+[1.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/hook/cmake_prefix_path.sh'
+[1.000s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging/lib'
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging/bin'
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging/lib/pkgconfig/ros2_debug_logging.pc'
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging/lib/python3.10/site-packages'
+[1.001s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_debug_logging/bin'
+[1.003s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/package.ps1'
+[1.004s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/package.dsv'
+[1.004s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/package.sh'
+[1.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/package.bash'
+[1.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_debug_logging/share/ros2_debug_logging/package.zsh'
+[1.006s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/ros2_debug_logging/share/colcon-core/packages/ros2_debug_logging)
+[1.010s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_visualize)
+[1.013s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize' for CMake module files
+[1.014s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize' for CMake config files
+[1.014s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_visualize', 'cmake_prefix_path')
+[1.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/hook/cmake_prefix_path.ps1'
+[1.017s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/hook/cmake_prefix_path.dsv'
+[1.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/hook/cmake_prefix_path.sh'
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize/lib'
+[1.018s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize/bin'
+[1.019s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize/lib/pkgconfig/ros2_visualize.pc'
+[1.019s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize/lib/python3.10/site-packages'
+[1.019s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_visualize/bin'
+[1.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/package.ps1'
+[1.022s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/package.dsv'
+[1.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/package.sh'
+[1.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/package.bash'
+[1.024s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_visualize/share/ros2_visualize/package.zsh'
+[1.024s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/ros2_visualize/share/colcon-core/packages/ros2_visualize)
+[1.064s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(friend_msgs)
+[1.067s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs' for CMake module files
+[1.068s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs' for CMake config files
+[1.068s] Level 1:colcon.colcon_core.shell:create_environment_hook('friend_msgs', 'cmake_prefix_path')
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/hook/cmake_prefix_path.ps1'
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/hook/cmake_prefix_path.dsv'
+[1.071s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/hook/cmake_prefix_path.sh'
+[1.071s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs/lib'
+[1.071s] Level 1:colcon.colcon_core.shell:create_environment_hook('friend_msgs', 'ld_library_path_lib')
+[1.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/hook/ld_library_path_lib.ps1'
+[1.074s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/hook/ld_library_path_lib.dsv'
+[1.074s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/hook/ld_library_path_lib.sh'
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs/bin'
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs/lib/pkgconfig/friend_msgs.pc'
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs/lib/python3.10/site-packages'
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/friend_msgs/bin'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/package.ps1'
+[1.078s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/package.dsv'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/package.sh'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/package.bash'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/friend_msgs/share/friend_msgs/package.zsh'
+[1.080s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/friend_msgs/share/colcon-core/packages/friend_msgs)
+[1.080s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rizo/ros2_intro/hello_world' with build type 'ament_cmake'
+[1.081s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rizo/ros2_intro/hello_world'
+[1.083s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.083s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.090s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rizo/ros2_intro/ros2_composition' with build type 'ament_cmake'
+[1.091s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rizo/ros2_intro/ros2_composition'
+[1.093s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.094s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.108s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/build/hello_world': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rizo/ros2_intro/build/hello_world -- -j12 -l12
+[1.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/build/ros2_composition': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rizo/ros2_intro/build/ros2_composition -- -j12 -l12
+[1.131s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/hagen_robot/hagen_robot_controller': PYTHONPATH=/home/rizo/ros2_intro/build/hagen_robot_controller/prefix_override:/home/rizo/ros2_intro/install/hagen_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hagen_robot_controller build --build-base /home/rizo/ros2_intro/build/hagen_robot_controller/build install --record /home/rizo/ros2_intro/build/hagen_robot_controller/install.log --single-version-externally-managed
+[1.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/build/hello_world' returned '0': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rizo/ros2_intro/build/hello_world -- -j12 -l12
+[1.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/hagen_robot/hagen_robot_diff_drive': PYTHONPATH=/home/rizo/ros2_intro/build/hagen_robot_diff_drive/prefix_override:/home/rizo/ros2_intro/install/hagen_robot_diff_drive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hagen_robot_diff_drive build --build-base /home/rizo/ros2_intro/build/hagen_robot_diff_drive/build install --record /home/rizo/ros2_intro/build/hagen_robot_diff_drive/install.log --single-version-externally-managed
+[1.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/build/ros2_composition' returned '0': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/rizo/ros2_intro/build/ros2_composition -- -j12 -l12
+[1.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/build/hello_world': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rizo/ros2_intro/build/hello_world
+[1.212s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hello_world)
+[1.213s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world' for CMake module files
+[1.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/build/hello_world' returned '0': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rizo/ros2_intro/build/hello_world
+[1.214s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world' for CMake config files
+[1.215s] Level 1:colcon.colcon_core.shell:create_environment_hook('hello_world', 'cmake_prefix_path')
+[1.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/hello_world/share/hello_world/hook/cmake_prefix_path.ps1'
+[1.216s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/hello_world/share/hello_world/hook/cmake_prefix_path.dsv'
+[1.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/hello_world/share/hello_world/hook/cmake_prefix_path.sh'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world/lib'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world/bin'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world/lib/pkgconfig/hello_world.pc'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world/lib/python3.10/site-packages'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world/bin'
+[1.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hello_world/share/hello_world/package.ps1'
+[1.219s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/hello_world/share/hello_world/package.dsv'
+[1.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hello_world/share/hello_world/package.sh'
+[1.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hello_world/share/hello_world/package.bash'
+[1.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hello_world/share/hello_world/package.zsh'
+[1.220s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/hello_world/share/colcon-core/packages/hello_world)
+[1.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rizo/ros2_intro/build/ros2_composition': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rizo/ros2_intro/build/ros2_composition
+[1.233s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_composition)
+[1.235s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition' for CMake module files
+[1.235s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/build/ros2_composition' returned '0': AMENT_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rizo/ros2_intro/install/friend_msgs:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/rizo/ros2_intro/install/friend_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rizo/ros2_intro/install/friend_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/rizo/ros2_intro/build/ros2_composition
+[1.236s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition' for CMake config files
+[1.236s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_composition', 'cmake_prefix_path')
+[1.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/hook/cmake_prefix_path.ps1'
+[1.237s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/hook/cmake_prefix_path.dsv'
+[1.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/hook/cmake_prefix_path.sh'
+[1.238s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition/lib'
+[1.238s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_composition', 'ld_library_path_lib')
+[1.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/hook/ld_library_path_lib.ps1'
+[1.239s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/hook/ld_library_path_lib.dsv'
+[1.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/hook/ld_library_path_lib.sh'
+[1.240s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition/bin'
+[1.240s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition/lib/pkgconfig/ros2_composition.pc'
+[1.240s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition/lib/python3.10/site-packages'
+[1.240s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition/bin'
+[1.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/package.ps1'
+[1.242s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/package.dsv'
+[1.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/package.sh'
+[1.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/package.bash'
+[1.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/package.zsh'
+[1.243s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/ros2_composition/share/colcon-core/packages/ros2_composition)
+[1.247s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hello_world)
+[1.249s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world' for CMake module files
+[1.250s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world' for CMake config files
+[1.250s] Level 1:colcon.colcon_core.shell:create_environment_hook('hello_world', 'cmake_prefix_path')
+[1.252s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/hello_world/share/hello_world/hook/cmake_prefix_path.ps1'
+[1.253s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/hello_world/share/hello_world/hook/cmake_prefix_path.dsv'
+[1.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/hello_world/share/hello_world/hook/cmake_prefix_path.sh'
+[1.254s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world/lib'
+[1.254s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world/bin'
+[1.254s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world/lib/pkgconfig/hello_world.pc'
+[1.254s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world/lib/python3.10/site-packages'
+[1.255s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hello_world/bin'
+[1.257s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hello_world/share/hello_world/package.ps1'
+[1.258s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/hello_world/share/hello_world/package.dsv'
+[1.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hello_world/share/hello_world/package.sh'
+[1.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hello_world/share/hello_world/package.bash'
+[1.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hello_world/share/hello_world/package.zsh'
+[1.260s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/hello_world/share/colcon-core/packages/hello_world)
+[1.270s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_composition)
+[1.273s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition' for CMake module files
+[1.274s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition' for CMake config files
+[1.274s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_composition', 'cmake_prefix_path')
+[1.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/hook/cmake_prefix_path.ps1'
+[1.277s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/hook/cmake_prefix_path.dsv'
+[1.277s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/hook/cmake_prefix_path.sh'
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition/lib'
+[1.278s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_composition', 'ld_library_path_lib')
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/hook/ld_library_path_lib.ps1'
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/hook/ld_library_path_lib.dsv'
+[1.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/hook/ld_library_path_lib.sh'
+[1.282s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition/bin'
+[1.282s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition/lib/pkgconfig/ros2_composition.pc'
+[1.283s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition/lib/python3.10/site-packages'
+[1.283s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/ros2_composition/bin'
+[1.285s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/package.ps1'
+[1.286s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/package.dsv'
+[1.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/package.sh'
+[1.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/package.bash'
+[1.287s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/ros2_composition/share/ros2_composition/package.zsh'
+[1.288s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/ros2_composition/share/colcon-core/packages/ros2_composition)
+[1.399s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_controller' for CMake module files
+[1.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/hagen_robot/hagen_robot_controller' returned '0': PYTHONPATH=/home/rizo/ros2_intro/build/hagen_robot_controller/prefix_override:/home/rizo/ros2_intro/install/hagen_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hagen_robot_controller build --build-base /home/rizo/ros2_intro/build/hagen_robot_controller/build install --record /home/rizo/ros2_intro/build/hagen_robot_controller/install.log --single-version-externally-managed
+[1.399s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_controller' for CMake config files
+[1.400s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_controller/lib'
+[1.400s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_controller/bin'
+[1.400s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_controller/lib/pkgconfig/hagen_robot_controller.pc'
+[1.400s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_controller/lib/python3.10/site-packages'
+[1.400s] Level 1:colcon.colcon_core.shell:create_environment_hook('hagen_robot_controller', 'pythonpath')
+[1.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/hagen_robot_controller/share/hagen_robot_controller/hook/pythonpath.ps1'
+[1.402s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/hagen_robot_controller/share/hagen_robot_controller/hook/pythonpath.dsv'
+[1.402s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/hagen_robot_controller/share/hagen_robot_controller/hook/pythonpath.sh'
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_controller/bin'
+[1.403s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hagen_robot_controller)
+[1.404s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hagen_robot_controller/share/hagen_robot_controller/package.ps1'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/hagen_robot_controller/share/hagen_robot_controller/package.dsv'
+[1.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hagen_robot_controller/share/hagen_robot_controller/package.sh'
+[1.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hagen_robot_controller/share/hagen_robot_controller/package.bash'
+[1.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hagen_robot_controller/share/hagen_robot_controller/package.zsh'
+[1.406s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/hagen_robot_controller/share/colcon-core/packages/hagen_robot_controller)
+[1.448s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_diff_drive' for CMake module files
+[1.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rizo/ros2_intro/hagen_robot/hagen_robot_diff_drive' returned '0': PYTHONPATH=/home/rizo/ros2_intro/build/hagen_robot_diff_drive/prefix_override:/home/rizo/ros2_intro/install/hagen_robot_diff_drive/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/hagen_robot_diff_drive build --build-base /home/rizo/ros2_intro/build/hagen_robot_diff_drive/build install --record /home/rizo/ros2_intro/build/hagen_robot_diff_drive/install.log --single-version-externally-managed
+[1.448s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_diff_drive' for CMake config files
+[1.449s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/lib'
+[1.449s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/bin'
+[1.449s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/lib/pkgconfig/hagen_robot_diff_drive.pc'
+[1.449s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/lib/python3.10/site-packages'
+[1.449s] Level 1:colcon.colcon_core.shell:create_environment_hook('hagen_robot_diff_drive', 'pythonpath')
+[1.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/share/hagen_robot_diff_drive/hook/pythonpath.ps1'
+[1.451s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/share/hagen_robot_diff_drive/hook/pythonpath.dsv'
+[1.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/share/hagen_robot_diff_drive/hook/pythonpath.sh'
+[1.452s] Level 1:colcon.colcon_core.environment:checking '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/bin'
+[1.452s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hagen_robot_diff_drive)
+[1.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/share/hagen_robot_diff_drive/package.ps1'
+[1.453s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/share/hagen_robot_diff_drive/package.dsv'
+[1.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/share/hagen_robot_diff_drive/package.sh'
+[1.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/share/hagen_robot_diff_drive/package.bash'
+[1.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/rizo/ros2_intro/install/hagen_robot_diff_drive/share/hagen_robot_diff_drive/package.zsh'
+[1.455s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rizo/ros2_intro/install/hagen_robot_diff_drive/share/colcon-core/packages/hagen_robot_diff_drive)
+[1.455s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.455s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.455s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.455s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.461s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.461s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.461s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.472s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.474s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rizo/ros2_intro/install/local_setup.ps1'
+[1.475s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rizo/ros2_intro/install/_local_setup_util_ps1.py'
+[1.476s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rizo/ros2_intro/install/setup.ps1'
+[1.477s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rizo/ros2_intro/install/local_setup.sh'
+[1.478s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rizo/ros2_intro/install/_local_setup_util_sh.py'
+[1.478s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rizo/ros2_intro/install/setup.sh'
+[1.479s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rizo/ros2_intro/install/local_setup.bash'
+[1.480s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rizo/ros2_intro/install/setup.bash'
+[1.481s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rizo/ros2_intro/install/local_setup.zsh'
+[1.481s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rizo/ros2_intro/install/setup.zsh'
