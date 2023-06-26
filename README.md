@@ -21,6 +21,7 @@
     - [**`rclcpp::Executor`**](#rclcppexecutor)
     - [**`rclcpp::shutdown()`**](#rclcppshutdown)
     - [**Creating/Running packages**:](#creatingrunning-packages)
+  - [interfaces](#interfaces)
   - [Docker](#docker)
     - [Why Docker instead of usual installation?](#why-docker-instead-of-usual-installation)
     - [Creating docker container](#creating-docker-container)
@@ -615,6 +616,170 @@ Using `std::bind` in this context allows you to bind member functions to callbac
 - **py**: `~/ros2_ws/src$ ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy`
 - `colcon build` when you make changes, run that command in your workspace
 - **2 nodes can't have the same name** 
+
+## **interfaces**
+- ROS applications typically communicate through interfaces of one of three types: *topics*, *services*, or *actions*.
+- ROS 2 uses a simplified description language, the interface definition language (IDL), to describe these interfaces. This description makes it easy for ROS tools to automatically generate source code for the interface type in several target languages.
+### Messages
+- Messages are a way for a ROS 2 node to send data on the network to other ROS nodes, with no response expected. For instance, if a ROS 2 node reads temperature data from a sensor, it can then publish that data on the ROS 2 network using a Temperature message. Other nodes on the ROS 2 network can subscribe to that data and receive the Temperature message.
+- Messages are described and defined in `.msg` files in the `msg/` directory of a ROS package
+- `.msg` files are composed of 2 parts:
+  1. fields
+  2. constants
+  ```c++
+  fieldtype fieldname fielddefaultvalue
+  int32 my_int
+  string my_string
+  ```
+- Field types can be:
+  1. a built-in-type
+  2. names of Message descriptions defined on their own, such as `geometry_msgs/PoseStamped`
+```c++
+  int32[] unbounded_integer_array
+  int32[5] five_integers_array
+  int32[<=5] up_to_five_integers_array
+
+  string string_of_unbounded_size
+  string<=10 up_to_ten_characters_string
+
+  string[<=5] up_to_five_unbounded_strings
+  string<=10[] unbounded_array_of_strings_up_to_ten_characters_each
+  string<=10[<=5] up_to_five_strings_up_to_ten_characters_each
+  ```
+- Field names:
+  1. must be *lowercase* alphanumeric characters with underscores (`_`) for separating words
+  2. start with an alphabetic character
+  3. not end with an underscore (`_`) or have two consecutive underscores (`__`)
+
+- Constants:
+  1. names have to be UPPERCASE
+  2. value assignment is indicated by use of an equal `=` sign
+  3. `constanttype CONSTANTNAME=constantvalue`
+<div style="text-align: center;">
+  <img src="assets/built_in_types.png" alt="Alt Text">
+</div>
+<div style="text-align: center;">
+  <img src="assets/array.png" alt="Alt Text">
+</div>
+
+### Services
+- request/response communication, where the client (requester) is waiting for the server (responder) to make a short computation and return a result
+- defined in `.srv` files in the `srv/` directory of a ROS package.
+- consists of a `request` and a `response` `msg` type, separated by `---`
+  ```C++
+  # request constants
+  int8 FOO=1
+  int8 BAR=2
+  # request fields
+  int8 foobar
+  another_pkg/AnotherMessage msg
+  ---
+  # response constants
+  uint32 SECRET=123456
+  # response fields
+  another_pkg/YetAnotherMessage val
+  CustomMessageDefinedInThisPackage value
+  uint32 an_integer
+  ```
+- **You cannot embed another service inside of a service**
+
+
+### Actions
+- Actions are a long-running `request/response` communication, where the action `client` (requester) is waiting for the action `server` (the responder) to take some action and return a result.
+- In contrast to services, actions can be long-running (many seconds or minutes), provide feedback while they are happening, and can be interrupted.
+- There can be arbitrary numbers of request fields (including zero), arbitrary numbers of response fields (including zero), and arbitrary numbers of feedback fields (including zero).
+  ```C++
+  int32 order
+  ---
+  int32[] sequence
+  ---
+  int32[] sequence
+  ```
+- This is an action definition where the action client is sending a single int32 field representing the number of Fibonacci steps to take, and expecting the action server to produce an array of int32 containing the complete steps. Along the way, the action server may also provide an intermediate array of int32 contains the steps accomplished up until a certain point.
+
+### package.xml
+- `<build_depend>` This tag is used to specify dependencies that are required for building the package. It includes any packages or libraries that are needed during the build process to compile the source code, generate interfaces, or perform other build-related tasks. These dependencies are typically build-time only and are not required during runtime.
+- `<depend>` This tag is used to specify runtime dependencies of the package. It includes other packages or libraries that your package depends on during its execution or when it is used as a dependency by other packages. These dependencies are needed for the package to function correctly during runtime.
+### `example_interfaces/msg`:
+- basic msgs are there
+<div style="text-align: center;">
+  <img src="assets/std_types.png" alt="Alt Text">
+</div>
+
+## services
+- another method of communication between nodes
+- based on a call-and-response model
+- provide data when specifically requested
+- services are served by `servers` and used by `clients`
+  ```
+  [service client]--------------[service]--------------[service servers]
+  | node2        |              |req -> |              |         node1 |
+                                |res <- |
+  ```
+- Services have types that describe how the request and response data of a service is structured
+- have two parts: (1) message for the request and (2) for the response.
+```bash
+# 1. to see the type of the service
+ros2 service type <service_name>
+
+# 2. to see the types of all the active services
+ros2 service list -t
+
+# 3. to find all the services of a specific type
+ros2 service find <type_name>
+
+# 4. to know the structure of the input arguments of .srv
+ros2 interface show <type_name>
+
+# 5. to can call a service
+ros2 service call <service_name> <service_type> <arguments>
+# <arguments> in a service call from the command-line need to be in YAML syntax
+
+# 6. To see the parameters belonging to your nodes
+ros2 param list
+
+/teleop_turtle:
+  qos_overrides./parameter_events.publisher.depth
+  qos_overrides./parameter_events.publisher.durability
+  qos_overrides./parameter_events.publisher.history
+  qos_overrides./parameter_events.publisher.reliability
+  scale_angular
+  scale_linear
+  use_sim_time
+/turtlesim:
+  background_b
+  background_g
+  background_r
+  qos_overrides./parameter_events.publisher.depth
+  qos_overrides./parameter_events.publisher.durability
+  qos_overrides./parameter_events.publisher.history
+  qos_overrides./parameter_events.publisher.reliability
+  use_sim_time
+
+# 7. To determine a parameter’s type
+ros2 param get
+
+# 8. Let’s find out the current value of /turtlesim’s parameter background_g
+ros2 param get /turtlesim background_g
+
+# 9. To change a parameter’s value at runtime, use the command
+ros2 param set <node_name> <parameter_name> <value>
+
+# 10. To view all of a node’s current parameter values
+ros2 param dump <node_name>
+
+# 11. To save your current configuration of /turtlesim’s parameters into the file turtlesim.yaml
+ros2 param dump /turtlesim > turtlesim.yaml
+
+# 12. load parameters from a file to a currently running node 
+ros2 param load /turtlesim turtlesim.yaml
+
+# 13. To start the same node using your saved parameter values
+ros2 run turtlesim turtlesim_node --ros-args --params-file turtlesim.yaml
+
+```
+
+
 
 ## Docker
 <div style="text-align: center;">

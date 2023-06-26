@@ -52,6 +52,7 @@ class Commander : public rclcpp::Node {
             std_msgs::msg::Bool msg;
             msg.data = dones[i];
             turtles_is_done_pub[i]->publish(msg);
+            RCLCPP_INFO(this->get_logger(), "Published");
         }
 
         bool start_flag = false;
