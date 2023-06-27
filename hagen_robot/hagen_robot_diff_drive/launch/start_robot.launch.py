@@ -26,6 +26,10 @@ def generate_launch_description():
     spawn_entity = Node(package='hagen_robot_diff_drive', executable='spawn_robot',
                         arguments=['HagenRobot', 'hagen_robot', '0.0', '0.0', '0.0'],
                         output='screen')
+    
+    diff_drive_control = Node(package='hagen_robot_diff_drive', executable='diff_drive_control',
+                        arguments=['HagenRobot', 'hagen_robot', '0.0', '0.0', '0.0'],
+                        output='screen')
  
     return LaunchDescription([
         gazebo,

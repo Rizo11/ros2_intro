@@ -34,18 +34,47 @@ class Commander : public rclcpp::Node {
 
         template<int turtle_num>
         void turtleTraj(float t){
-            geometry_msgs::msg::Twist msg;
-            msg.linear.x = 0;
-            msg.linear.y = 0;
-            msg.linear.z = 0;
-            msg.angular.x = 0;
-            msg.angular.y = 0;
-            msg.angular.z = 1;
-            if(t >= 5){
-                msg.angular.z = 0;
-                dones[turtle_num-1] = true;
+
+            if (turtle_num == 3)
+            {
+                geometry_msgs::msg::Twist msg;
+                msg.linear.x = 0;
+                msg.linear.y = 0;
+                msg.linear.z = 0;
+                msg.angular.x = 0;
+                msg.angular.y = 0;
+                msg.angular.z = 1;
+                if(t >= 10){
+                    msg.angular.z = 0;
+                    dones[turtle_num-1] = true;
+                }
+                turtles_pub[turtle_num-1]->publish(msg);
             }
-            turtles_pub[turtle_num-1]->publish(msg);
+            else
+            {
+                geometry_msgs::msg::Twist msg;
+                if (int(t) % 4 <= 1)
+                {
+                    msg.linear.x = 1;
+                    msg.linear.y = 0;
+                    msg.linear.z = 0;
+                    msg.angular.x = 0;
+                    msg.angular.y = 0;
+                    msg.angular.z = 0.0;
+                }
+                else
+                {
+                    msg.linear.x = -1;
+                    msg.linear.y = 0;
+                    msg.linear.z = 0;
+                    msg.angular.x = 0;
+                    msg.angular.y = 0;
+                    msg.angular.z = 0.0;
+                    dones[turtle_num-1] = true;
+                }
+                turtles_pub[turtle_num-1]->publish(msg);
+            }
+
         }
 
         void publishDone(int i){
