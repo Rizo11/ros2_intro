@@ -1,0 +1,4 @@
+source;share/buggy/local_setup.bash
+source;share/buggy/local_setup.dsv
+source;share/buggy/local_setup.sh
+source;share/buggy/local_setup.zsh

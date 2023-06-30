@@ -1,0 +1,4 @@
+source;share/buggy/environment/ament_prefix_path.sh
+source;share/buggy/environment/library_path.sh
+source;share/buggy/environment/path.sh
+source;share/buggy/environment/pythonpath.sh

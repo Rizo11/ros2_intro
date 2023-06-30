@@ -1,0 +1,7 @@
+{
+  "package_name": "buggy",
+  "non_idl_tuples": [
+    "/home/rizo/iros/src/ros2_intro/homework/homework2/buggy:msg/CustomMsg.msg",
+    "/home/rizo/iros/src/ros2_intro/homework/homework2/buggy:srv/CustomSrv.srv"
+  ]
+}

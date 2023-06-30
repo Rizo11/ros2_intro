@@ -1,0 +1,464 @@
+[0.000000] (-) TimerEvent: {}
+[0.000367] (buggy) JobQueued: {'identifier': 'buggy', 'dependencies': OrderedDict()}
+[0.000401] (buggy) JobStarted: {'identifier': 'buggy'}
+[0.018171] (buggy) JobProgress: {'identifier': 'buggy', 'progress': 'cmake'}
+[0.018443] (buggy) Command: {'cmd': ['/usr/bin/cmake', '/home/rizo/iros/src/ros2_intro/homework/homework2/buggy', '-DCMAKE_INSTALL_PREFIX=/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy'], 'cwd': '/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rizo'), ('LC_TIME', 'ru_RU.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/home/rizo/iros/install/examples_rclcpp_wait_set/lib:/home/rizo/iros/install/buggy/lib:/home/rizo/iros/install/homework1_muhammadrizo_maribjonov/lib:/home/rizo/iros/install/turtlesim/lib:/home/rizo/iros/install/ros2_composition/lib:/home/rizo/iros/install/interfaces/lib:/home/rizo/iros/install/friend_msgs/lib:/home/rizo/iros/install/examples_rclcpp_minimal_subscriber/lib:/home/rizo/iros/install/examples_rclcpp_minimal_composition/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/rizo'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/rizo/iros/src/ros2_intro'), ('TERM_PROGRAM_VERSION', '1.79.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1664'), ('SYSTEMD_EXEC_PID', '1886'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '23310'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rizo/iros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rizo'), ('JOURNAL_STREAM', '8:33003'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rizo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models::/opt/ros/humble/share/turtlebot3_gazebo/models:/opt/ros/humble/share/turtlebot3_gazebo/models:/opt/ros/humble/share/turtlebot3_gazebo/models:/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/rizo/iros/install/homework1_muhammadrizo_maribjonov/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leo:@/tmp/.ICE-unix/1860,unix/leo:/tmp/.ICE-unix/1860'), ('INVOCATION_ID', 'cd370bf9aeb74af48736b09ae4dffa43'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DSVS61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-070640d747.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rizo/iros/install/turtlesim:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/examples_rclcpp_multithreaded_executor:/home/rizo/iros/install/examples_rclcpp_minimal_timer:/home/rizo/iros/install/buggy:/home/rizo/iros/install/homework1_muhammadrizo_maribjonov:/home/rizo/iros/install/ros2_visualize:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/launch_testing_examples:/home/rizo/iros/install/interfaces:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/home/rizo/iros/install/examples_rclpy_pointcloud_publisher:/home/rizo/iros/install/examples_rclpy_minimal_subscriber:/home/rizo/iros/install/examples_rclpy_minimal_service:/home/rizo/iros/install/examples_rclpy_minimal_publisher:/home/rizo/iros/install/examples_rclpy_minimal_client:/home/rizo/iros/install/examples_rclpy_minimal_action_server:/home/rizo/iros/install/examples_rclpy_minimal_action_client:/home/rizo/iros/install/examples_rclpy_guard_conditions:/home/rizo/iros/install/examples_rclpy_executors:/home/rizo/iros/install/examples_rclcpp_wait_set:/home/rizo/iros/install/examples_rclcpp_minimal_subscriber:/home/rizo/iros/install/examples_rclcpp_minimal_service:/home/rizo/iros/install/examples_rclcpp_minimal_publisher:/home/rizo/iros/install/examples_rclcpp_minimal_composition:/home/rizo/iros/install/examples_rclcpp_minimal_client:/home/rizo/iros/install/examples_rclcpp_minimal_action_server:/home/rizo/iros/install/examples_rclcpp_minimal_action_client:/home/rizo/iros/install/examples_rclcpp_cbg_executor:/home/rizo/iros/install/examples_rclcpp_async_client:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'Unity'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rizo/iros/install/turtlesim/local/lib/python3.10/dist-packages:/home/rizo/iros/install/friend_msgs/local/lib/python3.10/dist-packages:/home/rizo/iros/install/buggy/local/lib/python3.10/dist-packages:/home/rizo/iros/install/buggy/lib/python3.10/site-packages:/home/rizo/iros/install/launch_testing_examples/lib/python3.10/site-packages:/home/rizo/iros/install/interfaces/local/lib/python3.10/dist-packages:/home/rizo/iros/install/hagen_robot_diff_drive/lib/python3.10/site-packages:/home/rizo/iros/install/hagen_robot_controller/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_executors/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rizo/iros/install/examples_rclcpp_wait_set:/home/rizo/iros/install/buggy:/home/rizo/iros/install/homework1_muhammadrizo_maribjonov:/home/rizo/iros/install/turtlesim:/home/rizo/iros/install/ros2_visualize:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/interfaces:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/examples_rclcpp_multithreaded_executor:/home/rizo/iros/install/examples_rclcpp_minimal_timer:/home/rizo/iros/install/examples_rclcpp_minimal_subscriber:/home/rizo/iros/install/examples_rclcpp_minimal_service:/home/rizo/iros/install/examples_rclcpp_minimal_publisher:/home/rizo/iros/install/examples_rclcpp_minimal_composition:/home/rizo/iros/install/examples_rclcpp_minimal_client:/home/rizo/iros/install/examples_rclcpp_minimal_action_server:/home/rizo/iros/install/examples_rclcpp_minimal_action_client:/home/rizo/iros/install/examples_rclcpp_cbg_executor:/home/rizo/iros/install/examples_rclcpp_async_client:/home/rizo/iros/install/launch_testing_examples:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/home/rizo/iros/install/examples_rclpy_pointcloud_publisher:/home/rizo/iros/install/examples_rclpy_minimal_subscriber:/home/rizo/iros/install/examples_rclpy_minimal_service:/home/rizo/iros/install/examples_rclpy_minimal_publisher:/home/rizo/iros/install/examples_rclpy_minimal_client:/home/rizo/iros/install/examples_rclpy_minimal_action_server:/home/rizo/iros/install/examples_rclpy_minimal_action_client:/home/rizo/iros/install/examples_rclpy_guard_conditions:/home/rizo/iros/install/examples_rclpy_executors:/opt/ros/humble')]), 'shell': False}
+[0.069746] (buggy) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.099814] (-) TimerEvent: {}
+[0.124599] (buggy) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.130488] (buggy) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199910] (-) TimerEvent: {}
+[0.204023] (buggy) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.216125] (buggy) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.216542] (buggy) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.217023] (buggy) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.220690] (buggy) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.289023] (buggy) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.296877] (buggy) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.297111] (buggy) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.297559] (buggy) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.300006] (-) TimerEvent: {}
+[0.302194] (buggy) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400124] (-) TimerEvent: {}
+[0.500353] (-) TimerEvent: {}
+[0.566207] (buggy) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter \n'}
+[0.600505] (-) TimerEvent: {}
+[0.700973] (-) TimerEvent: {}
+[0.756394] (buggy) StdoutLine: {'line': b'-- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.801082] (-) TimerEvent: {}
+[0.819942] (buggy) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.828582] (buggy) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.838810] (buggy) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.858027] (buggy) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.883541] (buggy) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.901205] (-) TimerEvent: {}
+[0.977340] (buggy) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.982086] (buggy) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.001326] (-) TimerEvent: {}
+[1.092735] (buggy) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.101476] (-) TimerEvent: {}
+[1.139938] (buggy) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.194309] (buggy) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.201617] (-) TimerEvent: {}
+[1.212150] (buggy) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.297209] (buggy) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.297625] (buggy) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.301739] (-) TimerEvent: {}
+[1.373986] (buggy) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.375610] (buggy) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.401875] (-) TimerEvent: {}
+[1.502116] (-) TimerEvent: {}
+[1.598765] (buggy) StdoutLine: {'line': b'-- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.602228] (-) TimerEvent: {}
+[1.626839] (buggy) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.683808] (buggy) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.702332] (-) TimerEvent: {}
+[1.802582] (-) TimerEvent: {}
+[1.902847] (-) TimerEvent: {}
+[2.003043] (-) TimerEvent: {}
+[2.042910] (buggy) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[2.103154] (-) TimerEvent: {}
+[2.203448] (-) TimerEvent: {}
+[2.303695] (-) TimerEvent: {}
+[2.403933] (-) TimerEvent: {}
+[2.497574] (buggy) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.504017] (-) TimerEvent: {}
+[2.604244] (-) TimerEvent: {}
+[2.680315] (buggy) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.704321] (-) TimerEvent: {}
+[2.708356] (buggy) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") \n'}
+[2.714828] (buggy) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.743089] (buggy) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") \n'}
+[2.743501] (buggy) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.743642] (buggy) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.743733] (buggy) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.770043] (buggy) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.804424] (-) TimerEvent: {}
+[2.860375] (buggy) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.866764] (buggy) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.904510] (-) TimerEvent: {}
+[2.909912] (buggy) StdoutLine: {'line': b'-- Generating done\n'}
+[2.913810] (buggy) StdoutLine: {'line': b'-- Build files have been written to: /home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy\n'}
+[2.929889] (buggy) CommandEnded: {'returncode': 0}
+[2.930657] (buggy) JobProgress: {'identifier': 'buggy', 'progress': 'build'}
+[2.931879] (buggy) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy', '--', '-j12', '-l12'], 'cwd': '/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rizo'), ('LC_TIME', 'ru_RU.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/home/rizo/iros/install/examples_rclcpp_wait_set/lib:/home/rizo/iros/install/buggy/lib:/home/rizo/iros/install/homework1_muhammadrizo_maribjonov/lib:/home/rizo/iros/install/turtlesim/lib:/home/rizo/iros/install/ros2_composition/lib:/home/rizo/iros/install/interfaces/lib:/home/rizo/iros/install/friend_msgs/lib:/home/rizo/iros/install/examples_rclcpp_minimal_subscriber/lib:/home/rizo/iros/install/examples_rclcpp_minimal_composition/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/rizo'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/rizo/iros/src/ros2_intro'), ('TERM_PROGRAM_VERSION', '1.79.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1664'), ('SYSTEMD_EXEC_PID', '1886'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '23310'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rizo/iros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rizo'), ('JOURNAL_STREAM', '8:33003'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rizo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models::/opt/ros/humble/share/turtlebot3_gazebo/models:/opt/ros/humble/share/turtlebot3_gazebo/models:/opt/ros/humble/share/turtlebot3_gazebo/models:/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/rizo/iros/install/homework1_muhammadrizo_maribjonov/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leo:@/tmp/.ICE-unix/1860,unix/leo:/tmp/.ICE-unix/1860'), ('INVOCATION_ID', 'cd370bf9aeb74af48736b09ae4dffa43'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DSVS61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-070640d747.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rizo/iros/install/turtlesim:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/examples_rclcpp_multithreaded_executor:/home/rizo/iros/install/examples_rclcpp_minimal_timer:/home/rizo/iros/install/buggy:/home/rizo/iros/install/homework1_muhammadrizo_maribjonov:/home/rizo/iros/install/ros2_visualize:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/launch_testing_examples:/home/rizo/iros/install/interfaces:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/home/rizo/iros/install/examples_rclpy_pointcloud_publisher:/home/rizo/iros/install/examples_rclpy_minimal_subscriber:/home/rizo/iros/install/examples_rclpy_minimal_service:/home/rizo/iros/install/examples_rclpy_minimal_publisher:/home/rizo/iros/install/examples_rclpy_minimal_client:/home/rizo/iros/install/examples_rclpy_minimal_action_server:/home/rizo/iros/install/examples_rclpy_minimal_action_client:/home/rizo/iros/install/examples_rclpy_guard_conditions:/home/rizo/iros/install/examples_rclpy_executors:/home/rizo/iros/install/examples_rclcpp_wait_set:/home/rizo/iros/install/examples_rclcpp_minimal_subscriber:/home/rizo/iros/install/examples_rclcpp_minimal_service:/home/rizo/iros/install/examples_rclcpp_minimal_publisher:/home/rizo/iros/install/examples_rclcpp_minimal_composition:/home/rizo/iros/install/examples_rclcpp_minimal_client:/home/rizo/iros/install/examples_rclcpp_minimal_action_server:/home/rizo/iros/install/examples_rclcpp_minimal_action_client:/home/rizo/iros/install/examples_rclcpp_cbg_executor:/home/rizo/iros/install/examples_rclcpp_async_client:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'Unity'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rizo/iros/install/turtlesim/local/lib/python3.10/dist-packages:/home/rizo/iros/install/friend_msgs/local/lib/python3.10/dist-packages:/home/rizo/iros/install/buggy/local/lib/python3.10/dist-packages:/home/rizo/iros/install/buggy/lib/python3.10/site-packages:/home/rizo/iros/install/launch_testing_examples/lib/python3.10/site-packages:/home/rizo/iros/install/interfaces/local/lib/python3.10/dist-packages:/home/rizo/iros/install/hagen_robot_diff_drive/lib/python3.10/site-packages:/home/rizo/iros/install/hagen_robot_controller/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_executors/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rizo/iros/install/examples_rclcpp_wait_set:/home/rizo/iros/install/buggy:/home/rizo/iros/install/homework1_muhammadrizo_maribjonov:/home/rizo/iros/install/turtlesim:/home/rizo/iros/install/ros2_visualize:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/interfaces:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/examples_rclcpp_multithreaded_executor:/home/rizo/iros/install/examples_rclcpp_minimal_timer:/home/rizo/iros/install/examples_rclcpp_minimal_subscriber:/home/rizo/iros/install/examples_rclcpp_minimal_service:/home/rizo/iros/install/examples_rclcpp_minimal_publisher:/home/rizo/iros/install/examples_rclcpp_minimal_composition:/home/rizo/iros/install/examples_rclcpp_minimal_client:/home/rizo/iros/install/examples_rclcpp_minimal_action_server:/home/rizo/iros/install/examples_rclcpp_minimal_action_client:/home/rizo/iros/install/examples_rclcpp_cbg_executor:/home/rizo/iros/install/examples_rclcpp_async_client:/home/rizo/iros/install/launch_testing_examples:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/home/rizo/iros/install/examples_rclpy_pointcloud_publisher:/home/rizo/iros/install/examples_rclpy_minimal_subscriber:/home/rizo/iros/install/examples_rclpy_minimal_service:/home/rizo/iros/install/examples_rclpy_minimal_publisher:/home/rizo/iros/install/examples_rclpy_minimal_client:/home/rizo/iros/install/examples_rclpy_minimal_action_server:/home/rizo/iros/install/examples_rclpy_minimal_action_client:/home/rizo/iros/install/examples_rclpy_guard_conditions:/home/rizo/iros/install/examples_rclpy_executors:/opt/ros/humble')]), 'shell': False}
+[2.967543] (buggy) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.976238] (buggy) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.983686] (buggy) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_copy_buggy\n'}
+[3.004633] (-) TimerEvent: {}
+[3.104897] (-) TimerEvent: {}
+[3.205259] (-) TimerEvent: {}
+[3.305505] (-) TimerEvent: {}
+[3.345370] (buggy) StdoutLine: {'line': b'running egg_info\n'}
+[3.346017] (buggy) StdoutLine: {'line': b'creating buggy.egg-info\n'}
+[3.346153] (buggy) StdoutLine: {'line': b'writing buggy.egg-info/PKG-INFO\n'}
+[3.346346] (buggy) StdoutLine: {'line': b'writing dependency_links to buggy.egg-info/dependency_links.txt\n'}
+[3.346477] (buggy) StdoutLine: {'line': b'writing top-level names to buggy.egg-info/top_level.txt\n'}
+[3.346669] (buggy) StdoutLine: {'line': b"writing manifest file 'buggy.egg-info/SOURCES.txt'\n"}
+[3.348528] (buggy) StdoutLine: {'line': b"reading manifest file 'buggy.egg-info/SOURCES.txt'\n"}
+[3.349115] (buggy) StdoutLine: {'line': b"writing manifest file 'buggy.egg-info/SOURCES.txt'\n"}
+[3.374813] (buggy) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_buggy_egg\n'}
+[3.404539] (buggy) StdoutLine: {'line': b'[  4%] Built target buggy__cpp\n'}
+[3.405578] (-) TimerEvent: {}
+[3.426370] (buggy) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.427192] (buggy) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.427579] (buggy) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.457669] (buggy) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/buggy__rosidl_generator_c.dir/rosidl_generator_c/buggy/srv/detail/custom_srv__functions.c.o\x1b[0m\n'}
+[3.458006] (buggy) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/buggy__rosidl_generator_c.dir/rosidl_generator_c/buggy/msg/detail/custom_msg__functions.c.o\x1b[0m\n'}
+[3.505699] (-) TimerEvent: {}
+[3.529810] (buggy) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libbuggy__rosidl_generator_c.so\x1b[0m\n'}
+[3.571600] (buggy) StdoutLine: {'line': b'[ 18%] Built target buggy__rosidl_generator_c\n'}
+[3.584925] (buggy) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.585283] (buggy) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.585460] (buggy) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.605829] (-) TimerEvent: {}
+[3.706114] (-) TimerEvent: {}
+[3.806468] (-) TimerEvent: {}
+[3.874360] (buggy) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/buggy__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/buggy/msg/custom_msg__type_support.cpp.o\x1b[0m\n'}
+[3.874720] (buggy) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/buggy__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/buggy/srv/custom_srv__type_support.cpp.o\x1b[0m\n'}
+[3.888079] (buggy) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/buggy__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/buggy/msg/detail/custom_msg__type_support.cpp.o\x1b[0m\n'}
+[3.895581] (buggy) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/buggy__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/buggy/srv/detail/custom_srv__type_support.cpp.o\x1b[0m\n'}
+[3.906590] (-) TimerEvent: {}
+[4.001364] (buggy) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/buggy__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/buggy/srv/detail/dds_fastrtps/custom_srv__type_support.cpp.o\x1b[0m\n'}
+[4.001779] (buggy) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/buggy__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/buggy/msg/detail/dds_fastrtps/custom_msg__type_support.cpp.o\x1b[0m\n'}
+[4.006696] (-) TimerEvent: {}
+[4.108266] (-) TimerEvent: {}
+[4.148465] (buggy) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/buggy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/buggy/msg/detail/custom_msg__type_support.c.o\x1b[0m\n'}
+[4.158028] (buggy) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/buggy__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/buggy/srv/detail/custom_srv__type_support.c.o\x1b[0m\n'}
+[4.208381] (-) TimerEvent: {}
+[4.245821] (buggy) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking C shared library libbuggy__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.320287] (-) TimerEvent: {}
+[4.320669] (buggy) StdoutLine: {'line': b'[ 48%] Built target buggy__rosidl_typesupport_introspection_c\n'}
+[4.320958] (buggy) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/buggy__rosidl_typesupport_c.dir/rosidl_typesupport_c/buggy/msg/custom_msg__type_support.cpp.o\x1b[0m\n'}
+[4.341806] (buggy) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/buggy__rosidl_typesupport_c.dir/rosidl_typesupport_c/buggy/srv/custom_srv__type_support.cpp.o\x1b[0m\n'}
+[4.418511] (buggy) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libbuggy__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.420370] (-) TimerEvent: {}
+[4.439573] (buggy) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libbuggy__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.444508] (buggy) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/buggy__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/buggy/msg/detail/custom_msg__type_support_c.cpp.o\x1b[0m\n'}
+[4.445217] (buggy) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/buggy__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/buggy/srv/detail/custom_srv__type_support_c.cpp.o\x1b[0m\n'}
+[4.520501] (-) TimerEvent: {}
+[4.523808] (buggy) StdoutLine: {'line': b'[ 60%] Built target buggy__rosidl_typesupport_c\n'}
+[4.533642] (buggy) StdoutLine: {'line': b'[ 60%] Built target buggy__rosidl_typesupport_cpp\n'}
+[4.579295] (buggy) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/sub.dir/src/sub.cpp.o\x1b[0m\n'}
+[4.579991] (buggy) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/pub.dir/src/pub.cpp.o\x1b[0m\n'}
+[4.620651] (-) TimerEvent: {}
+[4.722861] (-) TimerEvent: {}
+[4.804658] (buggy) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libbuggy__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.823679] (-) TimerEvent: {}
+[4.905976] (buggy) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libbuggy__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.923804] (-) TimerEvent: {}
+[4.958172] (buggy) StdoutLine: {'line': b'[ 69%] Built target buggy__rosidl_typesupport_introspection_cpp\n'}
+[5.023926] (-) TimerEvent: {}
+[5.034260] (buggy) StdoutLine: {'line': b'[ 69%] Built target buggy__rosidl_typesupport_fastrtps_cpp\n'}
+[5.124054] (-) TimerEvent: {}
+[5.161759] (buggy) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libbuggy__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.224182] (-) TimerEvent: {}
+[5.263769] (buggy) StdoutLine: {'line': b'[ 72%] Built target buggy__rosidl_typesupport_fastrtps_c\n'}
+[5.286872] (buggy) StdoutLine: {'line': b'[ 72%] Built target buggy\n'}
+[5.314200] (buggy) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.324333] (-) TimerEvent: {}
+[5.424663] (-) TimerEvent: {}
+[5.525008] (-) TimerEvent: {}
+[5.625365] (-) TimerEvent: {}
+[5.725728] (-) TimerEvent: {}
+[5.826073] (-) TimerEvent: {}
+[5.926410] (-) TimerEvent: {}
+[5.994125] (buggy) StdoutLine: {'line': b'[ 74%] Built target buggy__py\n'}
+[6.018509] (buggy) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/buggy__rosidl_generator_py.dir/rosidl_generator_py/buggy/srv/_custom_srv_s.c.o\x1b[0m\n'}
+[6.018835] (buggy) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/buggy__rosidl_generator_py.dir/rosidl_generator_py/buggy/msg/_custom_msg_s.c.o\x1b[0m\n'}
+[6.026534] (-) TimerEvent: {}
+[6.126920] (-) TimerEvent: {}
+[6.173347] (buggy) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/buggy/libbuggy__rosidl_generator_py.so\x1b[0m\n'}
+[6.223230] (buggy) StdoutLine: {'line': b'[ 81%] Built target buggy__rosidl_generator_py\n'}
+[6.227021] (-) TimerEvent: {}
+[6.259179] (buggy) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/buggy__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/buggy/_buggy_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.260762] (buggy) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/buggy__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/buggy/_buggy_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.264949] (buggy) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/buggy__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/buggy/_buggy_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.327147] (-) TimerEvent: {}
+[6.416412] (buggy) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/buggy/buggy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.416719] (buggy) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/buggy/buggy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.427264] (-) TimerEvent: {}
+[6.474318] (buggy) StdoutLine: {'line': b'[ 93%] Built target buggy__rosidl_typesupport_c__pyext\n'}
+[6.480932] (buggy) StdoutLine: {'line': b'[ 93%] Built target buggy__rosidl_typesupport_introspection_c__pyext\n'}
+[6.499313] (buggy) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/buggy/buggy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.527393] (-) TimerEvent: {}
+[6.555456] (buggy) StdoutLine: {'line': b'[ 95%] Built target buggy__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.627529] (-) TimerEvent: {}
+[6.727801] (-) TimerEvent: {}
+[6.828124] (-) TimerEvent: {}
+[6.928379] (-) TimerEvent: {}
+[7.028677] (-) TimerEvent: {}
+[7.128917] (-) TimerEvent: {}
+[7.229225] (-) TimerEvent: {}
+[7.329504] (-) TimerEvent: {}
+[7.429774] (-) TimerEvent: {}
+[7.530106] (-) TimerEvent: {}
+[7.630484] (-) TimerEvent: {}
+[7.730810] (-) TimerEvent: {}
+[7.831120] (-) TimerEvent: {}
+[7.834787] (buggy) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rizo/iros/src/ros2_intro/homework/homework2/buggy/src/sub.cpp:12:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kbuggy::msg::CustomMsg_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.835217] (buggy) StderrLine: {'line': b'   12 | void callback(const buggy::msg::CustomMsg::ConstPtr& msg\x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[7.835384] (buggy) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.835533] (buggy) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy/rosidl_generator_cpp/buggy/msg/custom_msg.hpp:7\x1b[m\x1b[K,\n'}
+[7.835647] (buggy) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rizo/iros/src/ros2_intro/homework/homework2/buggy/src/sub.cpp:2\x1b[m\x1b[K:\n'}
+[7.835748] (buggy) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy/rosidl_generator_cpp/buggy/msg/detail/custom_msg__struct.hpp:141:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[7.835839] (buggy) StderrLine: {'line': b'  141 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[7.835929] (buggy) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.931261] (-) TimerEvent: {}
+[8.031665] (-) TimerEvent: {}
+[8.131961] (-) TimerEvent: {}
+[8.232318] (-) TimerEvent: {}
+[8.332643] (-) TimerEvent: {}
+[8.432921] (-) TimerEvent: {}
+[8.533182] (-) TimerEvent: {}
+[8.633439] (-) TimerEvent: {}
+[8.733782] (-) TimerEvent: {}
+[8.834096] (-) TimerEvent: {}
+[8.934419] (-) TimerEvent: {}
+[9.034701] (-) TimerEvent: {}
+[9.134991] (-) TimerEvent: {}
+[9.235416] (-) TimerEvent: {}
+[9.335776] (-) TimerEvent: {}
+[9.436039] (-) TimerEvent: {}
+[9.536275] (-) TimerEvent: {}
+[9.636513] (-) TimerEvent: {}
+[9.736743] (-) TimerEvent: {}
+[9.837008] (-) TimerEvent: {}
+[9.937274] (-) TimerEvent: {}
+[10.037566] (-) TimerEvent: {}
+[10.060801] (buggy) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable pub\x1b[0m\n'}
+[10.137667] (-) TimerEvent: {}
+[10.237996] (-) TimerEvent: {}
+[10.247263] (buggy) StdoutLine: {'line': b'[ 97%] Built target pub\n'}
+[10.338122] (-) TimerEvent: {}
+[10.438372] (-) TimerEvent: {}
+[10.538628] (-) TimerEvent: {}
+[10.638896] (-) TimerEvent: {}
+[10.739183] (-) TimerEvent: {}
+[10.839581] (-) TimerEvent: {}
+[10.939923] (-) TimerEvent: {}
+[11.040296] (-) TimerEvent: {}
+[11.140578] (-) TimerEvent: {}
+[11.240829] (-) TimerEvent: {}
+[11.341094] (-) TimerEvent: {}
+[11.441371] (-) TimerEvent: {}
+[11.541691] (-) TimerEvent: {}
+[11.641933] (-) TimerEvent: {}
+[11.742173] (-) TimerEvent: {}
+[11.842469] (-) TimerEvent: {}
+[11.942735] (-) TimerEvent: {}
+[12.043008] (-) TimerEvent: {}
+[12.143289] (-) TimerEvent: {}
+[12.243626] (-) TimerEvent: {}
+[12.343935] (-) TimerEvent: {}
+[12.444301] (-) TimerEvent: {}
+[12.544547] (-) TimerEvent: {}
+[12.644759] (-) TimerEvent: {}
+[12.744979] (-) TimerEvent: {}
+[12.845276] (-) TimerEvent: {}
+[12.945524] (-) TimerEvent: {}
+[13.045779] (-) TimerEvent: {}
+[13.146030] (-) TimerEvent: {}
+[13.246298] (-) TimerEvent: {}
+[13.346544] (-) TimerEvent: {}
+[13.446795] (-) TimerEvent: {}
+[13.547046] (-) TimerEvent: {}
+[13.647259] (-) TimerEvent: {}
+[13.747533] (-) TimerEvent: {}
+[13.847801] (-) TimerEvent: {}
+[13.948062] (-) TimerEvent: {}
+[14.048312] (-) TimerEvent: {}
+[14.148597] (-) TimerEvent: {}
+[14.248865] (-) TimerEvent: {}
+[14.349127] (-) TimerEvent: {}
+[14.449346] (-) TimerEvent: {}
+[14.549612] (-) TimerEvent: {}
+[14.614865] (buggy) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable sub\x1b[0m\n'}
+[14.649700] (-) TimerEvent: {}
+[14.749968] (-) TimerEvent: {}
+[14.850241] (-) TimerEvent: {}
+[14.950494] (-) TimerEvent: {}
+[14.950935] (buggy) StdoutLine: {'line': b'[100%] Built target sub\n'}
+[14.968293] (buggy) CommandEnded: {'returncode': 0}
+[15.034076] (buggy) JobProgress: {'identifier': 'buggy', 'progress': 'install'}
+[15.040619] (buggy) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy'], 'cwd': '/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rizo'), ('LC_TIME', 'ru_RU.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '3'), ('LD_LIBRARY_PATH', '/home/rizo/iros/install/examples_rclcpp_wait_set/lib:/home/rizo/iros/install/buggy/lib:/home/rizo/iros/install/homework1_muhammadrizo_maribjonov/lib:/home/rizo/iros/install/turtlesim/lib:/home/rizo/iros/install/ros2_composition/lib:/home/rizo/iros/install/interfaces/lib:/home/rizo/iros/install/friend_msgs/lib:/home/rizo/iros/install/examples_rclcpp_minimal_subscriber/lib:/home/rizo/iros/install/examples_rclcpp_minimal_composition/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/rizo'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/rizo/iros/src/ros2_intro'), ('TERM_PROGRAM_VERSION', '1.79.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1664'), ('SYSTEMD_EXEC_PID', '1886'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '23310'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rizo/iros/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rizo'), ('JOURNAL_STREAM', '8:33003'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rizo'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-11/models::/opt/ros/humble/share/turtlebot3_gazebo/models:/opt/ros/humble/share/turtlebot3_gazebo/models:/opt/ros/humble/share/turtlebot3_gazebo/models:/opt/ros/humble/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/rizo/iros/install/homework1_muhammadrizo_maribjonov/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/leo:@/tmp/.ICE-unix/1860,unix/leo:/tmp/.ICE-unix/1860'), ('INVOCATION_ID', 'cd370bf9aeb74af48736b09ae4dffa43'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DSVS61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-070640d747.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rizo/iros/install/turtlesim:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/examples_rclcpp_multithreaded_executor:/home/rizo/iros/install/examples_rclcpp_minimal_timer:/home/rizo/iros/install/buggy:/home/rizo/iros/install/homework1_muhammadrizo_maribjonov:/home/rizo/iros/install/ros2_visualize:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/launch_testing_examples:/home/rizo/iros/install/interfaces:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/home/rizo/iros/install/examples_rclpy_pointcloud_publisher:/home/rizo/iros/install/examples_rclpy_minimal_subscriber:/home/rizo/iros/install/examples_rclpy_minimal_service:/home/rizo/iros/install/examples_rclpy_minimal_publisher:/home/rizo/iros/install/examples_rclpy_minimal_client:/home/rizo/iros/install/examples_rclpy_minimal_action_server:/home/rizo/iros/install/examples_rclpy_minimal_action_client:/home/rizo/iros/install/examples_rclpy_guard_conditions:/home/rizo/iros/install/examples_rclpy_executors:/home/rizo/iros/install/examples_rclcpp_wait_set:/home/rizo/iros/install/examples_rclcpp_minimal_subscriber:/home/rizo/iros/install/examples_rclcpp_minimal_service:/home/rizo/iros/install/examples_rclcpp_minimal_publisher:/home/rizo/iros/install/examples_rclcpp_minimal_composition:/home/rizo/iros/install/examples_rclcpp_minimal_client:/home/rizo/iros/install/examples_rclcpp_minimal_action_server:/home/rizo/iros/install/examples_rclcpp_minimal_action_client:/home/rizo/iros/install/examples_rclcpp_cbg_executor:/home/rizo/iros/install/examples_rclcpp_async_client:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'Unity'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ru_RU.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rizo/iros/install/turtlesim/local/lib/python3.10/dist-packages:/home/rizo/iros/install/friend_msgs/local/lib/python3.10/dist-packages:/home/rizo/iros/install/buggy/local/lib/python3.10/dist-packages:/home/rizo/iros/install/buggy/lib/python3.10/site-packages:/home/rizo/iros/install/launch_testing_examples/lib/python3.10/site-packages:/home/rizo/iros/install/interfaces/local/lib/python3.10/dist-packages:/home/rizo/iros/install/hagen_robot_diff_drive/lib/python3.10/site-packages:/home/rizo/iros/install/hagen_robot_controller/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_publisher/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_action_server/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_guard_conditions/lib/python3.10/site-packages:/home/rizo/iros/install/examples_rclpy_executors/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rizo/iros/install/examples_rclcpp_wait_set:/home/rizo/iros/install/buggy:/home/rizo/iros/install/homework1_muhammadrizo_maribjonov:/home/rizo/iros/install/turtlesim:/home/rizo/iros/install/ros2_visualize:/home/rizo/iros/install/ros2_debug_logging:/home/rizo/iros/install/ros2_composition:/home/rizo/iros/install/interfaces:/home/rizo/iros/install/homework1:/home/rizo/iros/install/hello_world:/home/rizo/iros/install/friend_msgs:/home/rizo/iros/install/examples_rclcpp_multithreaded_executor:/home/rizo/iros/install/examples_rclcpp_minimal_timer:/home/rizo/iros/install/examples_rclcpp_minimal_subscriber:/home/rizo/iros/install/examples_rclcpp_minimal_service:/home/rizo/iros/install/examples_rclcpp_minimal_publisher:/home/rizo/iros/install/examples_rclcpp_minimal_composition:/home/rizo/iros/install/examples_rclcpp_minimal_client:/home/rizo/iros/install/examples_rclcpp_minimal_action_server:/home/rizo/iros/install/examples_rclcpp_minimal_action_client:/home/rizo/iros/install/examples_rclcpp_cbg_executor:/home/rizo/iros/install/examples_rclcpp_async_client:/home/rizo/iros/install/launch_testing_examples:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/home/rizo/iros/install/examples_rclpy_pointcloud_publisher:/home/rizo/iros/install/examples_rclpy_minimal_subscriber:/home/rizo/iros/install/examples_rclpy_minimal_service:/home/rizo/iros/install/examples_rclpy_minimal_publisher:/home/rizo/iros/install/examples_rclpy_minimal_client:/home/rizo/iros/install/examples_rclpy_minimal_action_server:/home/rizo/iros/install/examples_rclpy_minimal_action_client:/home/rizo/iros/install/examples_rclpy_guard_conditions:/home/rizo/iros/install/examples_rclpy_executors:/opt/ros/humble')]), 'shell': False}
+[15.047918] (buggy) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.048105] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/ament_index/resource_index/rosidl_interfaces/buggy\n'}
+[15.048328] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy\n'}
+[15.048531] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv\n'}
+[15.048621] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail\n'}
+[15.048833] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__functions.c\n'}
+[15.048951] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__type_support.h\n'}
+[15.049027] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__struct.h\n'}
+[15.049127] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__functions.h\n'}
+[15.049200] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/custom_srv.h\n'}
+[15.049290] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg\n'}
+[15.049360] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/custom_msg.h\n'}
+[15.049455] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail\n'}
+[15.049538] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__struct.h\n'}
+[15.049605] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__type_support.h\n'}
+[15.049671] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__functions.c\n'}
+[15.049741] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__functions.h\n'}
+[15.049811] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.049908] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/library_path.sh\n'}
+[15.049975] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/library_path.dsv\n'}
+[15.050070] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_generator_c.so\n'}
+[15.050266] (buggy) StdoutLine: {'line': b'-- Set runtime path of "/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_generator_c.so" to ""\n'}
+[15.050380] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy\n'}
+[15.050447] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv\n'}
+[15.050535] (-) TimerEvent: {}
+[15.050626] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail\n'}
+[15.050687] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__rosidl_typesupport_fastrtps_c.h\n'}
+[15.050733] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg\n'}
+[15.050801] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail\n'}
+[15.050867] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__rosidl_typesupport_fastrtps_c.h\n'}
+[15.050974] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.051058] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_fastrtps_c.so\n'}
+[15.051166] (buggy) StdoutLine: {'line': b'-- Set runtime path of "/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[15.051274] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy\n'}
+[15.051398] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv\n'}
+[15.051479] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail\n'}
+[15.051586] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__builder.hpp\n'}
+[15.051667] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__traits.hpp\n'}
+[15.051789] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__struct.hpp\n'}
+[15.051868] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/custom_srv.hpp\n'}
+[15.051966] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg\n'}
+[15.052054] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail\n'}
+[15.052161] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__struct.hpp\n'}
+[15.052281] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__traits.hpp\n'}
+[15.052436] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__builder.hpp\n'}
+[15.052556] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/custom_msg.hpp\n'}
+[15.052656] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy\n'}
+[15.052781] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv\n'}
+[15.052879] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail\n'}
+[15.053018] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/dds_fastrtps\n'}
+[15.053111] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.053214] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg\n'}
+[15.053304] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[15.053391] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail\n'}
+[15.053458] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/dds_fastrtps\n'}
+[15.053523] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.053608] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_fastrtps_cpp.so\n'}
+[15.053759] (buggy) StdoutLine: {'line': b'-- Set runtime path of "/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[15.053828] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy\n'}
+[15.053897] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv\n'}
+[15.053988] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail\n'}
+[15.054070] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__type_support.c\n'}
+[15.054141] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__rosidl_typesupport_introspection_c.h\n'}
+[15.054229] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg\n'}
+[15.054342] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail\n'}
+[15.054459] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__type_support.c\n'}
+[15.054575] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__rosidl_typesupport_introspection_c.h\n'}
+[15.054761] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[15.054917] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_introspection_c.so\n'}
+[15.055020] (buggy) StdoutLine: {'line': b'-- Set runtime path of "/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_introspection_c.so" to ""\n'}
+[15.055128] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_c.so\n'}
+[15.055295] (buggy) StdoutLine: {'line': b'-- Set runtime path of "/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_c.so" to ""\n'}
+[15.055429] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy\n'}
+[15.055541] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv\n'}
+[15.055639] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail\n'}
+[15.055803] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__type_support.cpp\n'}
+[15.055929] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.056048] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg\n'}
+[15.056181] (buggy) StdoutLine: {'line': b'-- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail\n'}
+[15.056403] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__type_support.cpp\n'}
+[15.056537] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.056693] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_introspection_cpp.so\n'}
+[15.056810] (buggy) StdoutLine: {'line': b'-- Set runtime path of "/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[15.056938] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_cpp.so\n'}
+[15.057065] (buggy) StdoutLine: {'line': b'-- Set runtime path of "/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_cpp.so" to ""\n'}
+[15.057188] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/pythonpath.sh\n'}
+[15.057345] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/pythonpath.dsv\n'}
+[15.057518] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy-0.0.0-py3.10.egg-info\n'}
+[15.057760] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[15.057899] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[15.058034] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[15.058166] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[15.058453] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy\n'}
+[15.058636] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/_buggy_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[15.058808] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.059000] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/_buggy_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[15.059178] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/__init__.py\n'}
+[15.059334] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.059447] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/libbuggy__rosidl_generator_py.so\n'}
+[15.059583] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.059712] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/srv\n'}
+[15.059823] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/srv/__init__.py\n'}
+[15.059937] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/srv/_custom_srv_s.c\n'}
+[15.060045] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/srv/_custom_srv.py\n'}
+[15.060166] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/msg\n'}
+[15.060346] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/msg/_custom_msg.py\n'}
+[15.060498] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/msg/_custom_msg_s.c\n'}
+[15.060652] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/msg/__init__.py\n'}
+[15.060815] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/_buggy_s.ep.rosidl_typesupport_c.c\n'}
+[15.099919] (buggy) StdoutLine: {'line': b"Listing '/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy'...\n"}
+[15.100057] (buggy) StdoutLine: {'line': b"Compiling '/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/__init__.py'...\n"}
+[15.100124] (buggy) StdoutLine: {'line': b"Listing '/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/msg'...\n"}
+[15.100182] (buggy) StdoutLine: {'line': b"Compiling '/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/msg/__init__.py'...\n"}
+[15.100272] (buggy) StdoutLine: {'line': b"Compiling '/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/msg/_custom_msg.py'...\n"}
+[15.100328] (buggy) StdoutLine: {'line': b"Listing '/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/srv'...\n"}
+[15.100382] (buggy) StdoutLine: {'line': b"Compiling '/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/srv/__init__.py'...\n"}
+[15.100434] (buggy) StdoutLine: {'line': b"Compiling '/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/srv/_custom_srv.py'...\n"}
+[15.103794] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.103918] (buggy) StdoutLine: {'line': b'-- Set runtime path of "/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.104044] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.104289] (buggy) StdoutLine: {'line': b'-- Set runtime path of "/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.104461] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.104735] (buggy) StdoutLine: {'line': b'-- Set runtime path of "/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.104826] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_generator_py.so\n'}
+[15.104911] (buggy) StdoutLine: {'line': b'-- Set runtime path of "/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_generator_py.so" to ""\n'}
+[15.104992] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/msg/CustomMsg.idl\n'}
+[15.105065] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/srv/CustomSrv.idl\n'}
+[15.105136] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/msg/CustomMsg.msg\n'}
+[15.105238] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/srv/CustomSrv.srv\n'}
+[15.105373] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/srv/CustomSrv_Request.msg\n'}
+[15.105514] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/srv/CustomSrv_Response.msg\n'}
+[15.105724] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/buggy/sub\n'}
+[15.110526] (buggy) StdoutLine: {'line': b'-- Set runtime path of "/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/buggy/sub" to ""\n'}
+[15.110780] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/buggy/pub\n'}
+[15.112068] (buggy) StdoutLine: {'line': b'-- Set runtime path of "/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/buggy/pub" to ""\n'}
+[15.112207] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/launch\n'}
+[15.112416] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/launch/test.launch.py\n'}
+[15.112543] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/ament_index/resource_index/package_run_dependencies/buggy\n'}
+[15.112665] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/ament_index/resource_index/parent_prefix_path/buggy\n'}
+[15.112788] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/ament_prefix_path.sh\n'}
+[15.112910] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/ament_prefix_path.dsv\n'}
+[15.113017] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/path.sh\n'}
+[15.113123] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/path.dsv\n'}
+[15.113255] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/local_setup.bash\n'}
+[15.113447] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/local_setup.sh\n'}
+[15.113569] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/local_setup.zsh\n'}
+[15.113667] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/local_setup.dsv\n'}
+[15.113760] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/package.dsv\n'}
+[15.113895] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/ament_index/resource_index/packages/buggy\n'}
+[15.114054] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_generator_cExport.cmake\n'}
+[15.114175] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_generator_cExport-noconfig.cmake\n'}
+[15.114313] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[15.114411] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[15.114515] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_generator_cppExport.cmake\n'}
+[15.114621] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[15.114719] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[15.114822] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_introspection_cExport.cmake\n'}
+[15.114920] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[15.115029] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_cExport.cmake\n'}
+[15.115126] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[15.115249] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[15.115352] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[15.115462] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_cppExport.cmake\n'}
+[15.115563] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[15.115680] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_generator_pyExport.cmake\n'}
+[15.115783] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_generator_pyExport-noconfig.cmake\n'}
+[15.115883] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/rosidl_cmake-extras.cmake\n'}
+[15.115981] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.116083] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[15.116184] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[15.116333] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[15.116424] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[15.116500] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[15.116600] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggyConfig.cmake\n'}
+[15.116679] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggyConfig-version.cmake\n'}
+[15.116775] (buggy) StdoutLine: {'line': b'-- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/package.xml\n'}
+[15.118491] (buggy) CommandEnded: {'returncode': 0}
+[15.150660] (-) TimerEvent: {}
+[15.210649] (buggy) JobEnded: {'identifier': 'buggy', 'rc': 0}
+[15.211278] (-) EventReactorShutdown: {}

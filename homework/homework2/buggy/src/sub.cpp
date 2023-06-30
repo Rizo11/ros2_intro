@@ -1,21 +1,22 @@
 #include "rclcpp/rclcpp.hpp"
-#include <buggy/msg/custom_msg.h>
-#include <buggy/srv/custom_srv.h>
+#include <buggy/msg/custom_msg.hpp>
+#include <buggy/srv/custom_srv.hpp>
 #include<iostream>
 
 using std::placeholders::_1; 
+using namespace std::chrono_literals;
 
 bool flag  = false;
 bool flag2 = false;
 
-void callback(const buggy::CustomMsg::ConstPtr& msg)
+void callback(const buggy::msg::CustomMsg::ConstPtr& msg)
 {
 	flag = msg->flag.data;
 }
 
-bool turnOn(buggy::CustomSrv::Request& req, buggy::CustomSrv::Response& res) {
-  flag2 = req.flag.data;
-  res.result.data = flag2;
+bool turnOn(const std::shared_ptr<buggy::srv::CustomSrv::Request> req, std::shared_ptr<buggy::srv::CustomSrv::Response> res) {
+  flag2 = req->data.data;
+  res->result.data = flag2;
   return true;
 }
 
@@ -25,11 +26,9 @@ int main(int argc, char **argv)
   
   auto node = rclcpp::Node::make_shared("pub");
   rclcpp::Subscription<buggy::msg::CustomMsg>::SharedPtr subscriber_;
-  subscriber_ = create_subscription<buggy::msg::CustomMsg>("/topic", 10
-      ,std::bind(&callback, _1));
+  subscriber_ = node->create_subscription<buggy::msg::CustomMsg>("/topic", 10, std::bind(&callback, _1));
 
-  rclcpp::Service<friend_msgs::srv::FriendInfoService>::SharedPtr turn_on_service_ = 
-    node->create_service<friend_msgs::srv::FriendInfoService>("turnon", &turnon);
+  rclcpp::Service<buggy::srv::CustomSrv>::SharedPtr turn_on_service_ = node->create_service<buggy::srv::CustomSrv>("turnon", &turnOn);
 
   rclcpp::Rate loop_rate(500ms);
   while(rclcpp::ok()){

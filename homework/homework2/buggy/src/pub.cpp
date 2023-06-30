@@ -1,5 +1,5 @@
 #include "rclcpp/rclcpp.hpp"
-#include <buggy/msg/custom_msg.h>
+#include <buggy/msg/custom_msg.hpp>
 
 using namespace std::chrono_literals;
 
@@ -7,11 +7,11 @@ int main(int argc, char **argv)
 {
   rclcpp::init(argc, argv);
   
-  buggy::CustomMsg msg;
+  buggy::msg::CustomMsg msg;
 
   auto node = rclcpp::Node::make_shared("pub");
-  rclcpp::Publisher<buggy::CustomMsg>::SharedPtr publisher;
-  publisher =  create_publisher<buggy::msg::CustomMsg>("/topic1", 10);
+  rclcpp::Publisher<buggy::msg::CustomMsg>::SharedPtr publisher;
+  publisher = node->create_publisher<buggy::msg::CustomMsg>("/topic", 10);
 
   rclcpp::Rate loop_rate(500ms);
 

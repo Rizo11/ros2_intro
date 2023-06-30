@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/rizo/iros/install/turtlesim/include/**",
+        "/home/rizo/iros/install/friend_msgs/include/**",
+        "/home/rizo/iros/install/homework1_muhammadrizo_maribjonov/include/**",
+        "/home/rizo/iros/install/interfaces/include/**",
+        "/home/rizo/iros/install/examples_rclcpp_cbg_executor/include/**",
+        "/opt/ros/humble/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

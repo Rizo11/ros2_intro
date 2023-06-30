@@ -1,0 +1,198 @@
+[0.023s] Invoking command in '/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/launch_testing_examples:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/home/rizo/iros/install/examples_rclpy_pointcloud_publisher:/home/rizo/iros/install/examples_rclpy_minimal_subscriber:/home/rizo/iros/install/examples_rclpy_minimal_service:/home/rizo/iros/install/examples_rclpy_minimal_publisher:/home/rizo/iros/install/examples_rclpy_minimal_client:/home/rizo/iros/install/examples_rclpy_minimal_action_server:/home/rizo/iros/install/examples_rclpy_minimal_action_client:/home/rizo/iros/install/examples_rclpy_guard_conditions:/home/rizo/iros/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake --build /home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy -- -j12 -l12
+[0.061s] [35m[1mConsolidate compiler generated dependencies of target buggy__rosidl_generator_c[0m
+[0.073s] [  2%] Built target buggy__cpp
+[0.074s] [ 11%] Built target buggy__rosidl_generator_c
+[0.088s] [ 11%] Built target ament_cmake_python_copy_buggy
+[0.089s] [35m[1mConsolidate compiler generated dependencies of target buggy__rosidl_typesupport_c[0m
+[0.089s] [35m[1mConsolidate compiler generated dependencies of target buggy__rosidl_typesupport_cpp[0m
+[0.093s] [35m[1mConsolidate compiler generated dependencies of target buggy__rosidl_typesupport_introspection_cpp[0m
+[0.093s] [35m[1mConsolidate compiler generated dependencies of target buggy__rosidl_typesupport_introspection_c[0m
+[0.093s] [35m[1mConsolidate compiler generated dependencies of target buggy__rosidl_typesupport_fastrtps_cpp[0m
+[0.096s] [35m[1mConsolidate compiler generated dependencies of target buggy__rosidl_typesupport_fastrtps_c[0m
+[0.121s] [ 30%] Built target buggy__rosidl_typesupport_c
+[0.122s] [ 30%] Built target buggy__rosidl_typesupport_introspection_c
+[0.126s] [ 39%] Built target buggy__rosidl_typesupport_cpp
+[0.128s] [ 58%] Built target buggy__rosidl_typesupport_fastrtps_cpp
+[0.128s] [ 58%] Built target buggy__rosidl_typesupport_introspection_cpp
+[0.131s] [ 67%] Built target buggy__rosidl_typesupport_fastrtps_c
+[0.142s] [35m[1mConsolidate compiler generated dependencies of target pub[0m
+[0.142s] [35m[1mConsolidate compiler generated dependencies of target sub[0m
+[0.167s] [ 72%] Built target pub
+[0.168s] [ 76%] Built target sub
+[0.171s] [ 76%] Built target buggy
+[0.193s] [ 79%] Built target buggy__py
+[0.207s] [35m[1mConsolidate compiler generated dependencies of target buggy__rosidl_generator_py[0m
+[0.231s] [ 86%] Built target buggy__rosidl_generator_py
+[0.248s] [35m[1mConsolidate compiler generated dependencies of target buggy__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.248s] [35m[1mConsolidate compiler generated dependencies of target buggy__rosidl_typesupport_c__pyext[0m
+[0.254s] [35m[1mConsolidate compiler generated dependencies of target buggy__rosidl_typesupport_introspection_c__pyext[0m
+[0.269s] [ 90%] Built target buggy__rosidl_typesupport_c__pyext
+[0.269s] [ 95%] Built target buggy__rosidl_typesupport_fastrtps_c__pyext
+[0.279s] [100%] Built target buggy__rosidl_typesupport_introspection_c__pyext
+[0.480s] running egg_info
+[0.481s] writing buggy.egg-info/PKG-INFO
+[0.481s] writing dependency_links to buggy.egg-info/dependency_links.txt
+[0.482s] writing top-level names to buggy.egg-info/top_level.txt
+[0.485s] reading manifest file 'buggy.egg-info/SOURCES.txt'
+[0.486s] writing manifest file 'buggy.egg-info/SOURCES.txt'
+[0.532s] [100%] Built target ament_cmake_python_build_buggy_egg
+[0.560s] Invoked command in '/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/launch_testing_examples:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/home/rizo/iros/install/examples_rclpy_pointcloud_publisher:/home/rizo/iros/install/examples_rclpy_minimal_subscriber:/home/rizo/iros/install/examples_rclpy_minimal_service:/home/rizo/iros/install/examples_rclpy_minimal_publisher:/home/rizo/iros/install/examples_rclpy_minimal_client:/home/rizo/iros/install/examples_rclpy_minimal_action_server:/home/rizo/iros/install/examples_rclpy_minimal_action_client:/home/rizo/iros/install/examples_rclpy_guard_conditions:/home/rizo/iros/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake --build /home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy -- -j12 -l12
+[0.702s] Invoking command in '/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/launch_testing_examples:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/home/rizo/iros/install/examples_rclpy_pointcloud_publisher:/home/rizo/iros/install/examples_rclpy_minimal_subscriber:/home/rizo/iros/install/examples_rclpy_minimal_service:/home/rizo/iros/install/examples_rclpy_minimal_publisher:/home/rizo/iros/install/examples_rclpy_minimal_client:/home/rizo/iros/install/examples_rclpy_minimal_action_server:/home/rizo/iros/install/examples_rclpy_minimal_action_client:/home/rizo/iros/install/examples_rclpy_guard_conditions:/home/rizo/iros/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake --install /home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy
+[0.715s] -- Install configuration: ""
+[0.715s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/ament_index/resource_index/rosidl_interfaces/buggy
+[0.715s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy
+[0.715s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv
+[0.715s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail
+[0.716s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__functions.c
+[0.716s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__type_support.h
+[0.716s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__struct.h
+[0.716s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__functions.h
+[0.716s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/custom_srv.h
+[0.716s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg
+[0.716s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/custom_msg.h
+[0.717s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail
+[0.717s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__struct.h
+[0.717s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__type_support.h
+[0.717s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__functions.c
+[0.718s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__functions.h
+[0.718s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/rosidl_generator_c__visibility_control.h
+[0.718s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/library_path.sh
+[0.718s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/library_path.dsv
+[0.718s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_generator_c.so
+[0.718s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy
+[0.718s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv
+[0.719s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail
+[0.719s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__rosidl_typesupport_fastrtps_c.h
+[0.719s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg
+[0.719s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail
+[0.719s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__rosidl_typesupport_fastrtps_c.h
+[0.719s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.719s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_fastrtps_c.so
+[0.720s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy
+[0.720s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv
+[0.720s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail
+[0.720s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__builder.hpp
+[0.720s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__traits.hpp
+[0.720s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__struct.hpp
+[0.720s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/custom_srv.hpp
+[0.721s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg
+[0.721s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail
+[0.721s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__struct.hpp
+[0.721s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__traits.hpp
+[0.721s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__builder.hpp
+[0.721s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/custom_msg.hpp
+[0.722s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy
+[0.722s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv
+[0.722s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail
+[0.722s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/dds_fastrtps
+[0.722s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__rosidl_typesupport_fastrtps_cpp.hpp
+[0.722s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg
+[0.722s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.723s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail
+[0.723s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/dds_fastrtps
+[0.723s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[0.723s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_fastrtps_cpp.so
+[0.723s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy
+[0.723s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv
+[0.723s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail
+[0.723s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__type_support.c
+[0.723s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__rosidl_typesupport_introspection_c.h
+[0.723s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg
+[0.723s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__type_support.c
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__rosidl_typesupport_introspection_c.h
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_introspection_c.so
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_c.so
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__type_support.cpp
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/srv/detail/custom_srv__rosidl_typesupport_introspection_cpp.hpp
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__type_support.cpp
+[0.724s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/include/buggy/buggy/msg/detail/custom_msg__rosidl_typesupport_introspection_cpp.hpp
+[0.725s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_introspection_cpp.so
+[0.725s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_typesupport_cpp.so
+[0.725s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/pythonpath.sh
+[0.725s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/pythonpath.dsv
+[0.725s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy-0.0.0-py3.10.egg-info
+[0.725s] -- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.725s] -- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy-0.0.0-py3.10.egg-info/PKG-INFO
+[0.725s] -- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy-0.0.0-py3.10.egg-info/top_level.txt
+[0.725s] -- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.725s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy
+[0.725s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/_buggy_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.725s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.725s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/_buggy_s.ep.rosidl_typesupport_introspection_c.c
+[0.726s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/__init__.py
+[0.726s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.726s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/libbuggy__rosidl_generator_py.so
+[0.726s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.726s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/srv
+[0.726s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/srv/__init__.py
+[0.726s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/srv/_custom_srv_s.c
+[0.726s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/srv/_custom_srv.py
+[0.726s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/msg
+[0.726s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/msg/_custom_msg.py
+[0.726s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/msg/_custom_msg_s.c
+[0.726s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/msg/__init__.py
+[0.726s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/_buggy_s.ep.rosidl_typesupport_c.c
+[0.763s] Listing '/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy'...
+[0.763s] Listing '/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/msg'...
+[0.763s] Listing '/home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/srv'...
+[0.767s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.768s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.768s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/local/lib/python3.10/dist-packages/buggy/buggy_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.768s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/libbuggy__rosidl_generator_py.so
+[0.769s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/msg/CustomMsg.idl
+[0.769s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/srv/CustomSrv.idl
+[0.769s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/msg/CustomMsg.msg
+[0.769s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/srv/CustomSrv.srv
+[0.769s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/srv/CustomSrv_Request.msg
+[0.769s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/srv/CustomSrv_Response.msg
+[0.769s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/buggy/sub
+[0.770s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/lib/buggy/pub
+[0.770s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/launch
+[0.770s] -- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/launch/test.launch.py
+[0.770s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/ament_index/resource_index/package_run_dependencies/buggy
+[0.770s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/ament_index/resource_index/parent_prefix_path/buggy
+[0.771s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/ament_prefix_path.sh
+[0.771s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/ament_prefix_path.dsv
+[0.771s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/path.sh
+[0.771s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/environment/path.dsv
+[0.771s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/local_setup.bash
+[0.771s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/local_setup.sh
+[0.772s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/local_setup.zsh
+[0.772s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/local_setup.dsv
+[0.772s] -- Installing: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/package.dsv
+[0.772s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/ament_index/resource_index/packages/buggy
+[0.772s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_generator_cExport.cmake
+[0.772s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_generator_cExport-noconfig.cmake
+[0.773s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_typesupport_fastrtps_cExport.cmake
+[0.773s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.773s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_generator_cppExport.cmake
+[0.773s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.773s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.773s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_introspection_cExport.cmake
+[0.774s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.774s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_cExport.cmake
+[0.774s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_cExport-noconfig.cmake
+[0.774s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_introspection_cppExport.cmake
+[0.774s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.774s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_cppExport.cmake
+[0.775s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggy__rosidl_typesupport_cppExport-noconfig.cmake
+[0.775s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_generator_pyExport.cmake
+[0.775s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/export_buggy__rosidl_generator_pyExport-noconfig.cmake
+[0.775s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/rosidl_cmake-extras.cmake
+[0.775s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.775s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.775s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/ament_cmake_export_libraries-extras.cmake
+[0.775s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/ament_cmake_export_targets-extras.cmake
+[0.775s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.776s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.776s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggyConfig.cmake
+[0.776s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/cmake/buggyConfig-version.cmake
+[0.776s] -- Up-to-date: /home/rizo/iros/src/ros2_intro/homework/homework2/install/buggy/share/buggy/package.xml
+[0.778s] Invoked command in '/home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rizo/iros/install/launch_testing_examples:/home/rizo/iros/install/hagen_robot_diff_drive:/home/rizo/iros/install/hagen_robot_controller:/home/rizo/iros/install/examples_rclpy_pointcloud_publisher:/home/rizo/iros/install/examples_rclpy_minimal_subscriber:/home/rizo/iros/install/examples_rclpy_minimal_service:/home/rizo/iros/install/examples_rclpy_minimal_publisher:/home/rizo/iros/install/examples_rclpy_minimal_client:/home/rizo/iros/install/examples_rclpy_minimal_action_server:/home/rizo/iros/install/examples_rclpy_minimal_action_client:/home/rizo/iros/install/examples_rclpy_guard_conditions:/home/rizo/iros/install/examples_rclpy_executors:/opt/ros/humble /usr/bin/cmake --install /home/rizo/iros/src/ros2_intro/homework/homework2/build/buggy

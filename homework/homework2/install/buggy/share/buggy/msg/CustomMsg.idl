@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from buggy/msg/CustomMsg.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "geometry_msgs/msg/PointStamped.idl"
+#include "std_msgs/msg/Bool.idl"
+#include "std_msgs/msg/String.idl"
+
+module buggy {
+  module msg {
+    struct CustomMsg {
+      std_msgs::msg::String name;
+
+      geometry_msgs::msg::PointStamped point;
+
+      std_msgs::msg::Bool flag;
+
+      builtin_interfaces::msg::Time time;
+    };
+  };
+};
