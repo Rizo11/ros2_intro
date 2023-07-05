@@ -11,11 +11,9 @@ The assignment is individual.
 
 **Please note, there will be no tolerance for cheating.**
 
-The assignment consists of 3 parts as following:
+### Find & Fix (10 points)
 
-### Part 1: Find & Fix (8 points)
-
-You have a package called "buggy", if you tried to build this package, it will give errors. Your task is to find and fix such bugs and fix them. The bugs and errors are not only syntax errors, or missing lines, but can be mistakes in C++ codes, msg, srv, launch file, CMakeLists and package.xml. However, the logic of the code is correct.
+You have a package called "buggy", if you try to build this package, it will give errors. Your task is to find and fix these bugs and fix them if you don't mind. The bugs and errors are not only syntax errors, or missing lines, but can be mistakes in C++ codes, msg, srv, launch file, CMakeLists and package.xml. However, the logic of the code is correct.
 
 You may use the debugging tools to find the bugs.
 
@@ -30,17 +28,17 @@ ros2 service call /turnon "flag:
   data: True"
 ```
   
-Then, it should print "You finished, congrats on 5 points"
+Then, it should print "You finished, congrats on 10 points"
 
 ## Submission
 
 You need to submit a single zip file that contains the following:
 
-* For the first part, zip the package after you fix it with readme 
+* zip the package after you fix it with Readme 
 
 
 ## Grading
 
-* This homework costs 5 points
+* This homework costs 10 points
 
 

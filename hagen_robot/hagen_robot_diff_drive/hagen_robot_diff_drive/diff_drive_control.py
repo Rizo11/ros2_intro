@@ -51,7 +51,11 @@ class Controller(Node):
   def send_control(self):
     msg = Twist()
     msg.linear.x = 0.05
+<<<<<<< HEAD
     msg.linear.y = 0.05
+=======
+    msg.linear.y = 0.0
+>>>>>>> upstream/master
     msg.linear.z = 0.0
     msg.angular.x = 0.0
     msg.angular.y = 0.0

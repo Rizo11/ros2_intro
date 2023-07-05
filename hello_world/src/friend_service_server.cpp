@@ -1,6 +1,9 @@
 #include <rclcpp/rclcpp.hpp>
 #include <friend_msgs/srv/friend_info_service.hpp>
 #include <memory>
+#include <rclcpp/rclcpp.hpp>
+#include <rclcpp/logger.hpp>
+#include <rcutils/error_handling.h>
 
 
 #include <cinttypes>
@@ -22,7 +25,11 @@ bool setHeartBeat(std::shared_ptr<friend_msgs::srv::FriendInfoService::Request> 
         std::shared_ptr<friend_msgs::srv::FriendInfoService::Response> res)
 {
   res->heartbeat = req->value;
+<<<<<<< HEAD
 
+=======
+  // RCLCPP_DEBUG_FUNCTION();
+>>>>>>> upstream/master
   return true;
 }
 
@@ -96,8 +103,17 @@ int main(int argc, char **argv)
     node->create_service<friend_msgs::srv::FriendInfoService>("set_heartbeat", &setHeartBeat);
   // TODO Create service and register a callback with two arguments; name the callback function as addition
   // Inside the callback, print request value and assign the response value, i.e., heartbeat, as the request value 
+  node->get_logger().set_level(rclcpp::Logger::Level::Warn);
+
+  
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "Service server is ready");
+<<<<<<< HEAD
   RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "*************Logging*************");
+=======
+  // RCLCPP_INFO_STREAM(rclcpp::get_logger("rclcpp"), "Service server is ready" << );
+  RCLCPP_WARN(rclcpp::get_logger("rclcpp"), "Service server is ready");
+  RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Service server is ready");
+>>>>>>> upstream/master
   
   auto logger = std::make_shared<LoggingIntro>();
   logger->get_logger().set_level(rclcpp::Logger::Level::Warn);
