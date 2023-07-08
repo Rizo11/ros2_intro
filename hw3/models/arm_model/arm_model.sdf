@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <model name="arm">
+    <pose>0 0 1.4 0 0 0</pose>
+    <static>false</static>
+    
+    <link name="stick">
+      <inertial>
+        <inertia>
+          <ixx>0.274</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.274</iyy>
+          <iyz>0</iyz>
+          <izz>0.000788</izz>
+        </inertia>
+        <mass>10</mass>
+      </inertial>
+      
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.15 0.15 2.8</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.15 0.15 2.8</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Blue</name> <!-- Set the desired material for the base -->
+          </script>
+        </material>
+      </visual>
+    </link>
+
+
+    <link name="stick2">
+      <pose>0 0.15 1.9 0 0 0</pose>
+      <inertial>
+        <inertia>
+          <ixx>0.0343</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0343</iyy>
+          <iyz>0</iyz>
+          <izz>0.000394</izz>
+        </inertia>
+        <mass>10</mass>
+      </inertial>
+
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.15 0.15 1.4</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.15 0.15 1.4</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name> <!-- Set the desired material for the base -->
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <link name="stick3">
+      <pose>0 0.3 3.1 0 0 0</pose>
+      <inertial>
+        <inertia>
+          <ixx>0.0343</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0343</iyy>
+          <iyz>0</iyz>
+          <izz>0.000394</izz>
+        </inertia>
+        <mass>10</mass>
+      </inertial>
+
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.15 0.15 1.4</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.15 0.15 1.4</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green</name> <!-- Set the desired material for the base -->
+          </script>
+        </material>
+      </visual>
+    </link>
+
+    <joint name="joint1" type="fixed">
+      <parent>world</parent>
+      <child>stick</child>
+    </joint>
+
+    <joint name="joint2" type="revolute">
+      <parent>stick</parent>
+      <child>stick2</child>
+      <pose>0 0 -0.6 0 0 0</pose>
+      <axis>
+        <xyz>0 1 0</xyz>
+      </axis>
+      <limit>
+        <lower>-1.5707</lower> 
+        <upper>1.5707</upper>
+      </limit>
+    </joint>
+
+    <joint name="joint3" type="revolute">
+      <parent>stick2</parent>
+      <child>stick3</child>
+      <pose>0 0 -0.6 0 0 0</pose>
+      <axis>
+        <xyz>0 1 0</xyz>
+      </axis>
+      <limit>
+        <lower>-1.5707</lower> 
+        <upper>1.5707</upper>
+      </limit>
+    </joint>
+
+  </model>
+</sdf>
+
+<!-- <?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="arm">
+    <link name="base">
+      <pose>0 0 0.05 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.1 0.1 0.1</size> <!-- Set the dimensions of the base -->
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Blue</name> <!-- Set the desired material for the base -->
+          </script>
+        </material>
+      </visual>
+    </link>
+    <link name="stick">
+      <inertial>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>0.0</ixx>
+          <iyy>0.0</iyy>
+          <izz>0.0</izz>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyz>0.0</iyz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>1.0 0.05 0.05</size> <!-- Set the dimensions of the stick -->
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name> <!-- Set the desired material for the stick -->
+          </script>
+        </material>
+      </visual>
+    </link>
+    <joint name="base_joint" type="revolute">
+      <parent>world</parent> <!-- Attach the joint to the world -->
+      <child>base</child> <!-- Attach the base link to the joint -->
+      <axis>
+        <xyz>0 0 1</xyz> <!-- Set the rotation axis of the revolute joint along the z-axis -->
+      </axis>
+      <pose>0 0 0 0 0 0</pose> <!-- Set the position and orientation of the base joint -->
+    </joint>
+    <joint name="stick_joint" type="revolute">
+      <parent>base</parent> <!-- Attach the joint to the base link -->
+      <child>stick</child> <!-- Attach the stick link to the joint -->
+      <axis>
+        <xyz>0 0 1</xyz> <!-- Set the rotation axis of the revolute joint along the z-axis -->
+      </axis>
+      <pose>1 0 0 0 0 0</pose> <!-- Set the position and orientation of the stick joint -->
+      <limit>
+        <lower>-1.57</lower> <!-- Set the lower limit of the joint angle to -90 degrees -->
+        <upper>1.57</upper> <!-- Set the upper limit of the joint angle to 90 degrees -->
+      </limit>
+    </joint>
+  </model>
+</sdf> -->

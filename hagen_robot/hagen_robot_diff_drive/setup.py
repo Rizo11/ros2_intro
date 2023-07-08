@@ -32,7 +32,6 @@ setup(
     entry_points={
         'console_scripts': [
           'spawn_robot = hagen_robot_diff_drive.spawn_robot:main'
-          'diff_drive_control = hagen_robot_diff_drive.diff_drive_control:main'
         ],
     },
 )
